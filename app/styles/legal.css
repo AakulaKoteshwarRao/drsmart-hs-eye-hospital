@@ -1,0 +1,18 @@
+/* -- LEGAL PAGES (Disclaimer / Privacy / Terms) -- */
+
+.legal-hero { padding: 3rem 1.5rem 2rem; max-width: 800px; margin: 0 auto; }
+.legal-title { font-size: 2.2rem; font-weight: 800; color: var(--secondary-deep); margin: 0.5rem 0 0.25rem; }
+.legal-updated { font-size: 0.85rem; color: #6B7280; margin-bottom: 0; }
+
+.legal-body { max-width: 800px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+.legal-inner { display: flex; flex-direction: column; gap: 2rem; }
+
+.legal-section h2.legal-sec-title { font-size: 1.1rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem; }
+.legal-section p { color: #374151; line-height: 1.75; margin: 0; }
+
+.legal-list { margin: 0; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.legal-list li { color: #374151; line-height: 1.7; }
+
+.legal-nav { display: flex; flex-wrap: wrap; gap: 1rem; padding-top: 2.5rem; border-top: 1px solid #E5E7EB; margin-top: 1rem; }
+.legal-nav-link { font-size: 0.9rem; font-weight: 600; color: var(--secondary); text-decoration: none; padding: 0.5rem 1rem; border: 1.5px solid var(--secondary); border-radius: 6px; transition: background 0.2s, color 0.2s; }
+.legal-nav-link:hover { background: var(--secondary); color: #fff; }

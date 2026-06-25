@@ -1,0 +1,278 @@
+/* -- LOCATIONS PAGE -- */
+
+  
+  
+
+  .sec-label { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .sec-label::before { content: ''; width: 40px; height: 4px; background: var(--primary); border-radius: 2px; flex-shrink: 0; }
+  .sec-label span { font-size: 0.78rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+  .sec-title { font-size: 2rem; font-weight: 800; color: #111111; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
+  .sec-sub { font-size: 1.02rem; color: #374151; line-height: 1.65; max-width: 640px; }
+  .sec-header { margin-bottom: 2.5rem; }
+
+  .header { background: #FFFFFF; position: sticky; top: 0; z-index: 300; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .header-inner { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 72px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; text-decoration: none; }
+  .logo img { height: 56px; width: auto; max-width: 200px; object-fit: contain; }
+  .nav { display: flex; align-items: center; gap: 0.25rem; }
+  .nav a { text-decoration: none; color: #4B5563; font-size: 0.88rem; font-weight: 500; padding: 0.5rem 0.85rem; border-radius: 8px; transition: color 200ms, background 200ms; }
+  .nav a:hover { color: var(--secondary-dark); background: var(--secondary-light); }
+  .nav a.active { color: #111111; font-weight: 700; }
+
+  /* ============================================================
+     SECTION 1: HERO
+     ============================================================ */
+  .loc-hero { max-width: 1280px; margin: 0 auto; padding: 4rem 2rem 3rem; }
+  .loc-hero h1 {
+    font-size: 2.5rem; font-weight: 800; color: #111111;
+    line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.6rem;
+  }
+  .loc-hero h1 em { color: var(--primary); font-style: italic; }
+  .loc-hero-text { font-size: 1.05rem; color: #374151; line-height: 1.75; max-width: 700px; }
+
+  /* ============================================================
+     SECTION 2: INTRODUCTION
+     ============================================================ */
+  .intro-section { max-width: 100%; background: var(--primary-light); }
+  .intro-inner { max-width: 1280px; margin: 0 auto; padding: 4rem 2rem; }
+  .intro-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: center; }
+  .intro-content h2 { font-size: 1.5rem; font-weight: 800; color: #111111; margin-bottom: 0.75rem; }
+  .intro-content p { font-size: 0.95rem; color: #374151; line-height: 1.75; margin-bottom: 0.75rem; }
+  .intro-highlights { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+  .intro-chip {
+    font-size: 0.78rem; font-weight: 600; color: #111111;
+    background: #FFFFFF; border: 1.5px solid #E5E7EB;
+    padding: 0.4rem 0.85rem; border-radius: 24px;
+  }
+  .intro-visual {
+    width: 100%; aspect-ratio: 4/3; border-radius: 20px;
+    background: linear-gradient(160deg, var(--secondary-deep), var(--secondary), var(--primary));
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  }
+  .intro-visual svg { width: 48px; height: 48px; color: rgba(255,255,255,0.25); }
+
+  /* ============================================================
+     SECTION 3: CLINIC DETAILS
+     ============================================================ */
+  .clinic-section { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
+  .clinic-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+  .clinic-card {
+    background: #FFFFFF; border: 1.5px solid #E5E7EB; border-radius: 16px;
+    padding: 1.5rem; transition: all 200ms;
+  }
+  .clinic-card:hover { border-color: var(--primary); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+  .clinic-card-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 0.85rem;
+  }
+  .clinic-card-icon svg { width: 22px; height: 22px; color: #FFFFFF; }
+  .clinic-card h3 { font-size: 0.9rem; font-weight: 800; color: #111111; margin-bottom: 0.25rem; }
+  .clinic-card p { font-size: 0.82rem; color: #374151; line-height: 1.55; }
+  .clinic-card a { color: var(--secondary); text-decoration: none; font-weight: 600; font-size: 0.82rem; }
+  .clinic-card a:hover { color: var(--primary); }
+
+  /* ============================================================
+     SECTION 4: MAP
+     ============================================================ */
+  .map-section { max-width: 100%; background: #F3F4F6; }
+  .map-inner { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
+  .map-embed {
+    width: 100%; aspect-ratio: 16/7; border-radius: 20px; overflow: hidden;
+    background: linear-gradient(160deg, var(--secondary-deep), var(--secondary));
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  }
+  .map-embed svg { width: 48px; height: 48px; color: rgba(255,255,255,0.25); }
+  .map-embed span { color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-left: 0.75rem; }
+
+  /* ============================================================
+     SECTION 5: HOW TO REACH US
+     ============================================================ */
+  .reach-section { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
+  .reach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .reach-card {
+    background: #FFFFFF; border: 1.5px solid #E5E7EB; border-radius: 16px;
+    padding: 1.5rem; transition: all 200ms;
+  }
+  .reach-card:hover { border-color: var(--primary); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+  .reach-card-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 0.85rem;
+  }
+  .reach-card-icon svg { width: 22px; height: 22px; color: #FFFFFF; }
+  .reach-card h3 { font-size: 0.9rem; font-weight: 800; color: #111111; margin-bottom: 0.35rem; }
+  .reach-card p { font-size: 0.82rem; color: #374151; line-height: 1.6; }
+
+  /* ============================================================
+     SECTION 6: CORE SERVICES
+     ============================================================ */
+  .services-loc-section { max-width: 100%; background: #F8FAFC; }
+  .services-loc-inner { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
+  .services-loc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .svc-chip {
+    background: #FFFFFF; border: 1.5px solid #E5E7EB; border-radius: 12px;
+    padding: 1.15rem; display: flex; align-items: center; gap: 0.75rem;
+    text-decoration: none; transition: all 200ms;
+  }
+  .svc-chip:hover { border-color: var(--primary); background: var(--primary-light); transform: translateY(-2px); }
+  .svc-dot {
+    width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+  }
+  .svc-chip span { font-size: 0.88rem; font-weight: 700; color: #111111; }
+
+  /* ============================================================
+     SECTION 7: AREAS SERVED
+     ============================================================ */
+  .areas-section { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
+  .areas-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .area-card {
+    background: #FFFFFF; border: 1.5px solid #E5E7EB; border-radius: 14px;
+    padding: 1.25rem; text-decoration: none; transition: all 200ms;
+    display: flex; flex-direction: column;
+  }
+  .area-card:hover { border-color: var(--primary); background: var(--primary-light); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+  .area-card h3 { font-size: 0.95rem; font-weight: 800; color: #111111; margin-bottom: 0.35rem; }
+  .area-meta { display: flex; gap: 1rem; }
+  .area-meta span { font-size: 0.78rem; color: #4B5563; display: flex; align-items: center; gap: 0.3rem; }
+  .area-meta svg { width: 13px; height: 13px; color: var(--primary); }
+
+  /* ============================================================
+     SECTION 8: DOCTOR AUTHORITY
+     ============================================================ */
+  .doc-authority { max-width: 100%; background: linear-gradient(160deg, var(--secondary-deep) 0%, var(--secondary-deep) 100%); }
+  .doc-authority-inner {
+    max-width: 800px; margin: 0 auto; padding: 3.5rem 2rem;
+    display: flex; align-items: center; gap: 2rem;
+  }
+  .doc-auth-avatar {
+    width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    display: flex; align-items: center; justify-content: center;
+  }
+  .doc-auth-avatar svg { width: 32px; height: 32px; color: rgba(255,255,255,0.4); }
+  .doc-auth-text h3 { font-size: 1.15rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.25rem; }
+  .doc-auth-text p { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 0.75rem; }
+  .doc-auth-link {
+    font-size: 0.85rem; font-weight: 700; color: var(--primary);
+    text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  .doc-auth-link:hover { color: #FFFFFF; }
+  .doc-auth-link svg { width: 14px; height: 14px; }
+
+  /* ============================================================
+     SECTION 9: REVIEWS
+     ============================================================ */
+  .loc-reviews { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
+  .loc-reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .loc-review-card {
+    background: #FFFFFF; border: 1.5px solid #E5E7EB; border-radius: 16px;
+    padding: 1.5rem; transition: all 200ms;
+  }
+  .loc-review-card:hover { border-color: var(--primary); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+  .loc-review-stars { display: flex; gap: 0.1rem; margin-bottom: 0.6rem; }
+  .loc-review-stars svg { width: 15px; height: 15px; color: #F59E0B; fill: #F59E0B; }
+  .loc-review-text { font-size: 0.88rem; color: #374151; line-height: 1.65; font-style: italic; margin-bottom: 0.75rem; }
+  .loc-review-name { font-size: 0.82rem; font-weight: 700; color: #111111; }
+
+  /* ============================================================
+     SECTION 10: FAQ
+     ============================================================ */
+  .faq-section { max-width: 100%; background: #F3F4F6; }
+  .faq-inner { max-width: 800px; margin: 0 auto; padding: 5rem 2rem; }
+  .faq-header { text-align: center; }
+  .faq-header .sec-label { justify-content: center; }
+  .faq-header .sec-sub { margin: 0 auto; }
+  .faq-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .faq-item {
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    border-radius: 12px; overflow: hidden; cursor: pointer; transition: all 200ms;
+  }
+  .faq-item:hover { border-color: var(--primary); background: var(--primary-light); }
+  .faq-item.open { border-color: var(--primary); background: var(--primary-light); }
+  .faq-q { display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.5rem; gap: 1rem; }
+  .faq-q span { font-size: 0.95rem; font-weight: 700; color: #111111; }
+  .faq-toggle {
+    width: 28px; height: 28px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; background: #F3F4F6; transition: all 300ms;
+  }
+  .faq-toggle svg { width: 16px; height: 16px; color: #374151; transition: transform 300ms; }
+  .faq-item:hover .faq-toggle { background: var(--primary-pale); }
+  .faq-item.open .faq-toggle { background: var(--primary); }
+  .faq-item.open .faq-toggle svg { color: #FFFFFF; transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 350ms ease, padding 350ms ease; padding: 0 1.5rem; }
+  .faq-item.open .faq-a { max-height: 250px; padding: 0 1.5rem 1.25rem; }
+  .faq-a p { font-size: 0.9rem; color: #374151; line-height: 1.7; }
+
+  /* ============================================================
+     SECTION 11: INTERNAL LINKS
+     ============================================================ */
+  .internal-links { max-width: 1280px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+  .internal-links h3 { font-size: 0.85rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1rem; }
+  .links-wrap { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .int-link {
+    font-size: 0.82rem; font-weight: 600; color: var(--secondary);
+    background: #F3F4F6; padding: 0.45rem 0.85rem; border-radius: 8px;
+    text-decoration: none; transition: all 200ms;
+  }
+  .int-link:hover { background: var(--primary-light); color: var(--primary); }
+
+  /* Sticky bar */
+  .sticky-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 500;
+    display: flex; justify-content: center; background: #FFFFFF;
+    border-top: 1px solid #D1D5DB; box-shadow: 0 -3px 16px rgba(0,0,0,0.08);
+    padding: 0.6rem 1rem;
+  }
+  .sticky-bar-inner { display: flex; align-items: center; justify-content: center; gap: 2.5rem; }
+  .sticky-bar a {
+    display: flex; align-items: center; gap: 0.4rem;
+    text-decoration: none; font-size: 0.85rem; font-weight: 600;
+    padding: 0.4rem 0.5rem; border-radius: 8px; transition: background 200ms;
+  }
+  .sticky-bar a:active { background: #F2F4F6; }
+  .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .sticky-bar .call { color: var(--secondary); }
+  .sticky-bar .whatsapp { color: #1A9E52; }
+  .sticky-bar .appointment { color: var(--primary); }
+  .bar-divider { width: 1px; height: 20px; background: #D1D5DB; }
+
+  @media (max-width: 1024px) {
+    .intro-grid { grid-template-columns: 1fr; }
+    .intro-visual { order: -1; max-width: 480px; margin: 0 auto; }
+    .clinic-grid { grid-template-columns: 1fr 1fr; }
+    .reach-grid { grid-template-columns: 1fr 1fr; }
+    .services-loc-grid { grid-template-columns: 1fr 1fr; }
+    .areas-grid { grid-template-columns: 1fr 1fr; }
+    .loc-reviews-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .header-inner { height: 60px; padding: 0 1rem; }
+    .logo img { height: 44px; }
+    .nav { display: none; }
+    .loc-hero { padding: 2rem 1rem; }
+    .loc-hero h1 { font-size: 1.85rem; }
+    .sec-title { font-size: 1.5rem; }
+    .intro-inner { padding: 3rem 1rem; }
+    .clinic-section { padding: 3.5rem 1rem; }
+    .clinic-grid { grid-template-columns: 1fr; }
+    .map-inner { padding: 3.5rem 1rem; }
+    .reach-section { padding: 3.5rem 1rem; }
+    .reach-grid { grid-template-columns: 1fr; }
+    .services-loc-inner { padding: 3.5rem 1rem; }
+    .services-loc-grid { grid-template-columns: 1fr; }
+    .areas-section { padding: 3.5rem 1rem; }
+    .areas-grid { grid-template-columns: 1fr 1fr; }
+    .doc-authority-inner { padding: 2.5rem 1rem; flex-direction: column; text-align: center; }
+    .loc-reviews { padding: 3.5rem 1rem; }
+    .loc-reviews-grid { grid-template-columns: 1fr; }
+    .faq-inner { padding: 3.5rem 1rem; }
+    .internal-links { padding: 2rem 1rem 4rem; }
+    .sticky-bar-inner { gap: 0; width: 100%; justify-content: space-around; }
+    .sticky-bar a { font-size: 0.78rem; flex: 1; justify-content: center; }
+  }
+
+

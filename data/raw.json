@@ -1,0 +1,2296 @@
+{
+  "s07": {
+    "conditions": [
+      {
+        "slug": "migraine",
+        "name": "Migraine",
+        "description": "Severe recurring headaches often with nausea and light sensitivity. Highly treatable with the right diagnosis and plan.",
+        "pills": [
+          "Treatable",
+          "Early Detection Matters",
+          "Multiple Options"
+        ],
+        "heroStats": [
+          {
+            "label": "of adults affected",
+            "value": "15%"
+          },
+          {
+            "label": "reduction with treatment",
+            "value": "70%"
+          },
+          {
+            "label": "avg years to diagnosis",
+            "value": "7"
+          }
+        ],
+        "icd10": "G43.9",
+        "prevalence": "1 in 7 adults",
+        "progressionType": "Can become chronic",
+        "diagnosisMethod": "Clinical diagnosis",
+        "types": [
+          {
+            "name": "Migraine without Aura",
+            "description": "Throbbing headache without preceding sensory disturbances."
+          },
+          {
+            "name": "Migraine with Aura",
+            "description": "Visual or sensory disturbances precede the headache."
+          },
+          {
+            "name": "Chronic Migraine",
+            "description": "Headaches occurring 15+ days per month for more than 3 months."
+          }
+        ],
+        "causes": [
+          "Hormonal changes",
+          "Stress and anxiety",
+          "Sleep disruption",
+          "Dietary triggers",
+          "Environmental factors",
+          "Genetic predisposition"
+        ],
+        "symptoms": {
+          "early": [
+            "Mood changes",
+            "Food cravings",
+            "Neck stiffness"
+          ],
+          "moderate": [
+            "Throbbing one-sided headache",
+            "Nausea and vomiting",
+            "Light and sound sensitivity"
+          ],
+          "advanced": [
+            "Severe debilitating headache",
+            "Inability to perform daily tasks"
+          ]
+        },
+        "treatments": [
+          {
+            "name": "Preventive Medications",
+            "description": "Daily medications to reduce migraine frequency.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Beta-blockers",
+              "Topiramate",
+              "Amitriptyline",
+              "CGRP monoclonal antibodies"
+            ]
+          },
+          {
+            "name": "Acute Treatment",
+            "description": "Medications taken at onset of migraine.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Triptans",
+              "NSAIDs",
+              "Anti-nausea medications"
+            ]
+          },
+          {
+            "name": "Botox Injections",
+            "description": "For chronic migraine, given every 12 weeks.",
+            "invasiveness": "Minimally invasive",
+            "items": [
+              "31 injection sites",
+              "Every 12 weeks",
+              "Reduces headache days by 50%"
+            ]
+          },
+          {
+            "name": "Lifestyle Management",
+            "description": "Identifying and avoiding personal triggers.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Migraine diary tracking",
+              "Regular sleep",
+              "Stress reduction"
+            ]
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Detailed History & Trigger Mapping",
+            "description": "Thorough consultation to identify migraine patterns and triggers."
+          },
+          {
+            "title": "Diagnostic Workup",
+            "description": "MRI or blood tests to rule out secondary causes."
+          },
+          {
+            "title": "Personalised Treatment Plan",
+            "description": "Combining preventive and acute treatments tailored to your needs."
+          },
+          {
+            "title": "Regular Follow-up",
+            "description": "Monitor response and adjust medications for maximum reduction."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "Phase 1",
+            "title": "Acute Management",
+            "description": "Immediate relief and trigger identification.",
+            "timeline": [
+              {
+                "badge": "Week 1-2",
+                "text": "Start acute medications, begin migraine diary"
+              },
+              {
+                "badge": "Week 3-4",
+                "text": "Review diary, identify top triggers"
+              }
+            ],
+            "warnings": [
+              "Avoid medication overuse to prevent rebound headaches"
+            ]
+          },
+          {
+            "label": "Phase 2",
+            "title": "Preventive Treatment",
+            "description": "Introduction of preventive medications.",
+            "timeline": [
+              {
+                "badge": "Month 1-2",
+                "text": "Start preventive medication"
+              },
+              {
+                "badge": "Month 3",
+                "text": "First review \u2014 assess reduction"
+              }
+            ],
+            "warnings": [
+              "Preventive medications take 6-8 weeks to show full effect"
+            ]
+          },
+          {
+            "label": "Phase 3",
+            "title": "Long-term Control",
+            "description": "Achieving sustained migraine reduction.",
+            "timeline": [
+              {
+                "badge": "Month 4-6",
+                "text": "Fine-tune treatment"
+              },
+              {
+                "badge": "Month 6+",
+                "text": "Stable management, 3-monthly reviews"
+              }
+            ],
+            "warnings": [
+              "Do not stop preventive medications abruptly"
+            ]
+          }
+        ],
+        "outcomes": [
+          {
+            "title": "50-70% Reduction",
+            "description": "Significant reduction in migraine frequency with preventive treatment."
+          },
+          {
+            "title": "Improved Daily Function",
+            "description": "Return to work and normal daily life."
+          },
+          {
+            "title": "Fewer Emergency Visits",
+            "description": "Proper treatment reduces emergency visits."
+          },
+          {
+            "title": "Better Quality of Life",
+            "description": "Comprehensive management improves overall wellbeing."
+          }
+        ],
+        "whenToSeeDoctor": {
+          "intro": "Seek medical attention if:",
+          "items": [
+            "Headaches more than 4 times per month",
+            "Sudden severe thunderclap headache",
+            "Headache with fever or stiff neck",
+            "Headache after head injury",
+            "New headache pattern after age 50"
+          ]
+        },
+        "ifNotTreated": "Untreated migraines can progress to chronic, impacting quality of life and work productivity.",
+        "relatedProcedures": [
+          "botox-for-migraine",
+          "nerve-conduction-study"
+        ],
+        "faqs": [
+          {
+            "q": "Is migraine a lifelong condition?",
+            "a": "Migraine can be lifelong but often improves with age. With proper treatment most patients achieve significant control."
+          },
+          {
+            "q": "Can migraines be cured?",
+            "a": "No definitive cure, but migraines can be well controlled with 50-70% reduction in headache days."
+          },
+          {
+            "q": "What triggers a migraine?",
+            "a": "Common triggers include stress, hormonal changes, poor sleep, certain foods, bright lights, and strong smells."
+          },
+          {
+            "q": "When should I consider Botox?",
+            "a": "Botox is recommended for chronic migraine (15+ days/month) when two preventive medications have not worked."
+          }
+        ]
+      },
+      {
+        "slug": "epilepsy",
+        "name": "Epilepsy",
+        "description": "A neurological disorder causing recurrent seizures. Most cases are effectively controlled with modern medications.",
+        "pills": [
+          "Controllable",
+          "Medication-Responsive",
+          "Lifelong Care"
+        ],
+        "heroStats": [
+          {
+            "label": "achieve seizure control",
+            "value": "70%"
+          },
+          {
+            "label": "people affected in India",
+            "value": "10M+"
+          },
+          {
+            "label": "types of seizures",
+            "value": "40+"
+          }
+        ],
+        "icd10": "G40.9",
+        "prevalence": "50M worldwide",
+        "progressionType": "Stabilises with treatment",
+        "diagnosisMethod": "EEG + MRI",
+        "types": [
+          {
+            "name": "Focal Seizures",
+            "description": "Originate in one area of the brain."
+          },
+          {
+            "name": "Generalised Seizures",
+            "description": "Involve both hemispheres from onset."
+          },
+          {
+            "name": "Unknown Onset Seizures",
+            "description": "Seizures where onset cannot be determined."
+          }
+        ],
+        "causes": [
+          "Genetic factors",
+          "Brain injury or trauma",
+          "Stroke or brain tumours",
+          "Infections like meningitis",
+          "Developmental disorders",
+          "Unknown cause in many cases"
+        ],
+        "symptoms": {
+          "early": [
+            "Staring spells",
+            "Brief muscle jerks",
+            "Temporary loss of awareness"
+          ],
+          "moderate": [
+            "Uncontrolled jerking movements",
+            "Loss of consciousness",
+            "Repetitive movements"
+          ],
+          "advanced": [
+            "Prolonged seizures",
+            "Seizure clusters",
+            "Post-ictal confusion"
+          ]
+        },
+        "treatments": [
+          {
+            "name": "Anti-Epileptic Drugs",
+            "description": "First-line treatment. Medication depends on seizure type.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Valproate",
+              "Levetiracetam",
+              "Carbamazepine",
+              "Lamotrigine"
+            ]
+          },
+          {
+            "name": "EEG Monitoring",
+            "description": "Regular EEG to monitor brain activity and treatment response.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Routine EEG",
+              "Sleep-deprived EEG",
+              "Ambulatory EEG"
+            ]
+          },
+          {
+            "name": "Ketogenic Diet",
+            "description": "High-fat low-carb diet for drug-resistant epilepsy.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Supervised by dietitian",
+              "Effective in 50% of drug-resistant cases"
+            ]
+          },
+          {
+            "name": "Surgical Evaluation",
+            "description": "For drug-resistant epilepsy.",
+            "invasiveness": "Surgical",
+            "items": [
+              "Pre-surgical evaluation",
+              "Video EEG",
+              "MRI epilepsy protocol"
+            ]
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Accurate Seizure Classification",
+            "description": "EEG studies to correctly classify seizure type."
+          },
+          {
+            "title": "Identify Underlying Cause",
+            "description": "MRI brain and blood tests to find structural or metabolic causes."
+          },
+          {
+            "title": "Individualised Medication Plan",
+            "description": "AED selection based on seizure type, age, and lifestyle."
+          },
+          {
+            "title": "Safety Planning",
+            "description": "Seizure first aid, driving restrictions, and safety counselling."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "Phase 1",
+            "title": "Diagnosis & Initiation",
+            "description": "Confirming diagnosis and starting first AED.",
+            "timeline": [
+              {
+                "badge": "Week 1-2",
+                "text": "EEG + MRI, blood tests"
+              },
+              {
+                "badge": "Week 3-4",
+                "text": "Start AED at low dose"
+              }
+            ],
+            "warnings": [
+              "Never stop AEDs abruptly"
+            ]
+          },
+          {
+            "label": "Phase 2",
+            "title": "Optimisation",
+            "description": "Adjusting medication to achieve seizure freedom.",
+            "timeline": [
+              {
+                "badge": "Month 1-3",
+                "text": "Assess seizure frequency"
+              },
+              {
+                "badge": "Month 3-6",
+                "text": "Adjust or add second AED"
+              }
+            ],
+            "warnings": [
+              "Report any rash or mood changes immediately"
+            ]
+          },
+          {
+            "label": "Phase 3",
+            "title": "Long-term Management",
+            "description": "Maintaining seizure control.",
+            "timeline": [
+              {
+                "badge": "Year 1-2",
+                "text": "If seizure-free discuss AED tapering"
+              },
+              {
+                "badge": "Ongoing",
+                "text": "6-monthly reviews, annual EEG"
+              }
+            ],
+            "warnings": [
+              "AED withdrawal only under close supervision"
+            ]
+          }
+        ],
+        "outcomes": [
+          {
+            "title": "70% Seizure Freedom",
+            "description": "70% achieve complete seizure control with AED therapy."
+          },
+          {
+            "title": "Return to Normal Life",
+            "description": "Seizure-free patients can drive, work, and participate in most activities."
+          },
+          {
+            "title": "Reduced Injury Risk",
+            "description": "Effective control reduces seizure-related injuries."
+          },
+          {
+            "title": "Improved Mental Health",
+            "description": "Seizure control linked to improved mood and confidence."
+          }
+        ],
+        "whenToSeeDoctor": {
+          "intro": "Seek urgent attention for:",
+          "items": [
+            "First-ever seizure",
+            "Seizure lasting more than 5 minutes",
+            "Two or more seizures without recovery between them",
+            "Seizure in water",
+            "Injury during a seizure"
+          ]
+        },
+        "ifNotTreated": "Untreated epilepsy increases risk of injury, SUDEP, cognitive decline, and social isolation.",
+        "relatedProcedures": [
+          "eeg-test",
+          "nerve-conduction-study"
+        ],
+        "faqs": [
+          {
+            "q": "Can epilepsy go away on its own?",
+            "a": "Some childhood syndromes remit with age. Adults seizure-free for 2 years may be considered for AED withdrawal under supervision."
+          },
+          {
+            "q": "Is epilepsy hereditary?",
+            "a": "Some syndromes have genetic component but most is not directly inherited."
+          },
+          {
+            "q": "Can people with epilepsy drive?",
+            "a": "Driving permitted after seizure-free period (typically 1 year) as per medical guidelines."
+          },
+          {
+            "q": "What to do during a seizure?",
+            "a": "Stay calm, protect from injury, turn on side, do NOT put anything in mouth, time the seizure, call emergency if over 5 minutes."
+          }
+        ]
+      },
+      {
+        "slug": "stroke",
+        "name": "Stroke",
+        "description": "Caused by disrupted blood supply to the brain. Early treatment and rehabilitation significantly improves outcomes.",
+        "pills": [
+          "Time-Critical",
+          "Rehabilitation Responsive",
+          "Preventable"
+        ],
+        "heroStats": [
+          {
+            "label": "strokes are ischaemic",
+            "value": "87%"
+          },
+          {
+            "label": "better outcomes with early rehab",
+            "value": "60%"
+          },
+          {
+            "label": "are preventable",
+            "value": "80%"
+          }
+        ],
+        "icd10": "I64",
+        "prevalence": "1.8M/year in India",
+        "progressionType": "Acute emergency",
+        "diagnosisMethod": "CT / MRI brain",
+        "types": [
+          {
+            "name": "Ischaemic Stroke",
+            "description": "Caused by a blood clot blocking an artery. 87% of strokes."
+          },
+          {
+            "name": "Haemorrhagic Stroke",
+            "description": "Caused by a ruptured blood vessel."
+          },
+          {
+            "name": "TIA",
+            "description": "Stroke symptoms that resolve within 24 hours \u2014 a warning sign."
+          }
+        ],
+        "causes": [
+          "High blood pressure",
+          "Atrial fibrillation",
+          "Diabetes mellitus",
+          "High cholesterol",
+          "Smoking",
+          "Prior TIA or stroke"
+        ],
+        "symptoms": {
+          "early": [
+            "Sudden face drooping",
+            "Arm weakness or numbness",
+            "Speech difficulty",
+            "Sudden severe headache"
+          ],
+          "moderate": [
+            "Inability to walk",
+            "Vision loss",
+            "Confusion"
+          ],
+          "advanced": [
+            "Loss of consciousness",
+            "Paralysis",
+            "Inability to swallow"
+          ]
+        },
+        "treatments": [
+          {
+            "name": "Thrombolysis",
+            "description": "IV tPA given within 4.5 hours to dissolve clot.",
+            "invasiveness": "Minimally invasive",
+            "items": [
+              "Must be given within 4.5 hours",
+              "Only for ischaemic stroke"
+            ]
+          },
+          {
+            "name": "Antiplatelet Therapy",
+            "description": "Medications to prevent further clots.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Aspirin + Clopidogrel",
+              "Anticoagulants for AF",
+              "Statins"
+            ]
+          },
+          {
+            "name": "Stroke Rehabilitation",
+            "description": "Intensive multidisciplinary rehabilitation.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Physiotherapy",
+              "Speech therapy",
+              "Occupational therapy"
+            ]
+          },
+          {
+            "name": "Secondary Prevention",
+            "description": "Long-term management of risk factors.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Blood pressure control",
+              "Diabetes management",
+              "Smoking cessation"
+            ]
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Emergency Assessment",
+            "description": "Rapid CT/MRI to confirm stroke type."
+          },
+          {
+            "title": "Acute Treatment",
+            "description": "Immediate thrombolysis within treatment window."
+          },
+          {
+            "title": "Cause Investigation",
+            "description": "Cardiac monitoring and vascular imaging."
+          },
+          {
+            "title": "Rehabilitation Planning",
+            "description": "Early referral to stroke rehabilitation."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "Phase 1",
+            "title": "Acute (0-7 days)",
+            "description": "Emergency treatment and stabilisation.",
+            "timeline": [
+              {
+                "badge": "Hours 0-4.5",
+                "text": "Thrombolysis if eligible"
+              },
+              {
+                "badge": "Day 1-7",
+                "text": "Cause investigation, secondary prevention"
+              }
+            ],
+            "warnings": [
+              "Blood pressure should not be lowered too aggressively in acute stroke"
+            ]
+          },
+          {
+            "label": "Phase 2",
+            "title": "Subacute (1-3 months)",
+            "description": "Intensive rehabilitation.",
+            "timeline": [
+              {
+                "badge": "Week 2-4",
+                "text": "Daily physiotherapy, speech therapy"
+              },
+              {
+                "badge": "Month 2-3",
+                "text": "Assess walking and communication progress"
+              }
+            ],
+            "warnings": [
+              "Most recovery occurs in first 3 months \u2014 intensive rehab is critical"
+            ]
+          },
+          {
+            "label": "Phase 3",
+            "title": "Long-term (3 months+)",
+            "description": "Maintenance and secondary prevention.",
+            "timeline": [
+              {
+                "badge": "Month 3-6",
+                "text": "Community rehabilitation"
+              },
+              {
+                "badge": "Ongoing",
+                "text": "3-monthly neurology review"
+              }
+            ],
+            "warnings": [
+              "Risk of recurrent stroke highest in first 90 days"
+            ]
+          }
+        ],
+        "outcomes": [
+          {
+            "title": "60% Improve with Rehab",
+            "description": "Early rehabilitation significantly improves functional outcomes."
+          },
+          {
+            "title": "80% Strokes Preventable",
+            "description": "Addressing risk factors prevents up to 80% of strokes."
+          },
+          {
+            "title": "Independence Regained",
+            "description": "Many survivors regain ability to walk and perform daily activities."
+          },
+          {
+            "title": "Recurrence Reducible",
+            "description": "Secondary prevention reduces risk of second stroke by 80%."
+          }
+        ],
+        "whenToSeeDoctor": {
+          "intro": "FAST \u2014 call emergency services immediately for:",
+          "items": [
+            "Face drooping on one side",
+            "Arm weakness",
+            "Speech difficulty",
+            "Time to call emergency",
+            "Sudden severe headache",
+            "Sudden vision loss"
+          ]
+        },
+        "ifNotTreated": "Stroke left untreated causes irreversible brain damage. Every minute causes death of 1.9 million neurons.",
+        "relatedProcedures": [
+          "stroke-rehabilitation",
+          "nerve-conduction-study"
+        ],
+        "faqs": [
+          {
+            "q": "What is the difference between stroke and TIA?",
+            "a": "TIA causes stroke-like symptoms that fully resolve within 24 hours. It is a serious warning sign."
+          },
+          {
+            "q": "How long does stroke recovery take?",
+            "a": "Most recovery in first 3-6 months. Improvement can continue for 1-2 years with rehabilitation."
+          },
+          {
+            "q": "Can a young person have a stroke?",
+            "a": "Yes. Young adults can have strokes from cardiac conditions, clotting disorders, or illicit drug use."
+          },
+          {
+            "q": "Can stroke cause depression?",
+            "a": "Post-stroke depression affects up to 33% of survivors and can impair recovery. We screen and treat depression as part of stroke care."
+          }
+        ]
+      },
+      {
+        "slug": "parkinsons-disease",
+        "name": "Parkinson's Disease",
+        "description": "A progressive movement disorder causing tremors and stiffness. Managed effectively with medications and therapy.",
+        "pills": [
+          "Manageable",
+          "Multi-disciplinary Care",
+          "Progressive"
+        ],
+        "heroStats": [
+          {
+            "label": "people affected globally",
+            "value": "10M+"
+          },
+          {
+            "label": "improvement with DBS",
+            "value": "60%"
+          },
+          {
+            "label": "years average age of onset",
+            "value": "60"
+          }
+        ],
+        "icd10": "G20",
+        "prevalence": "10M+ globally",
+        "progressionType": "Slowly progressive",
+        "diagnosisMethod": "Clinical exam",
+        "types": [
+          {
+            "name": "Idiopathic Parkinson's",
+            "description": "Most common \u2014 cause unknown, good response to levodopa."
+          },
+          {
+            "name": "Young-Onset Parkinson's",
+            "description": "Diagnosed before age 50, often genetic."
+          },
+          {
+            "name": "Parkinson's Plus Syndromes",
+            "description": "Related conditions that respond less to levodopa."
+          }
+        ],
+        "causes": [
+          "Loss of dopaminergic neurons",
+          "Genetic mutations",
+          "Environmental factors \u2014 pesticide exposure",
+          "Age",
+          "Unknown cause in most cases"
+        ],
+        "symptoms": {
+          "early": [
+            "Resting tremor",
+            "Slight stiffness or slowness",
+            "Reduced arm swing",
+            "Soft speech"
+          ],
+          "moderate": [
+            "Significant bradykinesia",
+            "Shuffling gait",
+            "Balance problems",
+            "Sleep disturbances"
+          ],
+          "advanced": [
+            "Freezing of gait",
+            "Significant falls",
+            "Cognitive decline",
+            "Dysphagia"
+          ]
+        },
+        "treatments": [
+          {
+            "name": "Levodopa / Carbidopa",
+            "description": "Gold standard treatment for Parkinson's motor symptoms.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Most effective motor treatment",
+              "Timing and dosing critical",
+              "Available in immediate and controlled-release forms"
+            ]
+          },
+          {
+            "name": "Dopamine Agonists",
+            "description": "Mimic dopamine effects. Used in early or younger-onset Parkinson's.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Pramipexole",
+              "Ropinirole",
+              "Rotigotine patch"
+            ]
+          },
+          {
+            "name": "Physiotherapy & Exercise",
+            "description": "Improve balance, gait, and mobility.",
+            "invasiveness": "Non-invasive",
+            "items": [
+              "Gait training",
+              "Balance exercises",
+              "LSVT BIG therapy"
+            ]
+          },
+          {
+            "name": "Deep Brain Stimulation",
+            "description": "Surgical implantation of electrodes for advanced Parkinson's.",
+            "invasiveness": "Surgical",
+            "items": [
+              "60% improvement in motor symptoms",
+              "Reduces medication requirements"
+            ]
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Confirm Diagnosis",
+            "description": "Careful clinical assessment to distinguish Parkinson's from other conditions."
+          },
+          {
+            "title": "Personalise Medication Timing",
+            "description": "Optimise levodopa dosing to maximise on time and minimise off periods."
+          },
+          {
+            "title": "Multidisciplinary Referrals",
+            "description": "Coordinate physiotherapy, speech therapy, and occupational therapy."
+          },
+          {
+            "title": "Advance Planning",
+            "description": "Discuss disease progression, driving, and advance care planning."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "Phase 1",
+            "title": "Early Stage",
+            "description": "Diagnosis and initiation with good symptom control.",
+            "timeline": [
+              {
+                "badge": "Year 1",
+                "text": "Start medications, physiotherapy"
+              },
+              {
+                "badge": "Year 1-3",
+                "text": "Good medication response"
+              }
+            ],
+            "warnings": [
+              "Do not start levodopa too late"
+            ]
+          },
+          {
+            "label": "Phase 2",
+            "title": "Middle Stage",
+            "description": "Managing motor fluctuations.",
+            "timeline": [
+              {
+                "badge": "Year 3-7",
+                "text": "Motor fluctuations emerge"
+              },
+              {
+                "badge": "Year 5+",
+                "text": "Consider DBS evaluation"
+              }
+            ],
+            "warnings": [
+              "Falls risk increases \u2014 physiotherapy essential"
+            ]
+          },
+          {
+            "label": "Phase 3",
+            "title": "Advanced Stage",
+            "description": "Managing complex symptoms.",
+            "timeline": [
+              {
+                "badge": "Year 7+",
+                "text": "Advanced therapies: DBS, apomorphine"
+              },
+              {
+                "badge": "Ongoing",
+                "text": "Palliative care input"
+              }
+            ],
+            "warnings": [
+              "Some Parkinson's drugs worsen confusion in advanced disease"
+            ]
+          }
+        ],
+        "outcomes": [
+          {
+            "title": "Maintained Independence",
+            "description": "Good medication management maintains independence for many years."
+          },
+          {
+            "title": "60% DBS Improvement",
+            "description": "DBS provides 60% improvement in motor symptoms."
+          },
+          {
+            "title": "Better Quality of Life",
+            "description": "Multidisciplinary care improves quality of life."
+          },
+          {
+            "title": "Caregiver Support",
+            "description": "We provide education and support to families and caregivers."
+          }
+        ],
+        "whenToSeeDoctor": {
+          "intro": "See a neurologist if you notice:",
+          "items": [
+            "Resting tremor in hand or leg",
+            "Slowness in everyday movements",
+            "Stiffness or rigidity in limbs",
+            "Changes in handwriting",
+            "Loss of smell",
+            "Unexplained falls"
+          ]
+        },
+        "ifNotTreated": "Without treatment Parkinson's progresses and motor symptoms become increasingly disabling.",
+        "relatedProcedures": [
+          "nerve-conduction-study",
+          "eeg-test"
+        ],
+        "faqs": [
+          {
+            "q": "Does everyone with Parkinson's get dementia?",
+            "a": "About 30-40% develop Parkinson's dementia in later stages."
+          },
+          {
+            "q": "Can exercise slow Parkinson's?",
+            "a": "Evidence suggests regular vigorous exercise may have neuroprotective effects."
+          },
+          {
+            "q": "When is DBS considered?",
+            "a": "DBS is considered for advanced Parkinson's with significant motor fluctuations not controlled by medications."
+          },
+          {
+            "q": "Is Parkinson's hereditary?",
+            "a": "Most is not inherited. About 10-15% have a genetic cause."
+          }
+        ]
+      }
+    ]
+  },
+  "s08": {
+    "procedures": [
+      {
+        "slug": "eeg-test",
+        "name": "EEG Test",
+        "shortDescription": "Records electrical activity in the brain to diagnose epilepsy, sleep disorders, and neurological conditions.",
+        "pills": [
+          "Non-invasive",
+          "30-60 mins",
+          "No sedation needed"
+        ],
+        "heroStats": [
+          {
+            "label": "accuracy for epilepsy",
+            "value": "85%"
+          },
+          {
+            "label": "minute procedure",
+            "value": "45"
+          },
+          {
+            "label": "conditions diagnosed",
+            "value": "20+"
+          }
+        ],
+        "anaesthesia": "None",
+        "duration": "30-60 minutes",
+        "hospitalStay": "Outpatient",
+        "recoveryTime": "Same day",
+        "successRate": "85% accuracy",
+        "relatedConditions": [
+          "epilepsy",
+          "migraine"
+        ],
+        "candidacyIntro": "An EEG is recommended for patients with:",
+        "candidacy": [
+          "Suspected epilepsy or recurrent seizures",
+          "First-ever unexplained seizure",
+          "Monitoring known epilepsy",
+          "Unexplained loss of consciousness",
+          "Sleep disorders",
+          "Altered mental status"
+        ],
+        "howItWorks": [
+          {
+            "title": "Electrode Placement",
+            "description": "20-25 small electrodes attached to scalp using conductive gel. No needles."
+          },
+          {
+            "title": "Brain Activity Recording",
+            "description": "EEG machine records electrical signals for 30-60 minutes."
+          },
+          {
+            "title": "Activation Procedures",
+            "description": "Hyperventilation and photic stimulation to provoke abnormal activity."
+          },
+          {
+            "title": "Analysis",
+            "description": "Recording analysed by neurologist and detailed report provided."
+          }
+        ],
+        "durationMilestones": [
+          {
+            "milestone": "Electrode setup",
+            "timeframe": "15 minutes",
+            "description": "Electrodes applied"
+          },
+          {
+            "milestone": "Recording",
+            "timeframe": "30-45 minutes",
+            "description": "Brain activity recorded"
+          },
+          {
+            "milestone": "Removal",
+            "timeframe": "10 minutes",
+            "description": "Electrodes removed"
+          },
+          {
+            "milestone": "Report",
+            "timeframe": "24-48 hours",
+            "description": "Neurologist analysis"
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Pre-test Instructions",
+            "description": "Advise on hair washing and caffeine avoidance."
+          },
+          {
+            "title": "Comfortable Environment",
+            "description": "Quiet relaxed environment for best quality recording."
+          },
+          {
+            "title": "Expert Interpretation",
+            "description": "All EEGs reported by consultant neurologist."
+          },
+          {
+            "title": "Clear Communication",
+            "description": "Results communicated clearly with implications for management."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "During",
+            "title": "During the Procedure",
+            "description": "Completely painless.",
+            "timeline": [
+              {
+                "badge": "0-15 min",
+                "text": "Electrode application"
+              },
+              {
+                "badge": "15-60 min",
+                "text": "Recording"
+              }
+            ],
+            "warnings": [
+              "Inform us if you had a seizure in past 24 hours"
+            ]
+          },
+          {
+            "label": "After",
+            "title": "After the Procedure",
+            "description": "No recovery time needed.",
+            "timeline": [
+              {
+                "badge": "Immediately",
+                "text": "Return to normal activities"
+              },
+              {
+                "badge": "24-48 hours",
+                "text": "Report available"
+              }
+            ],
+            "warnings": [
+              "If sleep deprivation was used arrange transport home"
+            ]
+          }
+        ],
+        "successRateItems": [
+          "85% diagnostic yield for epilepsy",
+          "Higher yield with sleep-deprived EEG",
+          "Normal EEG does not rule out epilepsy"
+        ],
+        "risks": [
+          "Minimal risk \u2014 non-invasive",
+          "Skin irritation from electrode gel (rare)",
+          "Rare seizure provocation during photic stimulation"
+        ],
+        "sideEffects": [
+          "Slight scalp irritation",
+          "Hair gel residue",
+          "Brief lightheadedness from hyperventilation"
+        ],
+        "outcomes": [
+          {
+            "title": "Accurate Diagnosis",
+            "description": "EEG is the cornerstone of epilepsy diagnosis."
+          },
+          {
+            "title": "Treatment Monitoring",
+            "description": "Serial EEGs assess response to medications."
+          },
+          {
+            "title": "Rule Out Mimics",
+            "description": "EEG distinguishes epileptic seizures from other conditions."
+          }
+        ],
+        "misconceptions": [
+          {
+            "myth": "EEG can read your thoughts",
+            "fact": "EEG only records electrical brain waves."
+          },
+          {
+            "myth": "EEG is painful",
+            "fact": "EEG is completely painless \u2014 no needles or currents."
+          },
+          {
+            "myth": "Normal EEG means no epilepsy",
+            "fact": "Up to 50% of epilepsy patients have normal routine EEG."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Do I need to stop medications before EEG?",
+            "a": "Usually no \u2014 continue medications unless specifically asked to hold them."
+          },
+          {
+            "q": "What if EEG is normal but I have seizures?",
+            "a": "Normal EEG does not rule out epilepsy. Sleep-deprived or ambulatory EEG may be ordered."
+          },
+          {
+            "q": "How should I prepare?",
+            "a": "Wash hair, avoid caffeine, no hair products, eat normally."
+          }
+        ]
+      },
+      {
+        "slug": "nerve-conduction-study",
+        "name": "Nerve Conduction Study",
+        "shortDescription": "Measures how quickly electrical signals move through nerves to detect neuropathy and nerve damage.",
+        "pills": [
+          "Diagnostic",
+          "45-90 mins",
+          "Mild discomfort only"
+        ],
+        "heroStats": [
+          {
+            "label": "accuracy for neuropathy",
+            "value": "90%"
+          },
+          {
+            "label": "nerves assessed",
+            "value": "10+"
+          },
+          {
+            "label": "conditions diagnosed",
+            "value": "15+"
+          }
+        ],
+        "anaesthesia": "None",
+        "duration": "45-90 minutes",
+        "hospitalStay": "Outpatient",
+        "recoveryTime": "Same day",
+        "successRate": "90% accuracy",
+        "relatedConditions": [
+          "parkinsons-disease",
+          "stroke"
+        ],
+        "candidacyIntro": "NCS is recommended for patients with:",
+        "candidacy": [
+          "Numbness, tingling, or burning in hands or feet",
+          "Weakness in arms or legs",
+          "Suspected carpal tunnel syndrome",
+          "Diabetic peripheral neuropathy",
+          "Suspected motor neuron disease"
+        ],
+        "howItWorks": [
+          {
+            "title": "Electrode Placement",
+            "description": "Surface electrodes placed on skin over the nerve being tested."
+          },
+          {
+            "title": "Electrical Stimulation",
+            "description": "Small electrical impulse delivered along the nerve \u2014 feels like a brief tap."
+          },
+          {
+            "title": "Signal Recording",
+            "description": "Speed and strength of nerve signal recorded."
+          },
+          {
+            "title": "EMG if required",
+            "description": "Thin needle into muscles to assess electrical activity."
+          }
+        ],
+        "durationMilestones": [
+          {
+            "milestone": "Setup",
+            "timeframe": "10 minutes",
+            "description": "Electrode placement"
+          },
+          {
+            "milestone": "NCS recording",
+            "timeframe": "30-45 minutes",
+            "description": "Motor and sensory measurements"
+          },
+          {
+            "milestone": "EMG",
+            "timeframe": "15-30 minutes",
+            "description": "Needle EMG if needed"
+          },
+          {
+            "milestone": "Report",
+            "timeframe": "24-48 hours",
+            "description": "Neurophysiology report"
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Targeted Study Design",
+            "description": "Tailor NCS protocol to your symptoms."
+          },
+          {
+            "title": "Patient Comfort",
+            "description": "Explain each step and minimise discomfort."
+          },
+          {
+            "title": "Combined NCS/EMG",
+            "description": "Combine with EMG for comprehensive assessment."
+          },
+          {
+            "title": "Immediate Discussion",
+            "description": "Findings discussed immediately after test."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "During",
+            "title": "During the Procedure",
+            "description": "Mild stimulation \u2014 most find it tolerable.",
+            "timeline": [
+              {
+                "badge": "0-10 min",
+                "text": "Setup"
+              },
+              {
+                "badge": "10-90 min",
+                "text": "NCS and EMG recordings"
+              }
+            ],
+            "warnings": [
+              "Inform us if you have a pacemaker before EMG"
+            ]
+          },
+          {
+            "label": "After",
+            "title": "After the Procedure",
+            "description": "No restrictions.",
+            "timeline": [
+              {
+                "badge": "Immediately",
+                "text": "Return to all activities"
+              },
+              {
+                "badge": "24-48 hours",
+                "text": "Report available"
+              }
+            ],
+            "warnings": [
+              "Minor muscle soreness after EMG may last 1-2 days"
+            ]
+          }
+        ],
+        "successRateItems": [
+          "90% accuracy for common neuropathies",
+          "Gold standard for carpal tunnel diagnosis",
+          "Essential for Guillain-Barre diagnosis"
+        ],
+        "risks": [
+          "Minimal risk",
+          "Minor bruising at EMG sites (rare)",
+          "Infection at EMG sites (extremely rare)"
+        ],
+        "sideEffects": [
+          "Brief discomfort during stimulation",
+          "Mild muscle soreness after EMG",
+          "Small marks at electrode sites"
+        ],
+        "outcomes": [
+          {
+            "title": "Precise Diagnosis",
+            "description": "Identifies type, location, and severity of nerve damage."
+          },
+          {
+            "title": "Treatment Planning",
+            "description": "Results guide surgical or medication decisions."
+          },
+          {
+            "title": "Monitoring Progress",
+            "description": "Serial studies monitor recovery from nerve injuries."
+          }
+        ],
+        "misconceptions": [
+          {
+            "myth": "NCS is extremely painful",
+            "fact": "Most describe it as a mild shock \u2014 brief and tolerable."
+          },
+          {
+            "myth": "NCS diagnoses all neurological conditions",
+            "fact": "NCS only assesses peripheral nerves."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is NCS painful?",
+            "a": "The stimulation causes brief mild shock \u2014 most find it tolerable."
+          },
+          {
+            "q": "How to prepare?",
+            "a": "Keep skin clean, avoid lotions, wear loose clothing."
+          },
+          {
+            "q": "What conditions can NCS diagnose?",
+            "a": "Carpal tunnel, peripheral neuropathy, Guillain-Barre, motor neuron disease, and nerve injuries."
+          }
+        ]
+      },
+      {
+        "slug": "botox-for-migraine",
+        "name": "Botox for Migraine",
+        "shortDescription": "Preventive Botox injections reduce the frequency and severity of chronic migraines with long-lasting results.",
+        "pills": [
+          "Every 12 weeks",
+          "Chronic Migraine",
+          "NICE Approved"
+        ],
+        "heroStats": [
+          {
+            "label": "reduction in headache days",
+            "value": "50%"
+          },
+          {
+            "label": "injection sites per session",
+            "value": "31"
+          },
+          {
+            "label": "weeks between treatments",
+            "value": "12"
+          }
+        ],
+        "anaesthesia": "None",
+        "duration": "20-30 minutes",
+        "hospitalStay": "Outpatient",
+        "recoveryTime": "Same day",
+        "fullRecovery": "2-3 cycles",
+        "successRate": "70% respond",
+        "relatedConditions": [
+          "migraine"
+        ],
+        "candidacyIntro": "Botox for migraine is recommended for:",
+        "candidacy": [
+          "Chronic migraine: 15+ headache days per month",
+          "At least 2 preventive medications tried and failed",
+          "Significant disability from migraines"
+        ],
+        "howItWorks": [
+          {
+            "title": "Mapping Injection Sites",
+            "description": "31 injection sites mapped across forehead, temples, neck, and shoulders."
+          },
+          {
+            "title": "Preparation",
+            "description": "Skin cleaned. Fine-needle syringes prepared."
+          },
+          {
+            "title": "Injections",
+            "description": "Small amounts of botulinum toxin injected at each of 31 sites."
+          },
+          {
+            "title": "Post-injection Review",
+            "description": "Results assessed at follow-up 12 weeks later."
+          }
+        ],
+        "durationMilestones": [
+          {
+            "milestone": "Consultation",
+            "timeframe": "Before first session",
+            "description": "Eligibility assessment"
+          },
+          {
+            "milestone": "Injection session",
+            "timeframe": "20-30 minutes",
+            "description": "31 injections"
+          },
+          {
+            "milestone": "Onset of effect",
+            "timeframe": "2-4 weeks",
+            "description": "Gradual reduction in frequency"
+          },
+          {
+            "milestone": "Next cycle",
+            "timeframe": "12 weeks",
+            "description": "Repeat injections"
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Eligibility Assessment",
+            "description": "Review migraine history and confirm criteria."
+          },
+          {
+            "title": "Personalised Injection Plan",
+            "description": "Follow PREEMPT protocol of 31 sites."
+          },
+          {
+            "title": "Headache Diary Review",
+            "description": "Review diary at each visit to quantify response."
+          },
+          {
+            "title": "Combined Treatment Strategy",
+            "description": "Botox as part of comprehensive migraine management."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "Cycle 1",
+            "title": "First Treatment",
+            "description": "Some respond from first cycle; others need 2-3 cycles.",
+            "timeline": [
+              {
+                "badge": "Week 1-2",
+                "text": "Injection site tenderness resolves"
+              },
+              {
+                "badge": "Week 2-4",
+                "text": "Gradual onset of migraine reduction"
+              }
+            ],
+            "warnings": [
+              "Do not rub injection sites for 24 hours"
+            ]
+          },
+          {
+            "label": "Cycle 2-3",
+            "title": "Building Response",
+            "description": "Migraine frequency continues to decrease.",
+            "timeline": [
+              {
+                "badge": "Week 12",
+                "text": "Second injection session"
+              },
+              {
+                "badge": "Week 24",
+                "text": "Third injection \u2014 assess cumulative response"
+              }
+            ],
+            "warnings": [
+              "Keep headache diary to track response"
+            ]
+          },
+          {
+            "label": "Maintenance",
+            "title": "Ongoing Treatment",
+            "description": "Continue 12-weekly injections while responding.",
+            "timeline": [
+              {
+                "badge": "Every 12 weeks",
+                "text": "Injection session"
+              },
+              {
+                "badge": "Annually",
+                "text": "Review whether to continue"
+              }
+            ],
+            "warnings": [
+              "Botox effect wears off if stopped"
+            ]
+          }
+        ],
+        "successRateItems": [
+          "70% achieve 50%+ reduction in headache days",
+          "Average reduction of 8-9 headache days per month",
+          "Approved by NICE for chronic migraine"
+        ],
+        "risks": [
+          "Bruising at injection sites (common, resolves quickly)",
+          "Temporary neck weakness (uncommon)",
+          "Eyelid drooping (rare)",
+          "Flu-like symptoms 1-2 days (uncommon)"
+        ],
+        "sideEffects": [
+          "Injection site tenderness 24-48 hours",
+          "Mild headache on day of treatment",
+          "Temporary neck stiffness"
+        ],
+        "outcomes": [
+          {
+            "title": "50% Fewer Migraine Days",
+            "description": "Most patients experience 50% reduction after 2-3 cycles."
+          },
+          {
+            "title": "Reduced Medication Use",
+            "description": "Fewer migraines means less need for acute pain medications."
+          },
+          {
+            "title": "Improved Daily Functioning",
+            "description": "Fewer missed work days and better social participation."
+          }
+        ],
+        "misconceptions": [
+          {
+            "myth": "Botox for migraine is cosmetic",
+            "fact": "It is a licensed medical treatment approved by NICE for chronic migraine prevention."
+          },
+          {
+            "myth": "Results are immediate",
+            "fact": "Takes 2-4 weeks to start working, full effect over 2-3 cycles."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "How many sessions will I need?",
+            "a": "At least 2-3 cycles (6-9 months) to assess full response."
+          },
+          {
+            "q": "Will Botox completely stop my migraines?",
+            "a": "Complete freedom is uncommon. Goal is 50%+ reduction."
+          },
+          {
+            "q": "Is it the same as cosmetic Botox?",
+            "a": "Same medication but completely different technique, sites, and doses."
+          },
+          {
+            "q": "Can I have it if pregnant?",
+            "a": "Not recommended during pregnancy or breastfeeding."
+          }
+        ]
+      },
+      {
+        "slug": "stroke-rehabilitation",
+        "name": "Stroke Rehabilitation Therapy",
+        "shortDescription": "Structured therapy to restore movement, speech, and cognitive function after a stroke.",
+        "pills": [
+          "Multidisciplinary",
+          "Evidence-Based",
+          "Personalised"
+        ],
+        "heroStats": [
+          {
+            "label": "improve with early rehab",
+            "value": "60%"
+          },
+          {
+            "label": "therapy disciplines",
+            "value": "4"
+          },
+          {
+            "label": "months active recovery",
+            "value": "6"
+          }
+        ],
+        "anaesthesia": "None",
+        "duration": "3-6 months",
+        "hospitalStay": "Outpatient/Inpatient",
+        "recoveryTime": "Highly individual",
+        "fullRecovery": "6-12 months",
+        "successRate": "60-70% walk again",
+        "relatedConditions": [
+          "stroke"
+        ],
+        "candidacyIntro": "Stroke rehabilitation is recommended for:",
+        "candidacy": [
+          "Any stroke survivor with residual neurological deficits",
+          "Weakness or paralysis in arm or leg",
+          "Speech or language difficulties",
+          "Swallowing difficulties",
+          "Cognitive changes",
+          "Balance and walking difficulties"
+        ],
+        "howItWorks": [
+          {
+            "title": "Neurological Assessment",
+            "description": "Detailed assessment of all deficits to design personalised rehab plan."
+          },
+          {
+            "title": "Physiotherapy",
+            "description": "Targeted exercises to regain strength, balance, and walking."
+          },
+          {
+            "title": "Speech & Language Therapy",
+            "description": "Treatment of aphasia and dysphagia."
+          },
+          {
+            "title": "Occupational Therapy",
+            "description": "Retraining daily living skills and home modifications."
+          }
+        ],
+        "durationMilestones": [
+          {
+            "milestone": "Acute phase",
+            "timeframe": "Days 1-7",
+            "description": "Early mobility and SLT assessment"
+          },
+          {
+            "milestone": "Early rehabilitation",
+            "timeframe": "Weeks 2-4",
+            "description": "Daily PT, OT, SLT"
+          },
+          {
+            "milestone": "Active recovery",
+            "timeframe": "Months 1-3",
+            "description": "Functional gains in walking and communication"
+          },
+          {
+            "milestone": "Community integration",
+            "timeframe": "Months 3-6",
+            "description": "Return to community and driving assessment"
+          }
+        ],
+        "howWeHandle": [
+          {
+            "title": "Early Initiation",
+            "description": "Rehabilitation within 24-48 hours of stroke."
+          },
+          {
+            "title": "Multidisciplinary Team",
+            "description": "Coordinate PT, OT, speech therapy, neuropsychology."
+          },
+          {
+            "title": "Goal-Oriented Therapy",
+            "description": "Goals set collaboratively with patient and family."
+          },
+          {
+            "title": "Carer Training",
+            "description": "Train family members in safe handling and exercise programmes."
+          }
+        ],
+        "recoveryPhases": [
+          {
+            "label": "Phase 1",
+            "title": "Acute Rehabilitation",
+            "description": "Hospital-based intensive therapy.",
+            "timeline": [
+              {
+                "badge": "Day 1-3",
+                "text": "Sitting balance, swallowing assessment"
+              },
+              {
+                "badge": "Day 4-14",
+                "text": "Standing, stepping, arm exercises"
+              }
+            ],
+            "warnings": [
+              "Rest is as important as therapy in acute phase"
+            ]
+          },
+          {
+            "label": "Phase 2",
+            "title": "Active Recovery",
+            "description": "Intensive outpatient rehabilitation.",
+            "timeline": [
+              {
+                "badge": "Week 3-12",
+                "text": "Daily or alternate-day sessions"
+              },
+              {
+                "badge": "Month 3",
+                "text": "Functional milestone review"
+              }
+            ],
+            "warnings": [
+              "Spasticity needs early treatment to prevent contractures"
+            ]
+          },
+          {
+            "label": "Phase 3",
+            "title": "Community Integration",
+            "description": "Return to community activities.",
+            "timeline": [
+              {
+                "badge": "Month 3-6",
+                "text": "Driving assessment, return to work"
+              },
+              {
+                "badge": "Month 6+",
+                "text": "Home exercise programme"
+              }
+            ],
+            "warnings": [
+              "Post-stroke depression is common \u2014 seek help early"
+            ]
+          }
+        ],
+        "successRateItems": [
+          "60-70% regain independent walking",
+          "80% with aphasia show meaningful language improvement",
+          "Early rehabilitation significantly improves outcomes"
+        ],
+        "risks": [
+          "Fatigue from intensive therapy",
+          "Falls risk during mobility training",
+          "Shoulder pain with hemiplegic arm"
+        ],
+        "sideEffects": [
+          "Fatigue after therapy sessions",
+          "Muscle soreness",
+          "Emotional distress"
+        ],
+        "outcomes": [
+          {
+            "title": "Return to Walking",
+            "description": "60-70% regain ability to walk."
+          },
+          {
+            "title": "Communication Restored",
+            "description": "Speech therapy significantly improves language."
+          },
+          {
+            "title": "Independence Regained",
+            "description": "OT helps relearn daily living skills."
+          },
+          {
+            "title": "Community Reintegration",
+            "description": "Return to social life and work."
+          }
+        ],
+        "misconceptions": [
+          {
+            "myth": "Recovery stops after 6 months",
+            "fact": "Improvement continues for years with continued therapy."
+          },
+          {
+            "myth": "Complete recovery is unlikely",
+            "fact": "Many survivors achieve significant recovery with intensive rehabilitation."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "When should rehabilitation start?",
+            "a": "As soon as patient is medically stable \u2014 ideally within 24-48 hours."
+          },
+          {
+            "q": "How long does rehab take?",
+            "a": "Most active rehabilitation in first 3-6 months but improvement continues for 1-2 years."
+          },
+          {
+            "q": "What is aphasia?",
+            "a": "Difficulty with language caused by stroke. Speech therapy significantly improves aphasia."
+          },
+          {
+            "q": "Can I drive again after stroke?",
+            "a": "Depends on deficits. Formal driving assessment required. Many survivors return to driving."
+          }
+        ]
+      }
+    ]
+  },
+  "s10": {
+    "packages": [
+      {
+        "slug": "migraine-care",
+        "name": "Comprehensive Migraine Care",
+        "shortDescription": "Full diagnosis and ongoing management plan for chronic and episodic migraine patients.",
+        "pills": [
+          "Complete Care",
+          "Personalised",
+          "Ongoing Support"
+        ],
+        "priceRange": "Rs.4,500 \u2013 Rs.9,000",
+        "priceUnit": "per package",
+        "whoIsItFor": [
+          "Patients with episodic migraine (4+ headaches/month)",
+          "Chronic migraine patients",
+          "Patients seeking structured long-term management"
+        ],
+        "whatsIncluded": [
+          {
+            "category": "Diagnosis & Assessment",
+            "items": [
+              "Initial neurologist consultation (60 min)",
+              "Detailed migraine history and trigger mapping",
+              "Migraine disability assessment"
+            ]
+          },
+          {
+            "category": "Investigations",
+            "items": [
+              "EEG if clinically indicated",
+              "Blood tests",
+              "MRI referral if required"
+            ]
+          },
+          {
+            "category": "Treatment",
+            "items": [
+              "Personalised preventive medication plan",
+              "Acute treatment prescription",
+              "Trigger avoidance counselling"
+            ]
+          },
+          {
+            "category": "Follow-up",
+            "items": [
+              "3 follow-up consultations over 6 months",
+              "Medication adjustments as needed",
+              "WhatsApp support"
+            ]
+          }
+        ],
+        "howItWorks": [
+          {
+            "title": "Initial Consultation",
+            "description": "Comprehensive 60-minute assessment of migraine history and triggers."
+          },
+          {
+            "title": "Investigation",
+            "description": "Targeted investigations based on clinical need."
+          },
+          {
+            "title": "Treatment Plan",
+            "description": "Personalised medication plan combining preventive and acute treatments."
+          },
+          {
+            "title": "Follow-up",
+            "description": "Three scheduled follow-ups to review diary and optimise plan."
+          }
+        ],
+        "pricingBreakdown": [
+          {
+            "item": "Initial consultation (60 min)",
+            "amount": "Rs.1,500"
+          },
+          {
+            "item": "Investigations (blood tests)",
+            "amount": "Rs.800 \u2013 Rs.2,000"
+          },
+          {
+            "item": "3 follow-up consultations",
+            "amount": "Rs.2,400"
+          }
+        ],
+        "totalPrice": "Rs.4,500 \u2013 Rs.9,000",
+        "pricingNote": "Investigation costs vary based on tests required.",
+        "paymentOptions": [
+          {
+            "title": "Cash / UPI / Card",
+            "items": [
+              "All major payment methods accepted"
+            ]
+          },
+          {
+            "title": "Health Insurance",
+            "items": [
+              "Most major insurance plans accepted"
+            ]
+          }
+        ],
+        "testimonials": [
+          {
+            "name": "Priya M.",
+            "detail": "Chronic Migraine Patient",
+            "text": "I had migraines 20 days a month. Now I have 5-6 days at most.",
+            "rating": 5
+          },
+          {
+            "name": "Rajan K.",
+            "detail": "Episodic Migraine Patient",
+            "text": "Dr Arjun identified my triggers in the first consultation. Migraines reduced by 70%.",
+            "rating": 5
+          }
+        ],
+        "relatedProcedures": [
+          "botox-for-migraine",
+          "eeg-test"
+        ],
+        "faqs": [
+          {
+            "q": "How long before I see results?",
+            "a": "Most notice improvement within 6-8 weeks of preventive treatment."
+          },
+          {
+            "q": "Does this include Botox?",
+            "a": "Botox is not included but available separately if you meet criteria."
+          },
+          {
+            "q": "What if migraines don't improve?",
+            "a": "We review thoroughly and explore additional options including Botox and CGRP inhibitors."
+          }
+        ]
+      },
+      {
+        "slug": "stroke-rehabilitation",
+        "name": "Stroke Rehabilitation Package",
+        "shortDescription": "Comprehensive post-stroke recovery programme including neurological assessment and therapy sessions.",
+        "pills": [
+          "Post-Stroke",
+          "Multidisciplinary",
+          "Goal-Oriented"
+        ],
+        "priceRange": "Rs.8,500 \u2013 Rs.25,000",
+        "priceUnit": "per month",
+        "whoIsItFor": [
+          "Stroke survivors with residual weakness or speech difficulties",
+          "Patients transitioning from hospital to outpatient rehab",
+          "Caregivers seeking structured support"
+        ],
+        "whatsIncluded": [
+          {
+            "category": "Assessment",
+            "items": [
+              "Monthly neurologist review",
+              "Physiotherapy assessment",
+              "Speech therapy assessment",
+              "ADL assessment"
+            ]
+          },
+          {
+            "category": "Therapy Sessions",
+            "items": [
+              "8 physiotherapy sessions per month",
+              "4 speech therapy sessions (if required)",
+              "4 occupational therapy sessions"
+            ]
+          },
+          {
+            "category": "Support",
+            "items": [
+              "Home exercise programme",
+              "Caregiver training session",
+              "WhatsApp support"
+            ]
+          },
+          {
+            "category": "Monitoring",
+            "items": [
+              "Monthly progress report",
+              "Goal review and plan adjustment",
+              "Spasticity management if needed"
+            ]
+          }
+        ],
+        "howItWorks": [
+          {
+            "title": "Initial Stroke Assessment",
+            "description": "Comprehensive neurological and functional assessment."
+          },
+          {
+            "title": "Personalised Therapy Plan",
+            "description": "Individual therapy plan based on your specific deficits."
+          },
+          {
+            "title": "Structured Therapy Sessions",
+            "description": "Regular PT, SLT, and OT sessions."
+          },
+          {
+            "title": "Monthly Review",
+            "description": "Monthly neurologist review and goal setting."
+          }
+        ],
+        "pricingBreakdown": [
+          {
+            "item": "Monthly neurologist review",
+            "amount": "Rs.1,000"
+          },
+          {
+            "item": "8 physiotherapy sessions",
+            "amount": "Rs.4,000"
+          },
+          {
+            "item": "4 OT sessions",
+            "amount": "Rs.2,000"
+          },
+          {
+            "item": "4 speech therapy sessions",
+            "amount": "Rs.2,000"
+          }
+        ],
+        "totalPrice": "Rs.8,500 \u2013 Rs.25,000",
+        "pricingNote": "Package depends on therapy disciplines required.",
+        "paymentOptions": [
+          {
+            "title": "Monthly Payment",
+            "items": [
+              "Pay at start of each month",
+              "No long-term commitment"
+            ]
+          },
+          {
+            "title": "Health Insurance",
+            "items": [
+              "Rehabilitation covered under many plans"
+            ]
+          }
+        ],
+        "testimonials": [
+          {
+            "name": "Venkat R.",
+            "detail": "Stroke survivor",
+            "text": "I couldn't walk when I left hospital. After 3 months I'm walking independently.",
+            "rating": 5
+          }
+        ],
+        "relatedProcedures": [
+          "stroke-rehabilitation",
+          "nerve-conduction-study"
+        ],
+        "faqs": [
+          {
+            "q": "How many months of rehab will I need?",
+            "a": "Most benefit from 3-6 months. Programme reviewed monthly."
+          },
+          {
+            "q": "Can rehab start immediately after discharge?",
+            "a": "Yes \u2014 early initiation after hospital discharge is recommended."
+          },
+          {
+            "q": "Can family attend sessions?",
+            "a": "Yes \u2014 caregiver training is included in the package."
+          }
+        ]
+      },
+      {
+        "slug": "epilepsy-management",
+        "name": "Epilepsy Management Programme",
+        "shortDescription": "Complete epilepsy workup and long-term management with regular follow-up and EEG monitoring.",
+        "pills": [
+          "Comprehensive",
+          "Long-term",
+          "EEG Included"
+        ],
+        "priceRange": "Rs.6,000 \u2013 Rs.15,000",
+        "priceUnit": "per year",
+        "whoIsItFor": [
+          "Newly diagnosed epilepsy patients",
+          "Patients with poorly controlled seizures",
+          "Patients seeking second opinion",
+          "Patients considering medication withdrawal"
+        ],
+        "whatsIncluded": [
+          {
+            "category": "Diagnosis & Workup",
+            "items": [
+              "Initial neurologist consultation (60 min)",
+              "EEG (routine)",
+              "MRI review or referral",
+              "Blood tests"
+            ]
+          },
+          {
+            "category": "Treatment",
+            "items": [
+              "AED prescription and titration",
+              "Rescue medication prescription",
+              "Seizure action plan",
+              "SUDEP and safety counselling"
+            ]
+          },
+          {
+            "category": "Monitoring",
+            "items": [
+              "4 follow-up consultations per year",
+              "Annual EEG",
+              "AED blood level monitoring"
+            ]
+          },
+          {
+            "category": "Education",
+            "items": [
+              "Epilepsy education for patient and family",
+              "Seizure first aid training",
+              "Driving and employment guidance"
+            ]
+          }
+        ],
+        "howItWorks": [
+          {
+            "title": "Comprehensive Assessment",
+            "description": "Detailed seizure history with EEG and MRI."
+          },
+          {
+            "title": "Medication Initiation",
+            "description": "AED selected based on seizure type and lifestyle."
+          },
+          {
+            "title": "Quarterly Reviews",
+            "description": "Four review appointments per year."
+          },
+          {
+            "title": "Annual EEG",
+            "description": "Annual EEG to inform long-term management decisions."
+          }
+        ],
+        "pricingBreakdown": [
+          {
+            "item": "Initial consultation",
+            "amount": "Rs.1,500"
+          },
+          {
+            "item": "EEG (routine)",
+            "amount": "Rs.1,500"
+          },
+          {
+            "item": "Blood tests",
+            "amount": "Rs.500 \u2013 Rs.2,000"
+          },
+          {
+            "item": "4 follow-up consultations",
+            "amount": "Rs.3,200"
+          },
+          {
+            "item": "Annual EEG",
+            "amount": "Rs.1,500"
+          }
+        ],
+        "totalPrice": "Rs.6,000 \u2013 Rs.15,000",
+        "pricingNote": "MRI cost is additional if required.",
+        "paymentOptions": [
+          {
+            "title": "Pay Per Visit",
+            "items": [
+              "Pay at each consultation"
+            ]
+          },
+          {
+            "title": "Annual Package",
+            "items": [
+              "Discounted rate for annual commitment"
+            ]
+          }
+        ],
+        "testimonials": [
+          {
+            "name": "Suresh B.",
+            "detail": "2 years seizure free",
+            "text": "Dr Arjun found the right combination. I've been seizure-free for 2 years.",
+            "rating": 5
+          }
+        ],
+        "relatedProcedures": [
+          "eeg-test",
+          "nerve-conduction-study"
+        ],
+        "faqs": [
+          {
+            "q": "How often will I see the neurologist?",
+            "a": "4 consultations per year (every 3 months)."
+          },
+          {
+            "q": "What if seizures are not controlled?",
+            "a": "We conduct drug-resistant epilepsy workup and may refer for video EEG or surgical evaluation."
+          },
+          {
+            "q": "When can I stop medications?",
+            "a": "AED withdrawal considered after 2 years seizure-free, done gradually under supervision."
+          }
+        ]
+      },
+      {
+        "slug": "neuro-wellness",
+        "name": "Neuro Wellness Check",
+        "shortDescription": "Preventive neurological assessment for individuals with family history of brain or nerve disorders.",
+        "pills": [
+          "Preventive",
+          "Comprehensive",
+          "1-day Assessment"
+        ],
+        "priceRange": "Rs.2,500 \u2013 Rs.5,000",
+        "priceUnit": "per assessment",
+        "whoIsItFor": [
+          "Individuals with family history of stroke or dementia",
+          "Professionals with high cognitive demands",
+          "Patients with mild memory complaints",
+          "People over 50 seeking preventive screening"
+        ],
+        "whatsIncluded": [
+          {
+            "category": "Neurological Examination",
+            "items": [
+              "Full neurological examination",
+              "Cranial nerve assessment",
+              "Motor and sensory examination",
+              "Gait and balance assessment"
+            ]
+          },
+          {
+            "category": "Cognitive Screening",
+            "items": [
+              "MoCA (Montreal Cognitive Assessment)",
+              "Memory and attention testing",
+              "Executive function screening",
+              "Mood assessment"
+            ]
+          },
+          {
+            "category": "Vascular Risk Assessment",
+            "items": [
+              "Blood pressure and BMI",
+              "Blood tests: fasting glucose, lipid profile",
+              "ECG for atrial fibrillation screening"
+            ]
+          },
+          {
+            "category": "Report",
+            "items": [
+              "Detailed written report",
+              "Risk factor counselling",
+              "Personalised brain health recommendations"
+            ]
+          }
+        ],
+        "howItWorks": [
+          {
+            "title": "Booking & Preparation",
+            "description": "Fast 8 hours before for blood tests."
+          },
+          {
+            "title": "Neurological Examination",
+            "description": "Comprehensive examination covering all neurological domains."
+          },
+          {
+            "title": "Cognitive Testing",
+            "description": "Standardised cognitive screening tests."
+          },
+          {
+            "title": "Report & Counselling",
+            "description": "Detailed report with findings and personalised recommendations."
+          }
+        ],
+        "pricingBreakdown": [
+          {
+            "item": "Neurologist consultation",
+            "amount": "Rs.1,500"
+          },
+          {
+            "item": "Cognitive screening",
+            "amount": "Rs.500"
+          },
+          {
+            "item": "ECG",
+            "amount": "Rs.300"
+          },
+          {
+            "item": "Blood tests",
+            "amount": "Rs.500 \u2013 Rs.1,500"
+          }
+        ],
+        "totalPrice": "Rs.2,500 \u2013 Rs.5,000",
+        "pricingNote": "Additional investigations (MRI, EEG) extra if indicated.",
+        "paymentOptions": [
+          {
+            "title": "Single Payment",
+            "items": [
+              "Full payment on day of assessment"
+            ]
+          },
+          {
+            "title": "Corporate Bookings",
+            "items": [
+              "Discounted rates for groups of 5+"
+            ]
+          }
+        ],
+        "testimonials": [
+          {
+            "name": "Kiran M.",
+            "detail": "Software Engineer, age 45",
+            "text": "Clear picture of my risk factors. Very thorough and reassuring.",
+            "rating": 5
+          }
+        ],
+        "relatedProcedures": [
+          "eeg-test",
+          "nerve-conduction-study"
+        ],
+        "faqs": [
+          {
+            "q": "Is this suitable with no symptoms?",
+            "a": "Yes \u2014 designed for preventive assessment especially with risk factors or family history."
+          },
+          {
+            "q": "How long does it take?",
+            "a": "Approximately 2-3 hours including consultation, cognitive testing, ECG, and blood draw."
+          },
+          {
+            "q": "Can this detect early dementia?",
+            "a": "Cognitive screening identifies early cognitive changes. It is a screening tool \u2014 not a definitive diagnostic test."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+/* ============================================================
+   packages.css — PackageDetail page styles
+   Locked design: 2026-03-15
+   Extends conditions.css — import both
+   ============================================================ */
+
+/* ── Package hero — price + enquire CTA ─────────────────────── */
+.pkg-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: nowrap;
+}
+.pkg-price-val {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0D3B5E, #1B6FA8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+.pkg-price-note {
+  font-size: 0.88rem;
+  color: #9CA3AF;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.pkg-enquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #3CB8AF, #2A9D8F);
+  color: #FFFFFF;
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 0.85rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 200ms;
+  box-shadow: 0 4px 16px rgba(60,184,175,0.3);
+}
+.pkg-enquire:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(60,184,175,0.4); }
+.pkg-enquire svg { width: 16px; height: 16px; }
+
+/* ── What's Included — 2×2 category cards ───────────────────── */
+.incl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.incl-card {
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 200ms;
+}
+.incl-card:hover { border-color: #3CB8AF; }
+.incl-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+.incl-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.incl-icon svg { width: 16px; height: 16px; color: #FFFFFF; }
+.incl-card-head h3 { font-size: 0.92rem; font-weight: 800; color: #111111; }
+.incl-card ul { margin: 0 0 0 1rem; }
+.incl-card li { font-size: 0.85rem; color: #374151; line-height: 1.65; margin-bottom: 0.2rem; }
+
+/* ── Who Is This For — pill grid WITH VISIBLE BORDERS ───────── */
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.who-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EB;
+  padding: 0.85rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #111111;
+  transition: border-color 200ms;
+}
+.who-pill:hover { border-color: #3CB8AF; }
+.who-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.who-icon svg { width: 14px; height: 14px; color: #FFFFFF; }
+
+/* ── Pricing Breakdown — tiered card ────────────────────────── */
+.pricing-breakdown {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.pb-header {
+  background: linear-gradient(135deg, #0D3B5E, #1B6FA8);
+  padding: 1.5rem 2rem;
+  color: #FFFFFF;
+}
+.pb-header h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 0.2rem; }
+.pb-header p { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+
+.pb-rows { padding: 0.5rem 0; }
+.pb-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 2rem;
+  border-bottom: 1px solid #F3F4F6;
+}
+.pb-row:last-child { border-bottom: none; }
+.pb-row-label { font-size: 0.9rem; color: #374151; font-weight: 500; }
+.pb-row-val { font-size: 0.9rem; font-weight: 700; color: #111111; }
+
+.pb-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.15rem 2rem;
+  background: #F0FDFA;
+  border-top: 2px solid #3CB8AF;
+}
+.pb-total-label { font-size: 1rem; font-weight: 800; color: #0D3B5E; }
+.pb-total-val { font-size: 1.25rem; font-weight: 800; color: #3CB8AF; }
+
+.pb-note {
+  padding: 0.85rem 2rem;
+  font-size: 0.78rem;
+  color: #9CA3AF;
+  line-height: 1.5;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ── Payment Options — 2×2 cards (same as incl-grid style) ──── */
+/* Reuses .incl-grid and .incl-card — no additional CSS needed */
+
+/* ── Patient Testimonials — 2 cards ─────────────────────────── */
+.test-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.test-card {
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: all 200ms;
+}
+.test-card:hover { border-color: #3CB8AF; }
+.test-stars {
+  font-size: 0.95rem;
+  color: #D68910;
+  margin-bottom: 0.75rem;
+  letter-spacing: 2px;
+}
+.test-text {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+.test-author { display: flex; align-items: center; gap: 0.75rem; }
+.test-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.test-name { font-size: 0.88rem; font-weight: 800; color: #111111; display: block; }
+.test-detail { font-size: 0.75rem; color: #9CA3AF; font-weight: 500; }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .incl-grid { grid-template-columns: 1fr; }
+  .who-grid { grid-template-columns: 1fr; }
+  .test-grid { grid-template-columns: 1fr; }
+  .pb-row { padding: 0.75rem 1.25rem; }
+  .pb-total { padding: 1rem 1.25rem; }
+  .pb-header { padding: 1.25rem; }
+  .pb-note { padding: 0.75rem 1.25rem; }
+}

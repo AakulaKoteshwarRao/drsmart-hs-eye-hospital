@@ -1,0 +1,1047 @@
+{
+  "clinic": {
+    "name": "Dr Arjun Neuro Care",
+    "tagline": "Neurology . Hyderabad",
+    "phone": "+91-9123456789",
+    "whatsapp": "919123456789",
+    "email": "contact@drarjunneurocare.com",
+    "address": "Plot 45, 2nd Floor, Kondapur Main Road, Kondapur, Hyderabad",
+    "city": "Hyderabad",
+    "mapUrl": "https://maps.google.com/?q=Dr+Arjun+Neuro+Care+Kondapur+Hyderabad",
+    "hours": "Mon-Sat . 9:00 AM - 7:00 PM",
+    "languages": "English . Hindi . Telugu",
+    "mapEmbedUrl": "",
+    "area": "Kondapur",
+    "street": "Plot 45, 2nd Floor, Kondapur Main Road",
+    "hospital": "Kondapur Main Road, 2nd Floor",
+    "mapsUrl": "https://maps.google.com/?q=Dr+Arjun+Neuro+Care+Kondapur+Hyderabad",
+    "website": "https://drarjunneurocare.com",
+    "social": {
+      "google": "https://g.page/drarjunneurocare",
+      "facebook": "https://facebook.com/drarjunneurocare",
+      "instagram": "https://instagram.com/drarjunneurocare",
+      "youtube": ""
+    },
+    "type": "Multi-Doctor Clinic"
+  },
+  "brand": {
+    "primaryColor": "#0d7a5f",
+    "secondaryColor": "#1a4ea0"
+  },
+  "entity": {
+    "medicalSpecialty": "Neurology",
+    "bodyLocation": "Brain and Nervous System",
+    "registrationState": "Telangana"
+  },
+  "doctor": {
+    "name": "Dr Arjun Reddy",
+    "degrees": "MBBS . MD General Medicine . DM Neurology",
+    "photo": "",
+    "gender": "Male",
+    "specialties": [
+      "Migraine Treatment",
+      "Epilepsy Management",
+      "Stroke Rehabilitation",
+      "Parkinson's Disease",
+      "Neuropathy Treatment"
+    ],
+    "stats": [
+      {
+        "number": "9+",
+        "label": "Years"
+      },
+      {
+        "number": "10K+",
+        "label": "Patients"
+      },
+      {
+        "number": "5K+",
+        "label": "Procedures"
+      },
+      {
+        "number": "4.8*",
+        "label": "Rating"
+      }
+    ],
+    "details": [
+      {
+        "icon": "location",
+        "text": "Dr Arjun Neuro Care, Kondapur, Hyderabad",
+        "link": "https://maps.google.com/?q=Dr+Arjun+Neuro+Care+Kondapur+Hyderabad"
+      },
+      {
+        "icon": "clock",
+        "text": "Mon-Sat . 9:00 AM - 7:00 PM"
+      },
+      {
+        "icon": "language",
+        "text": "English . Hindi . Telugu"
+      }
+    ],
+    "ctaLabel": "Book Appointment",
+    "education": [
+      {
+        "degree": "MBBS",
+        "institution": "Osmania Medical College, Hyderabad"
+      },
+      {
+        "degree": "MD General Medicine",
+        "institution": "Nizam's Institute of Medical Sciences, Hyderabad"
+      },
+      {
+        "degree": "DM Neurology",
+        "institution": "NIMHANS, Bengaluru"
+      }
+    ],
+    "fellowships": [
+      {
+        "title": "Fellow -- Clinical Neurology",
+        "institution": "Indian Academy of Neurology, New Delhi"
+      },
+      {
+        "title": "Fellow -- Stroke Medicine",
+        "institution": "Apollo Hospitals, Hyderabad"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Consultant Neurologist",
+        "hospital": "Dr Arjun Neuro Care, Kondapur"
+      },
+      {
+        "role": "Senior Resident -- Neurology",
+        "hospital": "Nizam's Institute of Medical Sciences, Hyderabad"
+      },
+      {
+        "role": "Visiting Consultant",
+        "hospital": "Yashoda Hospitals, Hyderabad"
+      }
+    ],
+    "certifications": [
+      "NMC Registered -- TSMC-99882",
+      "Certified in Advanced EEG Interpretation"
+    ],
+    "workshops": [
+      {
+        "title": "Advanced Stroke Management Workshop",
+        "location": "Hyderabad, 2022"
+      },
+      {
+        "title": "CME -- Epilepsy Update 2023",
+        "location": "Mumbai, 2023"
+      },
+      {
+        "title": "Botox for Headache Disorders",
+        "location": "Bengaluru, 2021"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Migraine Patterns in Urban South India: A Clinical Study",
+        "journal": "Annals of Indian Academy of Neurology, 2021"
+      },
+      {
+        "title": "Outcomes of Early Stroke Rehabilitation in Telangana Patients",
+        "journal": "Indian Journal of Neurology, 2023"
+      }
+    ],
+    "awards": [
+      {
+        "title": "Best Neurologist Award",
+        "year": "Hyderabad Medical Forum, 2022"
+      },
+      {
+        "title": "10,000 Patients Milestone",
+        "year": "Achieved in 2024"
+      }
+    ],
+    "memberships": [
+      "Indian Academy of Neurology",
+      "Indian Medical Association",
+      "Telangana Medical Council",
+      "World Federation of Neurology"
+    ],
+    "nmcNumber": "TSMC-99882",
+    "registrationNumber": "TSMC-99882",
+    "faqs": [
+      {
+        "question": "What conditions does Dr Arjun specialise in?",
+        "answer": "Dr Arjun specialises in migraine, epilepsy, stroke rehabilitation, Parkinson's disease, and peripheral neuropathy. Both medical and procedural treatments are offered."
+      },
+      {
+        "question": "Is online consultation available?",
+        "answer": "Yes, teleconsultation is available via WhatsApp or phone call. Please contact the clinic to schedule an online consultation."
+      },
+      {
+        "question": "Can I get a second opinion?",
+        "answer": "Absolutely. Second opinion consultations are welcome. Please bring all previous reports, scans, and prescriptions for a thorough evaluation."
+      },
+      {
+        "question": "Which languages does Dr Arjun consult in?",
+        "answer": "Dr Arjun consults in English, Hindi, and Telugu to ensure clear communication with all patients."
+      },
+      {
+        "question": "Does Dr Arjun operate at multiple hospitals?",
+        "answer": "Yes, Dr Arjun is the lead consultant at Dr Arjun Neuro Care, Kondapur, and a visiting consultant at Yashoda Hospitals, Hyderabad."
+      }
+    ],
+    "qualifications": [
+      "MBBS",
+      "MD General Medicine",
+      "DM Neurology"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Telugu"
+    ]
+  },
+  "hero": {
+    "label": "Trusted Neurology Clinic . Hyderabad",
+    "heading": "Advanced Neurology Care for",
+    "headingEm": "Migraine, Stroke & Epilepsy",
+    "subtext": "Dr Arjun Reddy provides expert diagnosis and treatment for neurological disorders using modern techniques and a patient-first approach.",
+    "tags": [
+      "MBBS . MD . DM Neurology",
+      "9+ Years Experience",
+      "10,000+ Patients Treated"
+    ],
+    "ctaLabel": "Book an Appointment",
+    "ctaHref": "/appointment",
+    "stats": [
+      {
+        "number": "9+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "10,000+",
+        "label": "Happy Patients"
+      },
+      {
+        "number": "5,000+",
+        "label": "Procedures Done"
+      },
+      {
+        "number": "4.8*",
+        "label": "Google Rating"
+      }
+    ],
+    "chips": [
+      {
+        "type": "rating",
+        "text": "4.8 Google Rating"
+      },
+      {
+        "type": "experience",
+        "text": "9+ Years"
+      },
+      {
+        "type": "patients",
+        "text": "10K+ Patients"
+      }
+    ]
+  },
+  "trustStrip": [
+    {
+      "icon": "NMC",
+      "text": "NMC Registered"
+    },
+    {
+      "icon": "*****",
+      "text": "4.8 Google Rating (182+ Reviews)"
+    },
+    {
+      "icon": "hospital",
+      "text": "Dr Arjun Neuro Care"
+    },
+    {
+      "icon": "education",
+      "text": "NIMHANS . Bengaluru"
+    },
+    {
+      "icon": "award",
+      "text": "Fellow -- Indian Academy of Neurology"
+    }
+  ],
+  "whyChoose": [
+    {
+      "iconColor": "teal",
+      "iconType": "pulse",
+      "title": "Highly Specialised",
+      "description": "Focused exclusively on neurology. Deep expertise in migraine, epilepsy, stroke, and movement disorders."
+    },
+    {
+      "iconColor": "blue",
+      "iconType": "clock",
+      "title": "Well Experienced",
+      "description": "Over 9 years of clinical practice with 10,000+ patients and 5,000+ successful neurological procedures."
+    },
+    {
+      "iconColor": "deep",
+      "iconType": "user",
+      "title": "Personalised",
+      "description": "Every treatment plan is tailored to the patient's condition, lifestyle, and specific neurological goals."
+    },
+    {
+      "iconColor": "green",
+      "iconType": "check",
+      "title": "Proven Results",
+      "description": "Transparent outcomes backed by patient success stories and documented recovery rates."
+    }
+  ],
+  "conditions": [
+    {
+      "href": "/conditions/migraine",
+      "gradClass": "grad-teal",
+      "iconType": "activity",
+      "label": "Migraine",
+      "title": "Migraine",
+      "description": "Severe recurring headaches often with nausea and light sensitivity. Highly treatable with the right diagnosis and plan."
+    },
+    {
+      "href": "/conditions/epilepsy",
+      "gradClass": "grad-blue",
+      "iconType": "shield",
+      "label": "Epilepsy",
+      "title": "Epilepsy",
+      "description": "A neurological disorder causing recurrent seizures. Most cases are effectively controlled with modern medications."
+    },
+    {
+      "href": "/conditions/stroke",
+      "gradClass": "grad-deep",
+      "iconType": "pulse",
+      "label": "Stroke",
+      "title": "Stroke",
+      "description": "Caused by disrupted blood supply to the brain. Early treatment and rehabilitation significantly improves recovery."
+    },
+    {
+      "href": "/conditions/parkinsons-disease",
+      "gradClass": "grad-warm",
+      "iconType": "droplet",
+      "label": "Parkinson's Disease",
+      "title": "Parkinson's Disease",
+      "description": "A progressive movement disorder causing tremors and stiffness. Managed effectively with medications and therapy."
+    }
+  ],
+  "procedures": [
+    {
+      "href": "/procedures/eeg-test",
+      "gradClass": "grad-blue",
+      "iconType": "briefcase",
+      "label": "EEG Test",
+      "title": "EEG Test",
+      "description": "Records electrical activity in the brain to diagnose epilepsy, sleep disorders, and neurological conditions."
+    },
+    {
+      "href": "/procedures/nerve-conduction-study",
+      "gradClass": "grad-teal",
+      "iconType": "zap",
+      "label": "Nerve Conduction Study",
+      "title": "Nerve Conduction Study",
+      "description": "Measures how quickly electrical signals move through nerves to detect neuropathy and nerve damage."
+    },
+    {
+      "href": "/procedures/botox-for-migraine",
+      "gradClass": "grad-green",
+      "iconType": "search",
+      "label": "Botox for Migraine",
+      "title": "Botox for Migraine",
+      "description": "Preventive Botox injections reduce the frequency and severity of chronic migraines with long-lasting results."
+    },
+    {
+      "href": "/procedures/stroke-rehabilitation",
+      "gradClass": "grad-red",
+      "iconType": "shield",
+      "label": "Stroke Rehabilitation",
+      "title": "Stroke Rehabilitation Therapy",
+      "description": "Structured therapy to restore movement, speech, and cognitive function after a stroke."
+    }
+  ],
+  "packages": [
+    {
+      "href": "/packages/migraine-care",
+      "gradClass": "grad-teal",
+      "iconType": "box",
+      "title": "Comprehensive Migraine Care",
+      "description": "Full diagnosis and ongoing management plan for chronic and episodic migraine patients.",
+      "price": "Rs.4,500 - Rs.9,000",
+      "tags": [
+        "Consultation",
+        "EEG if needed",
+        "Medication plan",
+        "Follow-up"
+      ]
+    },
+    {
+      "href": "/packages/stroke-rehabilitation",
+      "gradClass": "grad-blue",
+      "iconType": "tool",
+      "title": "Stroke Rehabilitation Package",
+      "description": "Comprehensive post-stroke recovery programme including neurological assessment and therapy sessions.",
+      "price": "Rs.8,500 - Rs.25,000",
+      "tags": [
+        "Neuro assessment",
+        "Physio sessions",
+        "Speech therapy",
+        "Progress monitoring"
+      ]
+    },
+    {
+      "href": "/packages/epilepsy-management",
+      "gradClass": "grad-deep",
+      "iconType": "briefcase",
+      "title": "Epilepsy Management Programme",
+      "description": "Complete epilepsy workup and long-term management with regular follow-up and EEG monitoring.",
+      "price": "Rs.6,000 - Rs.15,000",
+      "tags": [
+        "EEG",
+        "MRI referral",
+        "Medication plan",
+        "Seizure diary review"
+      ]
+    },
+    {
+      "href": "/packages/neuro-wellness",
+      "gradClass": "grad-green",
+      "iconType": "zap",
+      "title": "Neuro Wellness Check",
+      "description": "Preventive neurological assessment for individuals with family history of brain or nerve disorders.",
+      "price": "Rs.2,500 - Rs.5,000",
+      "tags": [
+        "Full neuro exam",
+        "Cognitive screen",
+        "Risk assessment",
+        "Report included"
+      ]
+    }
+  ],
+  "howWeWork": [
+    {
+      "badge": "Step 01",
+      "iconType": "message",
+      "title": "Detailed Consultation",
+      "description": "Thorough review of your neurological history, symptoms, and treatment goals. Every question gets answered."
+    },
+    {
+      "badge": "Step 02",
+      "iconType": "search",
+      "title": "Clinical Diagnosis",
+      "description": "Targeted investigations -- EEG, NCS, or MRI referral -- to identify the exact nature and severity of your condition."
+    },
+    {
+      "badge": "Step 03",
+      "iconType": "file",
+      "title": "Personalised Plan",
+      "description": "A treatment plan built around your diagnosis, lifestyle, and recovery timeline -- no generic protocols."
+    },
+    {
+      "badge": "Step 04",
+      "iconType": "check-circle",
+      "title": "Treatment & Support",
+      "description": "Expert procedures with close monitoring, follow-up consultations, and support through full neurological recovery."
+    }
+  ],
+  "clinicalInfo": [
+    {
+      "colorClass": "cl-green",
+      "iconType": "pulse",
+      "title": "Success Rates",
+      "description": "Botox for chronic migraine achieves 70-80% reduction in headache days. Epilepsy management achieves seizure control in over 70% of patients with appropriate medications. A personalised estimate is provided at your first consultation.",
+      "note": "Results may vary based on individual diagnosis and clinical response."
+    },
+    {
+      "colorClass": "cl-amber",
+      "iconType": "alert",
+      "title": "Possible Risks",
+      "description": "All neurological procedures carry some risk. Botox injections may cause temporary neck soreness or mild weakness. EEG and NCS are non-invasive with minimal risk. Every risk is discussed openly before treatment begins.",
+      "note": "Every clinical risk is disclosed and explained before you decide."
+    },
+    {
+      "colorClass": "cl-blue",
+      "iconType": "info",
+      "title": "Side Effects",
+      "description": "Common effects from neurological medications include initial drowsiness or mild GI discomfort during the adjustment period. These are normal and managed through follow-up monitoring.",
+      "note": "Post-treatment support and guidance is provided to every patient."
+    }
+  ],
+  "patientStories": [
+    {
+      "gradClass": "grad-teal",
+      "duration": "3:24",
+      "title": "Ravi's Migraine Recovery",
+      "tag": "Success Story . Migraine Treatment",
+      "videoUrl": ""
+    },
+    {
+      "gradClass": "",
+      "duration": "2:45",
+      "title": "Epilepsy Controlled -- Sneha's Story",
+      "tag": "Success Story . Epilepsy Management",
+      "videoUrl": ""
+    },
+    {
+      "gradClass": "",
+      "duration": "4:10",
+      "title": "Stroke Rehab at 58 -- Full Recovery",
+      "tag": "Success Story . Stroke Rehabilitation",
+      "videoUrl": ""
+    },
+    {
+      "gradClass": "",
+      "duration": "3:52",
+      "title": "Living Well with Parkinson's",
+      "tag": "Success Story . Parkinson's Disease",
+      "videoUrl": ""
+    },
+    {
+      "gradClass": "",
+      "duration": "2:18",
+      "title": "Neuropathy Diagnosed Early -- Back to Work",
+      "tag": "Success Story . Neuropathy",
+      "videoUrl": ""
+    }
+  ],
+  "pricing": [
+    {
+      "barClass": "acc-teal",
+      "iconType": "dollar",
+      "title": "Upfront Pricing",
+      "description": "Every treatment package comes with a clear cost breakdown shared before you commit.",
+      "points": [
+        "Consultation fees published",
+        "Package costs all-inclusive",
+        "No surprise billing",
+        "Written cost estimate provided"
+      ]
+    },
+    {
+      "barClass": "acc-blue",
+      "iconType": "credit-card",
+      "title": "EMI Available",
+      "description": "Zero-cost and low-cost EMI options on treatment packages so finances don't delay your care.",
+      "points": [
+        "0% EMI on select packages",
+        "3 to 12 month options",
+        "Multiple bank partners",
+        "Quick approval process"
+      ]
+    },
+    {
+      "barClass": "acc-vibrant",
+      "iconType": "shield",
+      "title": "Insurance Support",
+      "description": "We work with all major insurance providers and handle the paperwork for you.",
+      "points": [
+        "Cashless facility available",
+        "All major TPA networks",
+        "Pre-authorisation assistance",
+        "Claim follow-up support"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "initials": "RK",
+      "name": "Ravi Kumar",
+      "date": "3 weeks ago",
+      "text": "My migraine frequency dropped significantly after starting treatment with Dr Arjun. He explained everything clearly and the follow-up care has been excellent."
+    },
+    {
+      "initials": "SS",
+      "name": "Sneha Sharma",
+      "date": "1 month ago",
+      "text": "Very knowledgeable doctor who takes time to explain the condition in plain language. My epilepsy has been well-controlled for over 8 months now."
+    },
+    {
+      "initials": "PM",
+      "name": "Priya Mehta",
+      "date": "2 months ago",
+      "text": "Brought my father after his stroke. Dr Arjun was patient and thorough -- gave us a very realistic recovery plan. The rehab guidance has been invaluable."
+    }
+  ],
+  "reviewSummary": {
+    "score": "4.8",
+    "count": "Based on 182+ Google Reviews",
+    "googleUrl": "https://g.page/drarjunneurocare/review"
+  },
+  "localAreas": [
+    {
+      "name": "Kondapur",
+      "slug": "kondapur",
+      "distance": "0 km",
+      "duration": "2 min",
+      "label": "Kondapur",
+      "href": "/specialist-near-kondapur"
+    },
+    {
+      "name": "Gachibowli",
+      "slug": "gachibowli",
+      "distance": "3 km",
+      "duration": "8 min",
+      "label": "Gachibowli",
+      "href": "/specialist-near-gachibowli"
+    },
+    {
+      "name": "Miyapur",
+      "slug": "miyapur",
+      "distance": "5 km",
+      "duration": "12 min",
+      "label": "Miyapur",
+      "href": "/specialist-near-miyapur"
+    },
+    {
+      "name": "Madhapur",
+      "slug": "madhapur",
+      "distance": "4 km",
+      "duration": "10 min",
+      "label": "Madhapur",
+      "href": "/specialist-near-madhapur"
+    },
+    {
+      "name": "Kukatpally",
+      "slug": "kukatpally",
+      "distance": "7 km",
+      "duration": "18 min",
+      "label": "Kukatpally",
+      "href": "/specialist-near-kukatpally"
+    },
+    {
+      "name": "KPHB Colony",
+      "slug": "kphb-colony",
+      "distance": "8 km",
+      "duration": "20 min",
+      "label": "KPHB Colony",
+      "href": "/specialist-near-kphb-colony"
+    },
+    {
+      "name": "Manikonda",
+      "slug": "manikonda",
+      "distance": "6 km",
+      "duration": "15 min",
+      "label": "Manikonda",
+      "href": "/specialist-near-manikonda"
+    },
+    {
+      "name": "Nanakramguda",
+      "slug": "nanakramguda",
+      "distance": "4 km",
+      "duration": "10 min",
+      "label": "Nanakramguda",
+      "href": "/specialist-near-nanakramguda"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I book an appointment with Dr Arjun?",
+      "answer": "You can book by calling +91-9123456789, messaging on WhatsApp, or using the online booking form. Walk-ins are welcome during clinic hours."
+    },
+    {
+      "question": "What should I bring to my first neurology consultation?",
+      "answer": "Please bring any previous MRI or CT scan reports, EEG reports, a list of current medications, and your insurance card if applicable."
+    },
+    {
+      "question": "Do you accept insurance for neurology treatment?",
+      "answer": "Yes, we work with all major insurance providers and TPA networks. Cashless facility is available. Our team assists with pre-authorisation and claim follow-up."
+    },
+    {
+      "question": "How long does recovery take after a neurological procedure?",
+      "answer": "Recovery varies depending on the condition and procedure. Dr Arjun will provide a personalised aftercare plan with a realistic timeline at your consultation."
+    },
+    {
+      "question": "Is EMI available for treatment packages?",
+      "answer": "Yes, we offer zero-cost and low-cost EMI options through multiple bank partners. The approval process is quick and our team handles the paperwork."
+    },
+    {
+      "question": "What are the clinic hours and location?",
+      "answer": "We are open Monday to Saturday, 9:00 AM - 7:00 PM. Located at Plot 45, Kondapur Main Road, Kondapur, Hyderabad -- easily accessible from Gachibowli, Miyapur, and Madhapur."
+    }
+  ],
+  "blog": [
+    {
+      "href": "/blog/early-signs-of-migraine",
+      "gradStyle": "background: linear-gradient(145deg,var(--secondary-deep),var(--secondary))",
+      "date": "15 Jan 2025",
+      "title": "10 Early Signs of Migraine You Should Not Ignore",
+      "excerpt": "Recognising migraine warning signs early can prevent full attacks and reduce long-term impact on daily life."
+    },
+    {
+      "href": "/blog/causes-of-epilepsy",
+      "gradStyle": "background: linear-gradient(145deg,var(--secondary),var(--primary))",
+      "date": "02 Feb 2025",
+      "title": "What Causes Epilepsy and How It Is Treated",
+      "excerpt": "A clear explanation of epilepsy triggers, types of seizures, and the modern treatment options available in India."
+    },
+    {
+      "href": "/blog/reduce-stroke-risk",
+      "gradStyle": "background: linear-gradient(145deg,var(--primary),var(--primary-dark))",
+      "date": "20 Feb 2025",
+      "title": "How to Reduce Stroke Risk Naturally",
+      "excerpt": "Lifestyle changes and early warning signs that can significantly lower your risk of stroke at any age."
+    },
+    {
+      "href": "/blog/parkinsons-disease-management",
+      "gradStyle": "background: linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))",
+      "date": "05 Mar 2025",
+      "title": "Managing Parkinson's Disease: What Patients Need to Know",
+      "excerpt": "An honest guide to Parkinson's symptoms, progression, and the treatment options that improve quality of life."
+    },
+    {
+      "href": "/blog/neuropathy-causes-and-treatment",
+      "gradStyle": "background: linear-gradient(145deg,var(--primary-dark),var(--secondary-deep))",
+      "date": "18 Mar 2025",
+      "title": "Peripheral Neuropathy: Causes, Symptoms and Treatment",
+      "excerpt": "Why nerve damage happens, how it is diagnosed with NCS, and what treatment options are available in Hyderabad."
+    }
+  ],
+  "ctaBand": {
+    "heading": "Ready to take the first step?",
+    "subtext": "Book a consultation with Dr Arjun Reddy today. Get a clear neurological diagnosis, a personalised treatment plan, and expert care -- all under one roof.",
+    "primaryLabel": "Book Appointment",
+    "primaryHref": "/appointment",
+    "secondaryLabel": "WhatsApp Us",
+    "secondaryHref": "https://wa.me/919123456789",
+    "infoItems": [
+      " Kondapur, Hyderabad",
+      " Mon-Sat: 9:00 AM - 7:00 PM"
+    ],
+    "info": [
+      " Kondapur, Hyderabad",
+      " Mon-Sat: 9:00 AM - 7:00 PM"
+    ]
+  },
+  "services": {
+    "conditions": [
+      {
+        "title": "Migraine",
+        "description": "Recurring severe headaches with nausea and light sensitivity -- accurately diagnosed and effectively managed.",
+        "slug": "migraine",
+        "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--secondary))"
+      },
+      {
+        "title": "Epilepsy",
+        "description": "Seizure disorders diagnosed with EEG and controlled with modern anti-epileptic medications.",
+        "slug": "epilepsy",
+        "gradient": "linear-gradient(145deg,var(--secondary),var(--primary))"
+      },
+      {
+        "title": "Stroke",
+        "description": "Emergency neurological care and comprehensive rehabilitation programmes to restore function after stroke.",
+        "slug": "stroke",
+        "gradient": "linear-gradient(145deg,var(--primary),var(--primary-dark))"
+      },
+      {
+        "title": "Parkinson's Disease",
+        "description": "Progressive movement disorder managed with medications, therapy, and regular neurological monitoring.",
+        "slug": "parkinsons-disease",
+        "gradient": "linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))"
+      }
+    ],
+    "procedures": [
+      {
+        "title": "EEG Test",
+        "description": "Non-invasive brain activity recording used to diagnose epilepsy, sleep disorders, and brain function abnormalities.",
+        "slug": "eeg-test",
+        "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--secondary))"
+      },
+      {
+        "title": "Nerve Conduction Study",
+        "description": "Measures nerve signal speed to detect neuropathy, carpal tunnel syndrome, and peripheral nerve damage.",
+        "slug": "nerve-conduction-study",
+        "gradient": "linear-gradient(145deg,var(--secondary),var(--primary))"
+      },
+      {
+        "title": "Botox for Migraine",
+        "description": "Preventive Botox injections that reduce chronic migraine frequency and intensity significantly.",
+        "slug": "botox-for-migraine",
+        "gradient": "linear-gradient(145deg,var(--primary),var(--primary-dark))"
+      },
+      {
+        "title": "Stroke Rehabilitation",
+        "description": "Structured recovery programme to restore movement, speech, and cognitive abilities after a stroke event.",
+        "slug": "stroke-rehabilitation",
+        "gradient": "linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))"
+      }
+    ]
+  },
+  "productPackages": [
+    {
+      "name": "Comprehensive Migraine Care",
+      "description": "Full diagnosis and ongoing management plan for chronic and episodic migraine patients.",
+      "slug": "migraine-care",
+      "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--secondary))",
+      "price": "Rs.4,500 - Rs.9,000",
+      "includes": [
+        "Initial consultation",
+        "EEG if clinically indicated",
+        "Personalised medication plan",
+        "Botox assessment",
+        "2 follow-up visits"
+      ]
+    },
+    {
+      "name": "Stroke Rehabilitation Package",
+      "description": "Comprehensive post-stroke recovery programme including neurological assessment and therapy sessions.",
+      "slug": "stroke-rehabilitation",
+      "gradient": "linear-gradient(145deg,var(--secondary),var(--primary))",
+      "price": "Rs.8,500 - Rs.25,000",
+      "includes": [
+        "Full neurological assessment",
+        "8 physiotherapy sessions",
+        "Speech therapy if required",
+        "Cognitive rehabilitation",
+        "Progress monitoring report"
+      ]
+    },
+    {
+      "name": "Epilepsy Management Programme",
+      "description": "Complete epilepsy workup and long-term management with regular follow-up and EEG monitoring.",
+      "slug": "epilepsy-management",
+      "gradient": "linear-gradient(145deg,var(--primary),var(--primary-dark))",
+      "price": "Rs.6,000 - Rs.15,000",
+      "includes": [
+        "Detailed EEG",
+        "MRI referral if needed",
+        "Anti-epileptic medication plan",
+        "Seizure diary review",
+        "3-month follow-up"
+      ]
+    },
+    {
+      "name": "Neuro Wellness Check",
+      "description": "Preventive neurological assessment for individuals with family history of brain or nerve disorders.",
+      "slug": "neuro-wellness",
+      "gradient": "linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))",
+      "price": "Rs.2,500 - Rs.5,000",
+      "includes": [
+        "Full neurological examination",
+        "Cognitive screening",
+        "Reflex and balance assessment",
+        "Risk factor analysis",
+        "Written report included"
+      ]
+    }
+  ],
+  "testimonials": {
+    "rating": "4.8",
+    "reviewCount": "182+",
+    "googleUrl": "https://g.page/drarjunneurocare/review",
+    "reviews": [
+      {
+        "initials": "RK",
+        "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--secondary))",
+        "name": "Ravi Kumar",
+        "date": "3 weeks ago",
+        "text": "My migraine frequency dropped significantly after starting treatment. Dr Arjun explained everything clearly and the follow-up care has been excellent."
+      },
+      {
+        "initials": "SS",
+        "gradient": "linear-gradient(145deg,var(--secondary),var(--primary))",
+        "name": "Sneha Sharma",
+        "date": "1 month ago",
+        "text": "Very knowledgeable doctor who takes time to explain the condition in plain language. My epilepsy has been well-controlled for over 8 months now."
+      },
+      {
+        "initials": "PM",
+        "gradient": "linear-gradient(145deg,var(--primary),var(--primary-dark))",
+        "name": "Priya Mehta",
+        "date": "2 months ago",
+        "text": "Brought my father after his stroke. Dr Arjun was patient and thorough -- gave us a very realistic recovery plan. The rehab guidance has been invaluable."
+      },
+      {
+        "initials": "AT",
+        "gradient": "linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))",
+        "name": "Anil Tiwari",
+        "date": "2 months ago",
+        "text": "Came for a second opinion on my Parkinson's diagnosis. Dr Arjun reviewed everything thoroughly and gave clear guidance without any pressure."
+      },
+      {
+        "initials": "VR",
+        "gradient": "linear-gradient(145deg,var(--primary-dark),var(--secondary-deep))",
+        "name": "Vijaya Rao",
+        "date": "3 months ago",
+        "text": "My elderly mother's neuropathy has improved greatly. Dr Arjun called personally to check on her progress after the first treatment. That kind of care is rare."
+      },
+      {
+        "initials": "KN",
+        "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--primary))",
+        "name": "Kiran Naidu",
+        "date": "3 months ago",
+        "text": "Honest, clear communication and no unnecessary tests. Dr Arjun recommended a conservative approach first -- it worked. I trust him completely."
+      }
+    ]
+  },
+  "optionalPages": {
+    "gallery": false,
+    "testimonials": true
+  },
+  "successStories": {
+    "videoCount": "20+",
+    "conditionCount": "10+",
+    "rating": "4.8",
+    "stories": [
+      {
+        "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--secondary))",
+        "duration": "3:24",
+        "tag": "Migraine Treatment",
+        "tagType": "procedure",
+        "category": "migraine",
+        "title": "Ravi's Migraine Finally Under Control After 5 Years",
+        "description": "32-year-old software engineer from Gachibowli had chronic daily migraines for 5 years. Botox treatment and a personalised plan reduced headache days by 80%."
+      },
+      {
+        "gradient": "linear-gradient(145deg,var(--secondary),var(--primary))",
+        "duration": "2:45",
+        "tag": "Epilepsy Management",
+        "tagType": "procedure",
+        "category": "epilepsy",
+        "title": "Seizure-Free for 18 Months -- Sneha's Story",
+        "description": "26-year-old teacher from Kondapur was having monthly seizures. Correct EEG diagnosis and medication adjustment achieved full seizure control."
+      },
+      {
+        "gradient": "linear-gradient(145deg,var(--primary),var(--primary-dark))",
+        "duration": "4:10",
+        "tag": "Stroke Rehabilitation",
+        "tagType": "procedure",
+        "category": "stroke",
+        "title": "Walking Again at 58 -- Post-Stroke Recovery",
+        "description": "58-year-old from Miyapur suffered a moderate stroke. Structured rehabilitation over 3 months restored walking ability and partial speech."
+      },
+      {
+        "gradient": "linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))",
+        "duration": "3:52",
+        "tag": "Parkinson's Disease",
+        "tagType": "condition",
+        "category": "parkinsons",
+        "title": "Living an Active Life with Parkinson's",
+        "description": "65-year-old from Madhapur diagnosed with early Parkinson's. Optimised medication and lifestyle plan maintained independence and quality of life for 3+ years."
+      },
+      {
+        "gradient": "linear-gradient(145deg,var(--primary-dark),var(--secondary-deep))",
+        "duration": "2:18",
+        "tag": "Neuropathy",
+        "tagType": "condition",
+        "category": "neuropathy",
+        "title": "Back to Work After Neuropathy Diagnosis",
+        "description": "40-year-old accountant from Kukatpally had progressive hand numbness. Nerve Conduction Study identified the cause and treatment restored sensation."
+      },
+      {
+        "gradient": "linear-gradient(145deg,var(--secondary-deep),var(--primary))",
+        "duration": "3:10",
+        "tag": "Migraine Treatment",
+        "tagType": "procedure",
+        "category": "migraine",
+        "title": "Vestibular Migraine Correctly Diagnosed After 3 Misdiagnoses",
+        "description": "34-year-old from Nanakramguda had vertigo and dizziness misdiagnosed for 2 years. Targeted treatment resolved symptoms in 6 weeks."
+      }
+    ]
+  },
+  "areas": [
+    {
+      "name": "Kondapur",
+      "slug": "kondapur",
+      "distance": "0 km",
+      "duration": "2 min"
+    },
+    {
+      "name": "Gachibowli",
+      "slug": "gachibowli",
+      "distance": "3 km",
+      "duration": "8 min"
+    },
+    {
+      "name": "Miyapur",
+      "slug": "miyapur",
+      "distance": "5 km",
+      "duration": "12 min"
+    },
+    {
+      "name": "Madhapur",
+      "slug": "madhapur",
+      "distance": "4 km",
+      "duration": "10 min"
+    },
+    {
+      "name": "Kukatpally",
+      "slug": "kukatpally",
+      "distance": "7 km",
+      "duration": "18 min"
+    },
+    {
+      "name": "KPHB Colony",
+      "slug": "kphb-colony",
+      "distance": "8 km",
+      "duration": "20 min"
+    },
+    {
+      "name": "Manikonda",
+      "slug": "manikonda",
+      "distance": "6 km",
+      "duration": "15 min"
+    },
+    {
+      "name": "Nanakramguda",
+      "slug": "nanakramguda",
+      "distance": "4 km",
+      "duration": "10 min"
+    }
+  ],
+  "team": [
+    {
+      "name": "Dr Arjun Reddy",
+      "designation": "Lead Consultant -- Neurology",
+      "qualifications": [
+        "MBBS",
+        "MD General Medicine",
+        "DM Neurology"
+      ],
+      "experience": "9+",
+      "schedule": "Mon-Sat . 9:00 AM - 7:00 PM",
+      "gradient": "linear-gradient(160deg,var(--secondary-deep) 0%,var(--secondary) 40%,var(--primary) 100%)",
+      "isLead": true
+    },
+    {
+      "name": "Dr Meena Krishnan",
+      "designation": "Consultant -- Paediatric Neurology",
+      "qualifications": [
+        "MBBS",
+        "MD Paediatrics",
+        "Fellowship in Child Neurology"
+      ],
+      "experience": "7+",
+      "schedule": "Tue, Thu, Sat . 10:00 AM - 4:00 PM",
+      "gradient": "linear-gradient(160deg,var(--secondary) 0%,var(--secondary-dark) 40%,var(--primary) 100%)",
+      "isLead": false
+    },
+    {
+      "name": "Dr Suresh Babu",
+      "designation": "Consultant -- Neurorehabilitation",
+      "qualifications": [
+        "MBBS",
+        "MD Physical Medicine",
+        "DNB Rehabilitation Medicine"
+      ],
+      "experience": "6+",
+      "schedule": "Mon, Wed, Fri . 9:00 AM - 2:00 PM",
+      "gradient": "linear-gradient(160deg,var(--primary) 0%,var(--primary-dark) 40%,var(--secondary) 100%)",
+      "isLead": false
+    }
+  ],
+  "locations": [
+    {
+      "name": "Kondapur",
+      "slug": "kondapur",
+      "address": "Plot 45, 2nd Floor, Kondapur Main Road, Kondapur, Hyderabad -- 500084",
+      "phone": "+91-9123456789",
+      "hours": "Mon-Sat: 9:00 AM - 7:00 PM",
+      "mapUrl": "https://maps.google.com/?q=Dr+Arjun+Neuro+Care+Kondapur",
+      "mapEmbedUrl": "",
+      "isPrimary": true
+    }
+  ],
+  "entityType": "Multi-Doctor Clinic",
+  "s00": {
+    "entityType": "Multi-Doctor Clinic",
+    "primaryColor": "#0d7a5f",
+    "secondaryColor": "#1a4ea0"
+  }
+}
