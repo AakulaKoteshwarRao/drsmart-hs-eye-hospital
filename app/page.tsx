@@ -1,5 +1,5 @@
 export const dynamic = 'force-dynamic'
-import { loadConfig } from '@/lib/config'
+import { loadConfig, fetchVideos } from '@/lib/config'
 import type { Metadata } from 'next'
 import { buildHomeMetadata } from '@/lib/seo'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -78,7 +78,7 @@ export default async function HomePage() {
         <MeetDoctor doctor={cfg.doctor} clinic={cfg.clinic} />
         <TeamCarousel members={cfg.team} />
         <ClinicalInfo cards={cfg.clinicalInfo} />
-        <PatientStories stories={cfg.patientStories} />
+        <PatientStories stories={dynamicStories.length > 0 ? dynamicStories : cfg.patientStories} />
         <PricingAccordion items={cfg.pricing} />
         <Reviews reviews={cfg.reviews} summary={cfg.reviewSummary} />
         <LocalAreas areas={cfg.localAreas} clinic={cfg.clinic} />
