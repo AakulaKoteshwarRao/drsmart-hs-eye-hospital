@@ -163,6 +163,18 @@ export async function initConfig(): Promise<ClinicConfig> {
   return _cache
 }
 
+/** Fetch videos fresh every time — bypasses cache */
+export async function fetchVideos(): Promise<Record<string, unknown>[]> {
+  if (!CLIENT_ID || !SB_URL || !SB_KEY) return []
+  try {
+    const res = await fetch(
+      `${SB_URL}/rest/v1/videos?select=*&client_id=eq.${CLIENT_ID}&published=eq.true&order=sort_order.asc,created_at.desc`,
+      { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }, cache: 'no-store' }
+    )
+    return await res.json()
+  } catch { return [] }
+}
+
 /**
  * Synchronous getter — returns cached config after initConfig() resolves.
  * Falls back to templatedefault.json if called before cache is warm.
