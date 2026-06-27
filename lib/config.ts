@@ -146,7 +146,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
       transformed.successStories = {
         ...transformed.successStories,
         videoCount: `${videos.length}+`,
-        items: transformed.patientStories,
+        stories: transformed.patientStories,
       }
     } catch (e) {
       console.error('[config] Failed to fetch videos:', e)
