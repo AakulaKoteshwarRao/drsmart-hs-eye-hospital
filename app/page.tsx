@@ -33,6 +33,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function HomePage() {
   const cfg = await loadConfig()
+  const rawVideos = await fetchVideos()
+  const dynamicStories = rawVideos.map((v: Record<string, unknown>) => ({
+    gradClass: 'grad-1',
+    duration: '',
+    title: (v.title as string) || '',
+    tag: (v.category as string) || 'patient_story',
+    videoUrl: v.youtube_url as string,
+  }))
   const sc = buildSchemaConfig(cfg)
 
   const pageSchemas = generatePageSchemas(sc, {
