@@ -1,7 +1,11 @@
 "use client"
 import { useState } from 'react'
 import type { VideoStory } from '@/lib/types'
-import { Icon } from '@/lib/icons'
+
+function getYouTubeId(url: string): string | null {
+  const m = url?.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/)
+  return m ? m[1] : null
+}
 
 export default function VideoGrid({ stories, conditions: conditionsProp }: { stories: VideoStory[], conditions?: any[] }) {
   const conditions = (conditionsProp || []).slice(0, 5)
@@ -24,19 +28,37 @@ export default function VideoGrid({ stories, conditions: conditionsProp }: { sto
           ))}
         </div>
         <div className="video-grid">
-          {filtered.map((s, i) => (
-            <div key={i} className="video-card">
-              <div className="video-thumb" style={{ background: s.gradient }}>
-                <div className="play-btn">
-                  <Icon name="play" size={20} color="#FFFFFF" weight="fill" />
+          {filtered.map((s, i) => {
+            const ytId = s.youtubeUrl ? getYouTubeId(s.youtubeUrl) : null
+            const thumbnail = ytId ? `https://img.youtube.com/vi/${ytId}/mqdefault.jpg` : null
+            const url = s.youtubeUrl || (ytId ? `https://www.youtube.com/watch?v=${ytId}` : null)
+            return (
+              <div key={i} className="video-card">
+                <div className="video-thumb" style={{ background: s.gradient || '#1a1a2e', position: 'relative', overflow: 'hidden' }}>
+                  {thumbnail && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={thumbnail} alt={s.title || 'Video'} style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }} />
+                  )}
+                  {url && (
+                    <a href={url} target="_blank" rel="noreferrer" style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.3)' }}>
+                      <div className="play-btn" style={{ width: 48, height: 48, borderRadius: '50%', background: 'rgba(255,255,255,0.9)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#111"><polygon points="5,3 19,12 5,21"/></svg>
+                      </div>
+                    </a>
+                  )}
                 </div>
-                {s.duration && <span className="video-duration">{s.duration}</span>}
+                <div className="video-info">
+                  {s.tag && <span className={`video-tag tag-${s.tagType || 'condition'}`}>{s.tag}</span>}
+                  <h3 className="video-title">{s.title || s.caption || 'Patient Story'}</h3>
+                  {s.description && <p className="video-desc">{s.description}</p>}
+                  {s.duration && <span className="video-duration">{s.duration}</span>}
+                </div>
               </div>
-              <div className="video-info">
-                <h3 style={{ fontSize: 'var(--text-sm)', fontWeight: 700 }}>{s.title}</h3>
-              </div>
-            </div>
-          ))}
+            )
+          })}
+          {filtered.length === 0 && (
+            <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '40px', color: '#666' }}>No videos yet.</div>
+          )}
         </div>
       </div>
     </section>

@@ -310,13 +310,15 @@ export interface OptionalPages {
 }
 
 export interface VideoStory {
-  gradient: string
-  duration: string
-  tag: string
-  tagType: 'procedure' | 'condition'
-  category: string
-  title: string
-  description: string
+  gradient?: string
+  duration?: string
+  tag?: string
+  tagType?: 'procedure' | 'condition'
+  category?: string
+  title?: string
+  description?: string
+  youtubeUrl?: string
+  caption?: string
 }
 
 export interface SuccessStoriesConfig {
