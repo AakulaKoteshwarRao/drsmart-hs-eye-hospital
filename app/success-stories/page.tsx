@@ -5,6 +5,7 @@ import StoriesHero from '@/components/success-stories/StoriesHero'
 import VideoGrid from '@/components/success-stories/VideoGrid'
 import StoriesFAQ from '@/components/success-stories/StoriesFAQ'
 export const dynamic = 'force-dynamic'
+export const revalidate = 0
 import { loadConfig, fetchVideos } from '@/lib/config'
 import Footer from '@/components/Footer'
 import '@/app/styles/success-stories.css'
