@@ -118,6 +118,41 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
     transformed.photos = {}
   }
 
+  // Fetch videos from videos table
+  if (CLIENT_ID && SB_URL) {
+    try {
+      const vRes = await fetch(
+        `${SB_URL}/rest/v1/videos?select=*&client_id=eq.${CLIENT_ID}&published=eq.true&order=sort_order.asc,created_at.desc`,
+        { headers: { apikey: SB_KEY!, Authorization: `Bearer ${SB_KEY}` }, cache: 'no-cache' }
+      )
+      const vRows = await vRes.json()
+      const videos = (vRows || []).map((v: Record<string, unknown>) => ({
+        id: v.id,
+        youtube_url: v.youtube_url,
+        title: v.title || '',
+        caption: v.caption || '',
+        category: v.category || 'patient_story',
+      }))
+      transformed.patientStories = videos.map((v: Record<string, unknown>) => ({
+        id: v.id,
+        youtubeUrl: v.youtube_url,
+        title: v.title,
+        caption: v.caption,
+        category: v.category,
+        tags: [],
+        duration: '',
+        thumbnail: '',
+      }))
+      transformed.successStories = {
+        ...transformed.successStories,
+        videoCount: `${videos.length}+`,
+        items: transformed.patientStories,
+      }
+    } catch (e) {
+      console.error('[config] Failed to fetch videos:', e)
+    }
+  }
+
   return transformed
 }
 
