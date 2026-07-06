@@ -36,6 +36,8 @@ export interface ClinicInfo {
   alternateName?: string
   phone: string
   whatsapp: string
+  phone2?: string
+  whatsapp2?: string
   logo?: string
   image?: string
   heroImage?: string

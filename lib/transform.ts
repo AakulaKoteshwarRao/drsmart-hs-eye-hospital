@@ -102,6 +102,8 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
   // s02 = Entity section in ConfigEditor
   const phone    = s(s02.telephone, '+91-0000000000')
   const whatsapp = s(s02.whatsapp, toWhatsapp(phone))
+  const phone2    = s(s02.telephone2, '')
+  const whatsapp2 = s(s02.whatsapp2, '')
   const mapsUrl  = s(s02.hasMap, '')
   const website  = s(s01.url, '')
 
@@ -123,6 +125,8 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
     type:        s(s00.entityType, ''),
     phone,
     whatsapp,
+    phone2,
+    whatsapp2,
     email:       s(s02.email, ''),
     address:     [s(s02.buildingName,''), s(s02.street,''), s(s02.city,'')].filter(Boolean).join(', '),
     city:        s(s02.city, ''),

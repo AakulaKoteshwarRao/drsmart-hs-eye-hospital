@@ -7,7 +7,7 @@ const faqs = [
   { q: 'How long does a consultation take?', a: 'A first consultation typically takes 20-30 minutes. The doctor ensures enough time to review your history, examine you, and discuss treatment options clearly.' },
   { q: 'Do you offer non-surgical treatments?', a: 'Yes. We offer a range of non-surgical and conservative treatment options depending on the condition. The doctor will recommend the most appropriate approach for your case.' },
   { q: 'What should I bring to my first visit?', a: 'Bring any previous medical reports, test results, prescriptions, and a list of current medications. If you have insurance, carry your insurance card and a valid ID.' },
-  { q: 'Where are procedures performed?', a: 'Surgical procedures are performed at our affiliated hospitals which are fully equipped with advanced operation theatres and post-operative care facilities.' },
+  { q: 'Where are procedures performed?', a: 'Surgical procedures are performed at our hospital, which is fully modern-equipped with advanced, different operation theatres for different surgeries and post-operative care facilities.' },
 ]
 
 export default function ServicesFAQ() {

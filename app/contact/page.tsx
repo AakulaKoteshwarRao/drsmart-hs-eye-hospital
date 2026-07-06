@@ -45,6 +45,10 @@ export default async function ContactPage() {
   const waLink = `https://wa.me/${whatsappNum?.replace(/\D/g,'')}`
   const social = (clinic as any).social ?? {}
 
+  const phone2 = (clinic as any).phone2 ?? ''
+  const whatsapp2 = (clinic as any).whatsapp2 ?? ''
+  const waLink2 = whatsapp2 ? `https://wa.me/${whatsapp2.replace(/\D/g,'')}` : ''
+
   return (
     <>
       <Header clinic={clinic} />
@@ -81,6 +85,7 @@ export default async function ContactPage() {
               </div>
               <h3>Phone</h3>
               <p><a href={`tel:${clinic.phone}`}>{clinic.phone}</a></p>
+              {phone2 && <p><a href={`tel:${phone2}`}>{phone2}</a></p>}
             </div>
             <div className="contact-card">
               <div className="contact-card-icon" style={{ background: 'linear-gradient(135deg,#25D366,#128C7E)' }}>
@@ -88,6 +93,7 @@ export default async function ContactPage() {
               </div>
               <h3>WhatsApp</h3>
               <p><a href={waLink} target="_blank" rel="noopener noreferrer">{whatsappNum}</a></p>
+              {whatsapp2 && <p><a href={waLink2} target="_blank" rel="noopener noreferrer">{whatsapp2}</a></p>}
             </div>
             <div className="contact-card">
               <div className="contact-card-icon" style={{ background: 'linear-gradient(135deg,#1B6FA8,#145A8A)' }}>
@@ -101,7 +107,13 @@ export default async function ContactPage() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <h3>Address</h3>
-              <p>{clinic.address}</p>
+              <p>
+                {(clinic as any).hospital && (
+                  <strong style={{ color: '#1B6FA8', textTransform: 'uppercase' as const }}>{(clinic as any).hospital}</strong>
+                )}
+                {(clinic as any).hospital && <br />}
+                {[(clinic as any).street, clinic.city].filter(Boolean).join(', ')}
+              </p>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function ProceduresGrid({ procedures }: { procedures: ServiceItem
       <div className="sec-header">
         <div className="sec-label"><span>Procedures We Do</span></div>
         <h2 className="sec-title">Surgical &amp; non-surgical treatments.</h2>
-        <p className="sec-sub">Advanced procedures performed at our affiliated hospitals by our experienced team.</p>
+        <p className="sec-sub">Advanced procedures performed at our hospital by our experienced team.</p>
       </div>
       <div className="card-grid">
         {procedures.map((p, i) => (
