@@ -49,6 +49,15 @@
   .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding-top: 1.25rem; border-top: 1px solid #E5E7EB; }
   .hero-stat-num { font-size: 1.5rem; font-weight: 800; color: #111111; }
   .hero-stat-label { font-size: 0.72rem; color: #9CA3AF; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .cond-hero-cta {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--primary); color: #ffffff;
+    font-size: var(--text-sm); font-weight: 700;
+    padding: 0.65rem 1.5rem; border-radius: 10px;
+    text-decoration: none; transition: all 200ms;
+    margin-top: 0.75rem;
+  }
+  .cond-hero-cta:hover { background: var(--primary-dark); transform: translateY(-1px); }
   .cond-hero-img {
     width: 100%; aspect-ratio: 4/3; border-radius: 24px;
     display: flex; align-items: center; justify-content: center;
