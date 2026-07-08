@@ -36,8 +36,9 @@ export interface ClinicInfo {
   alternateName?: string
   phone: string
   whatsapp: string
-  phone2?: string
-  whatsapp2?: string
+  secondaryPhone?: string
+  secondaryWhatsapp?: string
+  secondaryLocationUrl?: string
   logo?: string
   image?: string
   heroImage?: string
@@ -84,6 +85,7 @@ export interface ClinicInfo {
   serviceType?: string
   paymentAccepted?: string
   currenciesAccepted?: string
+  country?: string
   parking?: string
   wheelchair?: string
   toilets?: string

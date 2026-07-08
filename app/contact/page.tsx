@@ -45,8 +45,8 @@ export default async function ContactPage() {
   const waLink = `https://wa.me/${whatsappNum?.replace(/\D/g,'')}`
   const social = (clinic as any).social ?? {}
 
-  const phone2 = (clinic as any).phone2 ?? ''
-  const whatsapp2 = (clinic as any).whatsapp2 ?? ''
+  const phone2 = (clinic as any).secondaryPhone ?? ''
+  const whatsapp2 = (clinic as any).secondaryWhatsapp ?? ''
   const waLink2 = whatsapp2 ? `https://wa.me/${whatsapp2.replace(/\D/g,'')}` : ''
 
   return (

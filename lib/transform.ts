@@ -102,8 +102,10 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
   // s02 = Entity section in ConfigEditor
   const phone    = s(s02.telephone, '+91-0000000000')
   const whatsapp = s(s02.whatsapp, toWhatsapp(phone))
-  const phone2    = s(s02.telephone2, '')
-  const whatsapp2 = s(s02.whatsapp2, '')
+  // secondaryTelephone/secondaryWhatsapp are the portal-driven fields; telephone2/whatsapp2
+  // fall back for configs set before the portal exposed this
+  const secondaryPhone    = s(s02.secondaryTelephone ?? s02.telephone2, '')
+  const secondaryWhatsapp = s(s02.secondaryWhatsapp ?? s02.whatsapp2, '')
   const mapsUrl  = s(s02.hasMap, '')
   const website  = s(s01.url, '')
 
@@ -125,8 +127,8 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
     type:        s(s00.entityType, ''),
     phone,
     whatsapp,
-    phone2,
-    whatsapp2,
+    secondaryPhone,
+    secondaryWhatsapp,
     email:       s(s02.email, ''),
     address:     [s(s02.buildingName,''), s(s02.street,''), s(s02.city,'')].filter(Boolean).join(', '),
     city:        s(s02.city, ''),
@@ -157,6 +159,9 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
     pincode:     s(s02.pincode, ''),
     state:       s(s02.state, ''),
     foundingDate: s(s02.foundingDate, ''),
+    country:              s(s02.addressCountry, 'India'),
+    currenciesAccepted:   s(s02.currenciesAccepted, 'INR'),
+    secondaryLocationUrl: s(s02.secondaryLocationUrl, ''),
     geo: { lat: geoLat, lng: geoLng },
     facilities: a(s02.facilities).filter((f: any) => f.title).map((f: any) => ({ title: f.title, description: f.description || '' })),
     insurers: a(s02.insurers).filter((ins: any) => ins.name).map((ins: any, i: number) => ({ name: ins.name })),
