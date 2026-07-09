@@ -266,12 +266,17 @@ export function buildDoctorMetadata(cfg: ClinicConfig): Metadata {
   const doctor = cfg.doctor as any
   const city   = clinic?.city || ''
   const name   = getDoctorName(cfg)
-  const quals  = doctor?.qualifications || ''
-  const exp    = doctor?.experience     || ''
+  // qualifications is string[]; experience is {role,hospital}[] (job history, not
+  // a years-of-experience number) — years come from the doctor.stats entry instead.
+  const quals  = Array.isArray(doctor?.qualifications) ? doctor.qualifications.join(', ') : (doctor?.qualifications || '')
+  const yearsStat = Array.isArray(doctor?.stats)
+    ? doctor.stats.find((st: any) => /year|experience|exp/i.test(st?.label || ''))
+    : null
+  const exp = yearsStat?.number || ''
 
   return buildPageMetadata(cfg, {
     title:       `${name} — ${clinic?.medicalSpecialty || 'Specialist'} in ${city}`,
-    description: `${name} is an experienced ${clinic?.medicalSpecialty || 'specialist'} in ${city}. ${quals ? quals + '.' : ''} ${exp ? exp + ' of experience.' : ''}`.trim(),
+    description: `${name} is an experienced ${clinic?.medicalSpecialty || 'specialist'} in ${city}. ${quals ? quals + '.' : ''} ${exp ? exp + ' years of experience.' : ''}`.trim(),
     path:        '/doctor',
     image:       doctor?.photo,
     titleSuffix: name,
