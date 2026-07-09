@@ -11,7 +11,20 @@ import BlogGrid from '@/components/blog/BlogGrid'
 export const dynamic = 'force-dynamic'
 import { loadConfig } from '@/lib/config'
 import { getBlogs } from '@/lib/blogs'
+import type { Metadata } from 'next'
+import { buildPageMetadata } from '@/lib/seo'
 import '@/app/styles/blog.css'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cfg = await loadConfig()
+  const clinic = cfg.clinic as any
+  return buildPageMetadata(cfg, {
+    title:       'Health Articles & Patient Education',
+    description: `Read health articles, tips, and patient education content from ${clinic?.name || 'our clinic'} in ${clinic?.city || ''}.`,
+    path:        '/blog',
+    image:       clinic?.image,
+  })
+}
 
 export default async function BlogPage() {
   const cfg = await loadConfig()

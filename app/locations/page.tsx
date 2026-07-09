@@ -17,8 +17,21 @@ import LocationFAQ from '@/components/locations/LocationFAQ'
 import InternalLinks from '@/components/locations/InternalLinks'
 export const dynamic = 'force-dynamic'
 import { loadConfig } from '@/lib/config'
+import type { Metadata } from 'next'
+import { buildPageMetadata } from '@/lib/seo'
 import Footer from '@/components/Footer'
 import '@/app/styles/locations.css'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cfg = await loadConfig()
+  const clinic = cfg.clinic as any
+  return buildPageMetadata(cfg, {
+    title:       'Locations We Serve',
+    description: `${clinic?.name || 'Our clinic'} serves patients across ${clinic?.city || ''} and nearby areas.`,
+    path:        '/locations',
+    image:       clinic?.image,
+  })
+}
 
 export default async function LocationsPage() {
   const cfg = await loadConfig()

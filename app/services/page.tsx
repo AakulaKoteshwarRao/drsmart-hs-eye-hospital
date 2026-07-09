@@ -11,8 +11,21 @@ import ProceduresGrid from '@/components/services/ProceduresGrid'
 import ServicesFAQ from '@/components/services/ServicesFAQ'
 export const dynamic = 'force-dynamic'
 import { loadConfig } from '@/lib/config'
+import type { Metadata } from 'next'
+import { buildPageMetadata } from '@/lib/seo'
 import Footer from '@/components/Footer'
 import '@/app/styles/services.css'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cfg = await loadConfig()
+  const clinic = cfg.clinic as any
+  return buildPageMetadata(cfg, {
+    title:       `${clinic?.medicalSpecialty || 'Medical'} Services`,
+    description: `Explore conditions treated and procedures offered by ${clinic?.name || 'our clinic'} in ${clinic?.city || ''} — comprehensive ${clinic?.medicalSpecialty || 'medical'} care.`,
+    path:        '/services',
+    image:       clinic?.image,
+  })
+}
 
 export default async function ServicesPage() {
   const cfg = await loadConfig()

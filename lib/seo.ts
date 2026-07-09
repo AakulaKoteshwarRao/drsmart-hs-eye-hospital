@@ -275,11 +275,13 @@ export function buildDoctorMetadata(cfg: ClinicConfig): Metadata {
   const exp = yearsStat?.number || ''
 
   return buildPageMetadata(cfg, {
-    title:       `${name} — ${clinic?.medicalSpecialty || 'Specialist'} in ${city}`,
+    // No name/titleSuffix here — buildTitle() already appends " in City | Dr. Name"
+    // by default; passing titleSuffix would additionally append it via the
+    // `if (suffix) return keyword | suffix` branch, duplicating the name.
+    title:       clinic?.medicalSpecialty || 'Specialist',
     description: `${name} is an experienced ${clinic?.medicalSpecialty || 'specialist'} in ${city}. ${quals ? quals + '.' : ''} ${exp ? exp + ' years of experience.' : ''}`.trim(),
     path:        '/doctor',
     image:       doctor?.photo,
-    titleSuffix: name,
   })
 }
 
