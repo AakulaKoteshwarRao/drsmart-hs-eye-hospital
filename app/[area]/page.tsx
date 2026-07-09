@@ -8,6 +8,9 @@ import { loadConfig } from '@/lib/config'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { buildLocationMetadata } from '@/lib/seo'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { generatePageSchemas } from '@/lib/schema/index.js'
+import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 
 export const dynamic = 'force-dynamic'
 
@@ -37,8 +40,32 @@ export default async function LocationSpokePage({ params }: { params?: { area?: 
   if (!areaFromConfig) notFound()
   const area = areaFromConfig || { name: areaName, slug: areaSlug, distance: '', duration: '' }
 
+  const sc = buildSchemaConfig(cfg)
+  const _path = `/${areaSlug}`
+  const location = {
+    slug: areaSlug,
+    name: areaName,
+    url: sc.site.url + _path,
+    areasServed: [areaName],
+  }
+  const pageSchemas = generatePageSchemas(sc, {
+    pageType: 'location',
+    pageData: location,
+    meta: {
+      path: _path,
+      name: `${areaName} | ${sc.clinic.name}`,
+      description: `${sc.clinic.name} serving ${areaName}`,
+      image: sc.clinic.image,
+      breadcrumb: [
+        { name: 'Home', url: sc.site.url, path: '/' },
+        { name: areaName, url: sc.site.url + _path, path: _path },
+      ],
+    },
+  })
+
   return (
     <>
+      <SchemaMarkup graphs={[pageSchemas]} />
       <Header clinic={cfg.clinic} />
       <main>
         <LocationSpoke

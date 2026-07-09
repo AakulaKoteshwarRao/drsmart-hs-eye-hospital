@@ -8,8 +8,36 @@ import ConditionDetail from '@/components/condition/ConditionDetail'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyBar from '@/components/StickyBar'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { generatePageSchemas } from '@/lib/schema/index.js'
+import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 import '@/app/styles/conditions.css'
 interface PageParams { params: { slug: string } }
+
+const arr = (v: unknown): any[] => Array.isArray(v) ? v : []
+
+// conditionSchema() (lib/schema/contentSchemas.js) expects a flatter shape
+// than mapCondition()'s ConditionDetail-oriented output, so build it separately
+// from the raw s07 item and default every array to avoid crashing on
+// not-yet-AI-enriched conditions (ConfigEditor only guarantees name/slug).
+function toConditionSchemaData(raw: any) {
+  const symptoms = raw?.symptoms ?? {}
+  return {
+    slug: raw?.slug || '',
+    name: raw?.name || '',
+    alternateName: raw?.alternateName || raw?.name || '',
+    description: raw?.description || raw?.descriptionLong || raw?.shortDescription || '',
+    icdCode: raw?.icd10 || raw?.icd10Code || '',
+    anatomy: raw?.anatomy || '',
+    symptoms: [...arr(symptoms.early), ...arr(symptoms.moderate), ...arr(symptoms.advanced)],
+    risks: arr(raw?.causes),
+    complications: raw?.complications || '',
+    epidemiology: raw?.prevalence || '',
+    prognosis: raw?.progressionType || '',
+    treatments: arr(raw?.treatments).map((t: any) => typeof t === 'string' ? t : (t?.name || '')).filter(Boolean),
+    faq: arr(raw?.faqs).map((f: any) => ({ q: f.question ?? f.q ?? '', a: f.answer ?? f.a ?? '' })),
+  }
+}
 async function getRawConfig() {
   const configId = process.env.NEXT_PUBLIC_CONFIG_ID
   const sbUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -58,8 +86,28 @@ export default async function ConditionDetailPage({ params }: PageParams) {
     .slice(0, 4)
 
   const doctorName = fallback?.s03?.name || ''
+
+  const sc = buildSchemaConfig(config)
+  const schemaData = toConditionSchemaData(condition)
+  const _path = `/conditions/${params.slug}`
+  const pageSchemas = generatePageSchemas(sc, {
+    pageType: 'condition',
+    pageData: schemaData,
+    meta: {
+      path: _path,
+      name: `${schemaData.name} | ${sc.clinic.name}`,
+      description: schemaData.description,
+      image: photoUrl || sc.clinic.image,
+      breadcrumb: [
+        { name: 'Home', url: sc.site.url, path: '/' },
+        { name: schemaData.name, url: sc.site.url + _path, path: _path },
+      ],
+    },
+  })
+
   return (
     <>
+      <SchemaMarkup graphs={[pageSchemas]} />
       <Header clinic={config.clinic} />
       <StickyBar clinic={config.clinic} />
       <ConditionDetail

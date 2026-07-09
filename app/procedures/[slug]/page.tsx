@@ -8,9 +8,38 @@ import ProcedureDetail from '@/components/procedure/ProcedureDetail'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyBar from '@/components/StickyBar'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { generatePageSchemas } from '@/lib/schema/index.js'
+import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 import '@/app/styles/procedures.css'
 
 interface PageParams { params: { slug: string } }
+
+const arr = (v: unknown): any[] => Array.isArray(v) ? v : []
+
+// procedureSchema() (lib/schema/contentSchemas.js) expects fields that don't
+// exist on the raw s08 item (type/bodyLocation/preparation/etc — there's no
+// portal UI for these yet), so default to safe, valid values rather than
+// emitting "https://schema.org/undefined" or blank required properties.
+function toProcedureSchemaData(raw: any) {
+  return {
+    slug: raw?.slug || '',
+    name: raw?.name || '',
+    alternateName: raw?.alternateName || raw?.name || '',
+    description: raw?.shortDescription || raw?.shortdescription || raw?.description || raw?.descriptionLong || '',
+    type: raw?.type || 'NoninvasiveProcedure',
+    bodyLocation: raw?.bodyLocation || '',
+    preparation: raw?.preparation || '',
+    followup: raw?.followup || raw?.followUp || '',
+    howPerformed: raw?.howPerformed || '',
+    prognosis: raw?.prognosis || '',
+    contraindications: raw?.contraindications || '',
+    cost: raw?.cost || null,
+    minCost: raw?.minCost || '',
+    maxCost: raw?.maxCost || '',
+    faq: arr(raw?.faqs).map((f: any) => ({ q: f.question ?? f.q ?? '', a: f.answer ?? f.a ?? '' })),
+  }
+}
 
 async function getRawConfig() {
   const configId = process.env.NEXT_PUBLIC_CONFIG_ID
@@ -56,8 +85,28 @@ export default async function ProcedureDetailPage({ params }: PageParams) {
     .map((p: any) => ({ name: p.name || p.slug, slug: p.slug }))
     .slice(0, 4)
   const doctorNameP = fallback?.s03?.name || ''
+
+  const sc = buildSchemaConfig(config)
+  const schemaData = toProcedureSchemaData(procedure)
+  const _path = `/procedures/${params.slug}`
+  const pageSchemas = generatePageSchemas(sc, {
+    pageType: 'procedure',
+    pageData: schemaData,
+    meta: {
+      path: _path,
+      name: `${schemaData.name} | ${sc.clinic.name}`,
+      description: schemaData.description,
+      image: photoUrl || sc.clinic.image,
+      breadcrumb: [
+        { name: 'Home', url: sc.site.url, path: '/' },
+        { name: schemaData.name, url: sc.site.url + _path, path: _path },
+      ],
+    },
+  })
+
   return (
     <>
+      <SchemaMarkup graphs={[pageSchemas]} />
       <Header clinic={config.clinic} />
       <StickyBar clinic={config.clinic} />
       <ProcedureDetail
