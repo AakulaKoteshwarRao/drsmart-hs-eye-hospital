@@ -8,7 +8,7 @@ import AppointmentHero from '@/components/appointment/AppointmentHero'
 import AppointmentForm from '@/components/appointment/AppointmentForm'
 import ClinicStrip from '@/components/appointment/ClinicStrip'
 import WhatToExpect from '@/components/appointment/WhatToExpect'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import type { Metadata } from 'next'
 import { buildAppointmentMetadata } from '@/lib/seo'

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { buildConditionMetadata } from '@/lib/seo'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import { mapCondition } from '@/lib/transform'
 import ConditionDetail from '@/components/condition/ConditionDetail'
@@ -45,7 +45,7 @@ async function getRawConfig() {
   if (!configId || !sbUrl || !sbKey) return null
   const res = await fetch(
     `${sbUrl}/rest/v1/configs?select=data&id=eq.${encodeURIComponent(configId)}&limit=1`,
-    { headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` }, cache: 'no-cache' }
+    { headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` }, next: { revalidate: 3600 } }
   )
   const rows = await res.json()
   return rows?.[0]?.data ?? null

@@ -12,7 +12,7 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 import { generatePageSchemas } from '@/lib/schema/index.js'
 import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 
 export async function generateMetadata({ params }: { params?: { area?: string } }): Promise<Metadata> {
   const cfg = await loadConfig()

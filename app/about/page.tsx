@@ -13,7 +13,7 @@ import Affiliations from '@/components/about/Affiliations'
 import Insurance from '@/components/about/Insurance'
 import AboutFAQ from '@/components/about/AboutFAQ'
 import LocationStrip from '@/components/about/LocationStrip'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import type { Metadata } from 'next'
 import { buildPageMetadata } from '@/lib/seo'

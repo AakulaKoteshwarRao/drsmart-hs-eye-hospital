@@ -42,7 +42,7 @@ async function sbFetch(path: string): Promise<any[] | null> {
         Authorization: `Bearer ${SB_KEY}`,
         'Content-Type': 'application/json',
       },
-      cache: 'no-store',
+      next: { revalidate: 3600 },
     })
     if (!res.ok) return null
     return res.json()

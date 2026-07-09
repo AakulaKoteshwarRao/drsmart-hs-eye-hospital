@@ -4,7 +4,7 @@ import CTABand from '@/components/home/CTABand'
 import Footer from '@/components/Footer'
 import GalleryHero from '@/components/gallery/GalleryHero'
 import GalleryGrid from '@/components/gallery/GalleryGrid'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import '@/app/styles/gallery.css'
 

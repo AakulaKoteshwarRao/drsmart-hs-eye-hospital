@@ -7,7 +7,7 @@ import CTABand from '@/components/home/CTABand'
 import DoctorHero from '@/components/doctor/DoctorHero'
 import CredentialsGrid from '@/components/doctor/CredentialsGrid'
 import DoctorFAQ from '@/components/doctor/DoctorFAQ'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import type { Metadata } from 'next'
 import { buildDoctorMetadata } from '@/lib/seo'

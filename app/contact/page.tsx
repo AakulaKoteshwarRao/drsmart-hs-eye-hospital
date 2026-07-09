@@ -7,7 +7,7 @@ import StickyBar from '@/components/StickyBar'
 import CTABand from '@/components/home/CTABand'
 import '@/app/styles/contact.css'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 

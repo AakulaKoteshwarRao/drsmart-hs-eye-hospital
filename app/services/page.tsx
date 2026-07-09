@@ -9,7 +9,7 @@ import ConditionsGrid from '@/components/services/ConditionsGrid'
 import EarlyTreatment from '@/components/services/EarlyTreatment'
 import ProceduresGrid from '@/components/services/ProceduresGrid'
 import ServicesFAQ from '@/components/services/ServicesFAQ'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import type { Metadata } from 'next'
 import { buildPageMetadata } from '@/lib/seo'

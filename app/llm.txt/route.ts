@@ -10,7 +10,7 @@ import { loadConfig } from '@/lib/config'
  * Standard: https://llmstxt.org
  */
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 
 export async function GET() {
   const cfg     = await loadConfig()

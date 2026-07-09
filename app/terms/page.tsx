@@ -2,7 +2,7 @@ import Header from '@/components/Header'
 import StickyBar from '@/components/StickyBar'
 import Footer from '@/components/Footer'
 import LegalPage from '@/components/legal/LegalPage'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import type { Metadata } from 'next'
 import { buildLegalMetadata } from '@/lib/seo'

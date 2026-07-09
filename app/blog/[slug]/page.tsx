@@ -5,7 +5,7 @@ import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 import StickyBar from '@/components/StickyBar'
 import Footer from '@/components/Footer'
 import CTABand from '@/components/home/CTABand'
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import BlogAuthor from '@/components/blog/BlogAuthor'
 import type { Metadata } from 'next'

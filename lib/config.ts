@@ -46,7 +46,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
         Authorization:  `Bearer ${SB_KEY}`,
         'Content-Type': 'application/json',
       },
-      cache: 'no-store',
+      next: { revalidate: 3600 },
     }
   )
 
@@ -72,7 +72,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
     try {
       const wRes = await fetch(
         `${SB_URL}/rest/v1/websites?select=photos&client_id=eq.${CLIENT_ID}&limit=1`,
-        { headers: { apikey: SB_KEY!, Authorization: `Bearer ${SB_KEY}` }, cache: 'no-cache' }
+        { headers: { apikey: SB_KEY!, Authorization: `Bearer ${SB_KEY}` }, next: { revalidate: 3600 } }
       )
       const wRows = await wRes.json()
       const uploadedPhotos: Record<string, string> = wRows?.[0]?.photos || {}
@@ -123,7 +123,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
     try {
       const vRes = await fetch(
         `${SB_URL}/rest/v1/videos?select=*&client_id=eq.${CLIENT_ID}&published=eq.true&order=sort_order.asc,created_at.desc`,
-        { headers: { apikey: SB_KEY!, Authorization: `Bearer ${SB_KEY}` }, cache: 'no-cache' }
+        { headers: { apikey: SB_KEY!, Authorization: `Bearer ${SB_KEY}` }, next: { revalidate: 3600 } }
       )
       const vRows = await vRes.json()
       const videos = (vRows || []).map((v: Record<string, unknown>) => ({
@@ -163,13 +163,13 @@ export async function initConfig(): Promise<ClinicConfig> {
   return _cache
 }
 
-/** Fetch videos fresh every time — bypasses cache */
+/** Fetch videos — cached for an hour, same as the rest of the config */
 export async function fetchVideos(): Promise<Record<string, unknown>[]> {
   if (!CLIENT_ID || !SB_URL || !SB_KEY) return []
   try {
     const res = await fetch(
       `${SB_URL}/rest/v1/videos?select=*&client_id=eq.${CLIENT_ID}&published=eq.true&order=sort_order.asc,created_at.desc`,
-      { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }, cache: 'no-store' }
+      { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }, next: { revalidate: 3600 } }
     )
     return await res.json()
   } catch { return [] }
