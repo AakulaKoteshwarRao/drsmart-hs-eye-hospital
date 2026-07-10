@@ -107,7 +107,11 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
   const secondaryPhone    = s(s02.secondaryTelephone ?? s02.telephone2, '')
   const secondaryWhatsapp = s(s02.secondaryWhatsapp ?? s02.whatsapp2, '')
   const mapsUrl  = s(s02.hasMap, '')
-  const website  = s(s01.url, '')
+  // s01.url is often entered without a protocol (e.g. "www.drsrikar.com") — normalize
+  // it here since this feeds robots.txt's Sitemap directive, schema.org @id/url
+  // fields, and llm.txt, all of which need an absolute URL to be valid.
+  const rawWebsite = s(s01.url, '')
+  const website = rawWebsite && !/^https?:\/\//i.test(rawWebsite) ? `https://${rawWebsite}` : rawWebsite
 
   // Extract lat/lng from maps URL
   let geoLat = '', geoLng = ''

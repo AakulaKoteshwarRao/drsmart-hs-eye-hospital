@@ -68,7 +68,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang="en" className={plusJakarta.className}>
       <head>
         <SchemaMarkup graphs={[coreSchemas]} />
-        <link rel="preconnect" href="https://chuhaiskxbwpwoilzgcs.supabase.co" />
+        <link rel="preconnect" href="https://chuhaiskxbwpwoilzgcs.supabase.co" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://chuhaiskxbwpwoilzgcs.supabase.co" />
         {cfg.clinic?.image && <link rel="preload" as="image" href={cfg.clinic.image} />}
       </head>
