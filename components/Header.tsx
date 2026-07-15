@@ -12,7 +12,7 @@ const ALL_LINKS: Record<string, { href: string; label: string }> = {
   doctor:       { href: '/doctor',              label: 'Doctor' },
   team:         { href: '/team',                label: 'Team' },
   services:     { href: '/services',            label: 'Services' },
-  products:     { href: '/products',            label: 'Products' },
+  products:     { href: '/products',            label: 'Packages' },
   testimonials: { href: '/testimonials',        label: 'Testimonials' },
   locations:    { href: '/locations',           label: 'Locations' },
   blog:         { href: '/blog',                label: 'Blog' },
@@ -36,7 +36,8 @@ const DEFAULT_MENU = ['home', 'about', 'doctor', 'team', 'services', 'products',
 export default function Header({ clinic }: { clinic: ClinicInfo }) {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
-  const menuKeys = (clinic.type && MENU_BY_ENTITY[clinic.type]) || DEFAULT_MENU
+  const menuKeys = ((clinic.type && MENU_BY_ENTITY[clinic.type]) || DEFAULT_MENU)
+    .filter(k => k !== 'products' || clinic.hasPackages !== false)
   const navLinks = menuKeys.map(k => ALL_LINKS[k]).filter(Boolean)
 
   return (
