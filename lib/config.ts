@@ -13,6 +13,7 @@
  * templatedefault.json is only used in the template repo for local development.
  */
 
+import { cache } from 'react'
 import type { ClinicConfig } from './types'
 import { transformConfig }   from './transform'
 import templateDefault       from '../data/templatedefault.json'
@@ -156,11 +157,19 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
   return transformed
 }
 
-/** Initialise config once. Safe to call multiple times. */
+// Re-fetches once per request (React's cache() resets between requests), so
+// revalidatePath()/redeploys are actually picked up. The plain module `_cache`
+// used to short-circuit this permanently for the life of the server instance,
+// silently ignoring on-demand revalidation entirely.
+const getRequestConfig = cache(async (): Promise<ClinicConfig> => {
+  const result = await fetchFromSupabase()
+  _cache = result
+  return result
+})
+
+/** Initialise config once per request. Safe to call multiple times. */
 export async function initConfig(): Promise<ClinicConfig> {
-  if (_cache) return _cache
-  _cache = await fetchFromSupabase()
-  return _cache
+  return getRequestConfig()
 }
 
 /** Fetch videos — cached for an hour, same as the rest of the config */
