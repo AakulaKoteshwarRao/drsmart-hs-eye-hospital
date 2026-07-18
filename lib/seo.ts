@@ -262,7 +262,7 @@ export function buildHomeMetadata(cfg: ClinicConfig): Metadata {
   // verifiable facts (name, years of experience) — matches the quality already used
   // on the doctor page rather than a generic template.
   const generatedDescription = doctorName
-    ? `${doctorName}, ${specialty} in ${city}${exp ? ` with ${exp}+ years of experience` : ''}. Trusted, patient-focused care — book your appointment online today.`
+    ? `${doctorName}, ${specialty} in ${city}${exp ? ` with ${String(exp).replace(/\+$/, "")}+ years of experience` : ''}. Trusted, patient-focused care — book your appointment online today.`
     : `${specialty} in ${city} — trusted, patient-focused care. Book your appointment online today.`
 
   return buildPageMetadata(cfg, {
