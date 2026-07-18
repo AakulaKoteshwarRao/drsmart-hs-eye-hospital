@@ -32,7 +32,7 @@ export default async function BlogPage() {
   const blogs = await getBlogs()
 
   const pageSchemas = generatePageSchemas(sc, {
-    pageType: 'home',
+    pageType: 'collection',
     meta: {
       path:        '/blog',
       name:        `Blog | ${sc.clinic.name}`,

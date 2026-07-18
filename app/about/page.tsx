@@ -35,7 +35,7 @@ export default async function AboutPage() {
   const cfg = await loadConfig()
   const sc = buildSchemaConfig(cfg)
   const pageSchemas = generatePageSchemas(sc, {
-    pageType: 'home',
+    pageType: 'about',
     meta: {
       path:        '/about',
       name:        `About ${sc.clinic.name}`,

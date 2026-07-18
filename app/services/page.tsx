@@ -31,7 +31,7 @@ export default async function ServicesPage() {
   const cfg = await loadConfig()
   const sc = buildSchemaConfig(cfg)
   const pageSchemas = generatePageSchemas(sc, {
-    pageType: 'home',
+    pageType: 'collection',
     meta: {
       path:        '/services',
       name:        `Services | ${sc.clinic.name}`,

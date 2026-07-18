@@ -5,6 +5,9 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyBar from '@/components/StickyBar'
 import CTABand from '@/components/home/CTABand'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { generatePageSchemas } from '@/lib/schema/index.js'
+import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 import '@/app/styles/contact.css'
 
 export const revalidate = 3600
@@ -49,8 +52,24 @@ export default async function ContactPage() {
   const whatsapp2 = (clinic as any).secondaryWhatsapp ?? ''
   const waLink2 = whatsapp2 ? `https://wa.me/${whatsapp2.replace(/\D/g,'')}` : ''
 
+  const sc = buildSchemaConfig(cfg)
+  const pageSchemas = generatePageSchemas(sc, {
+    pageType: 'contact',
+    meta: {
+      path:        '/contact',
+      name:        `Contact | ${sc.clinic.name}`,
+      description: `Get in touch with ${sc.clinic.name} — call, WhatsApp or visit us.`,
+      image:       sc.clinic.image,
+      breadcrumb:  [
+        { name: 'Home', url: sc.site.url, path: '/' },
+        { name: 'Contact', url: sc.site.url + '/contact', path: '/contact' },
+      ],
+    },
+  })
+
   return (
     <>
+      <SchemaMarkup graphs={[pageSchemas]} />
       <Header clinic={clinic} />
       <StickyBar clinic={clinic} />
 

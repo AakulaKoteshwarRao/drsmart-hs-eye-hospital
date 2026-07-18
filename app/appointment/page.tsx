@@ -24,7 +24,7 @@ export default async function AppointmentPage() {
   const cfg = await loadConfig()
   const sc = buildSchemaConfig(cfg)
   const pageSchemas = generatePageSchemas(sc, {
-    pageType: 'home',
+    pageType: 'page',
     meta: {
       path:        '/appointment',
       name:        `Book Appointment | ${sc.clinic.name}`,

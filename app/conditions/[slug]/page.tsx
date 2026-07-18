@@ -35,6 +35,7 @@ function toConditionSchemaData(raw: any) {
     epidemiology: raw?.prevalence || '',
     prognosis: raw?.progressionType || '',
     treatments: arr(raw?.treatments).map((t: any) => typeof t === 'string' ? t : (t?.name || '')).filter(Boolean),
+    diagnosisMethod: raw?.diagnosisMethod || '',
     faq: arr(raw?.faqs).map((f: any) => ({ q: f.question ?? f.q ?? '', a: f.answer ?? f.a ?? '' })),
   }
 }
