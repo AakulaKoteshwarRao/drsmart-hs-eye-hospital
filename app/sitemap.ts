@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { loadConfig } from '@/lib/config'
+import { getBlogs } from '@/lib/blogs'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const cfg     = await loadConfig()
@@ -22,6 +23,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/gallery`,     lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/reviews`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.6 },
     { url: `${base}/team`,        lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/packages`,        lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/success-stories`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
   ]
 
   // Condition pages
@@ -51,13 +54,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority:        0.7,
   }))
 
-  // Location spoke pages
+  // Location spoke pages — canonical URL, not the bare-slug redirect
   const areas = (cfg.areas || (cfg as any).localAreas || []) as any[]
   const areaPages: MetadataRoute.Sitemap = areas.map((a) => ({
-    url:             `${base}/${a.slug}`,
+    url:             `${base}/specialist-near-${a.slug}`,
     lastModified:    now,
     changeFrequency: 'monthly',
     priority:        0.7,
+  }))
+
+  // Individual blog posts — real published_at dates, not the shared "now" timestamp
+  const blogs = await getBlogs()
+  const blogPages: MetadataRoute.Sitemap = blogs.map((b) => ({
+    url:             `${base}/blog/${b.slug}`,
+    lastModified:    b.published_at ? new Date(b.published_at) : now,
+    changeFrequency: 'monthly',
+    priority:        0.6,
   }))
 
   return [
@@ -66,5 +78,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...procedurePages,
     ...packagePages,
     ...areaPages,
+    ...blogPages,
   ]
 }

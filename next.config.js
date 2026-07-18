@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: '/specialist-near-:area',
-        destination: '/:area',
-      },
-    ]
-  },
   output: 'standalone',
   typescript: {
     // Pre-existing TS errors in template files (terms, locations/[slug]) are non-blocking

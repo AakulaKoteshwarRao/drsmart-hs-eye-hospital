@@ -77,7 +77,7 @@ export default function PackageDetail({
         <Icon name="chevron-right" size={12} />
         <a href="/services">Services</a>
         <Icon name="chevron-right" size={12} />
-        <a href="/products">Packages</a>
+        <a href="/packages">Packages</a>
         <Icon name="chevron-right" size={12} />
         <span>{name}</span>
       </nav>

@@ -29,7 +29,7 @@ export default function PackagesGrid({ packages, showViewAll = true }: { package
       </div>
       {showViewAll && (
         <div className="sec-cta">
-          <a href="/products">View All Packages <Icon name="arrow-right" size={16} /></a>
+          <a href="/packages">View All Packages <Icon name="arrow-right" size={16} /></a>
         </div>
       )}
     </section>

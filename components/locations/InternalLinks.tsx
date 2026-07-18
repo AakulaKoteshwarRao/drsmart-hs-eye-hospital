@@ -3,8 +3,8 @@ import type { AreaItem } from '@/lib/types'
 
 const pageLinks = [
   { label: 'About the Clinic', href: '/about' },
-  { label: 'Patient Reviews', href: '/testimonials' },
-  { label: 'Treatment Packages', href: '/products' },
+  { label: 'Patient Reviews', href: '/reviews' },
+  { label: 'Treatment Packages', href: '/packages' },
   { label: 'Book Appointment', href: '/appointment' },
 ]
 

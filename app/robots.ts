@@ -10,7 +10,7 @@ const clinic = cfg.clinic as any
       {
         userAgent: '*',
         allow:     '/',
-        disallow:  ['/api/', '/_next/'],
+        disallow:  ['/api/'],
       },
     ],
     sitemap: `${base}/sitemap.xml`,

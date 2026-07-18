@@ -247,14 +247,27 @@ export function buildPageMetadata(cfg: ClinicConfig, input: PageSEOInput): Metad
 /** Homepage metadata */
 export function buildHomeMetadata(cfg: ClinicConfig): Metadata {
   const clinic    = cfg.clinic as any
+  const doctor    = cfg.doctor as any
   const site      = cfg.site   as any
   const specialty = clinic?.medicalSpecialty || clinic?.name || 'Healthcare'
   const city      = clinic?.city             || ''
   const tagline   = clinic?.tagline          || ''
+  const doctorName = doctor?.name || ''
+  const yearsStat = Array.isArray(doctor?.stats)
+    ? doctor.stats.find((st: any) => /year|experience|exp/i.test(st?.label || ''))
+    : null
+  const exp = yearsStat?.number || ''
+
+  // Drops the unsubstantiated "Best X in Y" claim for a description grounded in real,
+  // verifiable facts (name, years of experience) — matches the quality already used
+  // on the doctor page rather than a generic template.
+  const generatedDescription = doctorName
+    ? `${doctorName}, ${specialty} in ${city}${exp ? ` with ${exp}+ years of experience` : ''}. Trusted, patient-focused care — book your appointment online today.`
+    : `${specialty} in ${city} — trusted, patient-focused care. Book your appointment online today.`
 
   return buildPageMetadata(cfg, {
     title:       specialty,
-    description: tagline || `Best ${specialty} in ${city}. Book an appointment today.`,
+    description: tagline || generatedDescription,
     path:        '/',
     image:       clinic?.heroImage || clinic?.logo,
   })
@@ -367,7 +380,7 @@ export function buildLocationMetadata(
   return buildPageMetadata(cfg, {
     title:       `${specialty} near ${area.name}`,
     description: desc,
-    path:        `/locations/${area.slug}`,
+    path:        `/specialist-near-${area.slug}`,
   })
 }
 

@@ -1,12 +1,12 @@
 import type { WhyCard } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
-export default function WhyChoose({ cards }: { cards: WhyCard[] }) {
+export default function WhyChoose({ cards, title }: { cards: WhyCard[]; title?: string }) {
   return (
     <section className="why-section">
       <div className="sec-header">
         <div className="sec-label"><span>Why Choose Us</span></div>
-        <h2 className="sec-title">The difference.</h2>
+        <h2 className="sec-title">{title || 'The difference.'}</h2>
         <p className="sec-sub">What sets us apart in delivering care that patients trust.</p>
       </div>
       <div className="why-grid">

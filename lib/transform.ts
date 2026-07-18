@@ -616,7 +616,7 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
     heading:       'Ready to take the first step?',
     subtext:       `Book an appointment with ${doctorName} today.`,
     primaryLabel:  'Book Appointment',
-    primaryHref:   '#',
+    primaryHref:   '/appointment',
     secondaryLabel:'WhatsApp Us',
     secondaryHref: `https://wa.me/${whatsapp}`,
     infoItems:     [
@@ -670,7 +670,9 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
   // ── Assemble ──────────────────────────────────────────────────────────────
   // ── Entity (for schema markup) ───────────────────────────────────────────
   const entity = {
-    medicalSpecialty: s(s02.medicalSpecialty, ''),
+    // Agency-entered, validated schema.org MedicalSpecialty enum value (e.g. "Ophthalmic", not "Ophthalmologist").
+    // Falls back to the client-facing specialty text if the agency hasn't set it yet — imperfect but not broken.
+    medicalSpecialty: s(s02.schemaSpecialty, s(s02.medicalSpecialty, '')),
     bodyLocation:     s(s02.bodyLocation, ''),
     registrationState: s(s02.state, ''),
     foundingDate:     s(s02.foundingDate, ''),

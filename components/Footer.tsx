@@ -5,7 +5,7 @@ const QUICK_LINKS_BY_ENTITY: Record<string, { label: string; href: string }[]> =
   'Physician': [
     { label: 'Doctor', href: '/doctor' },
     { label: 'Services', href: '/services' },
-    { label: 'Packages', href: '/products' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Locations', href: '/locations' },
     { label: 'Success Stories', href: '/success-stories' },
     { label: 'Blog', href: '/blog' },
@@ -15,7 +15,7 @@ const QUICK_LINKS_BY_ENTITY: Record<string, { label: string; href: string }[]> =
     { label: 'About', href: '/about' },
     { label: 'Doctor', href: '/doctor' },
     { label: 'Services', href: '/services' },
-    { label: 'Packages', href: '/products' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Locations', href: '/locations' },
     { label: 'Success Stories', href: '/success-stories' },
     { label: 'Blog', href: '/blog' },
@@ -26,7 +26,7 @@ const QUICK_LINKS_BY_ENTITY: Record<string, { label: string; href: string }[]> =
     { label: 'Doctor', href: '/doctor' },
     { label: 'Team', href: '/team' },
     { label: 'Services', href: '/services' },
-    { label: 'Packages', href: '/products' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Locations', href: '/locations' },
     { label: 'Success Stories', href: '/success-stories' },
     { label: 'Blog', href: '/blog' },
@@ -36,7 +36,7 @@ const QUICK_LINKS_BY_ENTITY: Record<string, { label: string; href: string }[]> =
     { label: 'About', href: '/about' },
     { label: 'Team', href: '/team' },
     { label: 'Services', href: '/services' },
-    { label: 'Packages', href: '/products' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Locations', href: '/locations' },
     { label: 'Success Stories', href: '/success-stories' },
     { label: 'Blog', href: '/blog' },
@@ -57,7 +57,7 @@ export default function Footer({ clinic, config }: { clinic: ClinicInfo; config?
   const social = clinic.social || {}
   const entityType = clinic.type || ''
   const quickLinks = (QUICK_LINKS_BY_ENTITY[entityType] || DEFAULT_QUICK_LINKS)
-    .filter(l => l.href !== '/products' || clinic.hasPackages !== false)
+    .filter(l => l.href !== '/packages' || clinic.hasPackages !== false)
   const serviceLinks = [
     ...((config?.services?.conditions || []).slice(0, 4).map((s: any) => ({ label: s.title, href: `/conditions/${s.slug}` }))),
     ...((config?.procedures || []).slice(0, 2).map((p: any) => ({ label: p.title, href: `/procedures/${p.slug}` }))),

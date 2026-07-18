@@ -41,7 +41,7 @@ export default function LocationSpoke(props?: any) {
     { label: 'Doctor Profile', href: '/doctor' },
     { label: 'All Services', href: '/services' },
     ...conditionsList.slice(0, 3).map((s: any) => ({ label: s.title, href: `/conditions/${s.slug}` })),
-    { label: 'Packages', href: '/products' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Book Appointment', href: '/appointment' },
     { label: 'Blog', href: '/blog' },
   ]

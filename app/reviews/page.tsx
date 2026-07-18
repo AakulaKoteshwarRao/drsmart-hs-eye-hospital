@@ -8,6 +8,7 @@ import TestimonialsFAQ from '@/components/testimonials/TestimonialsFAQ'
 export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
 import Footer from '@/components/Footer'
+import '@/app/styles/testimonials.css'
 
 export default async function TestimonialsPage() {
   const cfg = await loadConfig()
