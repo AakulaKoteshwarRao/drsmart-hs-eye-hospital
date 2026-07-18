@@ -55,6 +55,9 @@ export default async function BlogPostPage({ params }: { params?: { slug?: strin
       wordCount:     post?.content ? post.content.replace(/<[^>]+>/g, '').split(/\s+/).length : 0,
       schemaType:    'BlogPosting',
       category:      post?.category || 'Healthcare',
+      faq:           (Array.isArray(post?.faq) ? post.faq : [])
+                       .map((f) => ({ q: f.question ?? f.q ?? '', a: f.answer ?? f.a ?? '' }))
+                       .filter((f) => f.q && f.a),
     },
     meta: {
       path:        _path,

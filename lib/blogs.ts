@@ -31,6 +31,9 @@ export interface BlogPost {
   published_at: string
   meta_title: string
   meta_description: string
+  // Optional FAQ column ([{question, answer}] jsonb) — flows through the
+  // detail page's select=* automatically once the column exists in Supabase
+  faq?: { question?: string; answer?: string; q?: string; a?: string }[]
 }
 
 async function sbFetch(path: string): Promise<any[] | null> {

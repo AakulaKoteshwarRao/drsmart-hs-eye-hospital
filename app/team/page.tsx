@@ -6,6 +6,7 @@ import TeamCarousel from '@/components/team/TeamCarousel'
 import TeamFAQ from '@/components/team/TeamFAQ'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { generatePageSchemas } from '@/lib/schema/index.js'
+import { teamSchema } from '@/lib/schema/coreSchemas.js'
 import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 export const revalidate = 3600
 import { loadConfig } from '@/lib/config'
@@ -28,9 +29,10 @@ export default async function TeamPage() {
       ],
     },
   })
+  const teamNodes = teamSchema(sc, cfg.team)
   return (
     <>
-      <SchemaMarkup graphs={[pageSchemas]} />
+      <SchemaMarkup graphs={[[...pageSchemas, ...teamNodes]]} />
       <Header clinic={cfg.clinic} />
       <main>
         <TeamHero />
