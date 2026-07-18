@@ -8,6 +8,9 @@ import PackageDetail from '@/components/package/PackageDetail'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyBar from '@/components/StickyBar'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { generatePageSchemas } from '@/lib/schema/index.js'
+import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 import '@/app/styles/packages.css'
 
 interface PageParams { params: { slug: string } }
@@ -51,8 +54,28 @@ export default async function PackageDetailPage({ params }: PageParams) {
   if (!pkg) notFound()
   const photoUrl = (config.photos as any)?.[`package_${params.slug}`] ?? null
   const mapped = mapPackage(pkg, fallback, photoUrl)
+
+  const sc = buildSchemaConfig(config)
+  const _path = `/packages/${params.slug}`
+  const pageSchemas = generatePageSchemas(sc, {
+    pageType: 'package',
+    pageData: { ...mapped, faq: mapped.faqs },
+    meta: {
+      path: _path,
+      name: `${mapped.name} | ${sc.clinic.name}`,
+      description: mapped.description,
+      image: mapped.heroImage || sc.clinic.image,
+      breadcrumb: [
+        { name: 'Home', url: sc.site.url, path: '/' },
+        { name: 'Packages', url: sc.site.url + '/packages', path: '/packages' },
+        { name: mapped.name, url: sc.site.url + _path, path: _path },
+      ],
+    },
+  })
+
   return (
     <>
+      <SchemaMarkup graphs={[pageSchemas]} />
       <Header clinic={config.clinic} />
       <StickyBar clinic={config.clinic} />
       <PackageDetail {...mapped} />
