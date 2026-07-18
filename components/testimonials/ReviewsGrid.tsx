@@ -33,7 +33,7 @@ export default function ReviewsGrid({ reviews, googleUrl }: { reviews: ReviewIte
                 <div className="review-google-icon">{googleIcon}</div>
               </div>
               <div className="review-stars">
-                {[0,1,2,3,4].map(j => <Icon key={j} name="star" size={16} color="#F59E0B" weight="fill" />)}
+                {[0,1,2,3,4].map(j => <Icon key={j} name="star" size={16} color="var(--star)" weight="fill" />)}
               </div>
               <p className="review-text">{r.text}</p>
             </div>

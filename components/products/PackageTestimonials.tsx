@@ -29,7 +29,7 @@ export default function PackageTestimonials() {
         {testimonials.map((t, i) => (
           <div key={i} className="testi-card">
             <div className="testi-stars">
-              {[0,1,2,3,4].map(j => <Icon key={j} name="star" size={16} color="#F59E0B" weight="fill" />)}
+              {[0,1,2,3,4].map(j => <Icon key={j} name="star" size={16} color="var(--star)" weight="fill" />)}
             </div>
             <p className="testi-quote">&quot;{t.quote}&quot;</p>
             <div className="testi-author">

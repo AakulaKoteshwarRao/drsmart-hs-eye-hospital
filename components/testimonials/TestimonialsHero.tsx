@@ -21,7 +21,7 @@ export default function TestimonialsHero({ rating, reviewCount }: { rating: stri
         <div className="google-score">
           <span className="google-num">{rating}</span>
           <div className="google-stars">
-            {[0,1,2,3,4].map(i => <Icon key={i} name="star" size={16} color="#F59E0B" weight="fill" />)}
+            {[0,1,2,3,4].map(i => <Icon key={i} name="star" size={16} color="var(--star)" weight="fill" />)}
           </div>
           <span className="google-count">Based on {reviewCount} reviews</span>
         </div>

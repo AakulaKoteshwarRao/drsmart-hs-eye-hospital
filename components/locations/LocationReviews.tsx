@@ -23,7 +23,7 @@ export default function LocationReviews() {
         {reviews.map((r, i) => (
           <div key={i} className="loc-review-card" style={{ padding: '1.5rem' }}>
             <div className="loc-review-stars">
-              {[0,1,2,3,4].map(j => <Icon key={j} name="star" size={16} color="#F59E0B" weight="fill" />)}
+              {[0,1,2,3,4].map(j => <Icon key={j} name="star" size={16} color="var(--star)" weight="fill" />)}
             </div>
             <p className="loc-review-text">&quot;{r.quote}&quot;</p>
             <span className="loc-review-name">-- {r.author}</span>

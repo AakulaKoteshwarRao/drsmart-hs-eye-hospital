@@ -31,7 +31,7 @@
   --white: #FFFFFF;
   --dark:  #1A202C;
   --star:  #F59E0B;
-  --whatsapp: #1A9E52;
+  --whatsapp: #0F7A3D;
 
   /* -- TEXT COLOURS -- */
   --text-primary: #111111;
@@ -151,7 +151,7 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
 }
 .floating-chip svg { width: 20px; height: 20px; }
 .floating-chip.chip-rating { top: 12%; right: -8px; }
-.floating-chip.chip-rating svg { color: #F59E0B; }
+.floating-chip.chip-rating svg { color: var(--star); }
 .floating-chip.chip-experience { bottom: 28%; left: -8px; animation-delay: 1s; }
 .floating-chip.chip-experience svg { color: var(--primary); }
 .floating-chip.chip-patients { bottom: 10%; right: 8%; animation-delay: 0.5s; }
@@ -173,7 +173,7 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
   display: flex; align-items: center; justify-content: center;
   font-size: var(--text-sm); font-weight: 700; color: var(--text-muted);
 }
-.trust-item .stars { color: #F59E0B; font-size: var(--text-lg); }
+.trust-item .stars { color: var(--star); font-size: var(--text-lg); }
 .trust-divider { width: 5px; height: 5px; border-radius: 50%; background: var(--neutral-400); flex-shrink: 0; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
@@ -501,7 +501,7 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
 .reviews-inner { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 .reviews-rating { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
 .reviews-score { font-size: 3rem; font-weight: 800; color: var(--text-primary); line-height: 1; }
-.reviews-stars { color: #F59E0B; font-size: var(--text-lg); display: block; }
+.reviews-stars { color: var(--star); font-size: var(--text-lg); display: block; }
 .reviews-count { font-size: var(--text-sm); color: var(--text-muted); display: block; margin-top: 0.15rem; }
 .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
 .review-card {
@@ -519,7 +519,7 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
 .review-meta { flex: 1; }
 .review-name { font-size: var(--text-base); font-weight: 700; color: var(--text-primary); display: block; }
 .review-date { font-size: var(--text-xs); color: var(--text-faint); display: block; }
-.review-stars { color: #F59E0B; font-size: var(--text-sm); flex-shrink: 0; }
+.review-stars { color: var(--star); font-size: var(--text-sm); flex-shrink: 0; }
 .review-card p { font-size: var(--text-base); color: var(--text-body); line-height: 1.65; font-style: italic; }
 .reviews-actions { display: flex; gap: 0.75rem; margin-top: 2rem; justify-content: center; }
 .rev-btn {
@@ -656,7 +656,7 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
 .sticky-bar a:active { background: var(--neutral-100); }
 .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
 .sticky-bar .call { color: var(--secondary); }
-.sticky-bar .whatsapp { color: #1A9E52; }
+.sticky-bar .whatsapp { color: var(--whatsapp); }
 .sticky-bar .appointment { color: var(--primary); }
 .bar-divider { width: 1px; height: 20px; background: var(--neutral-300); }
 

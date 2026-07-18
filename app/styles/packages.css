@@ -356,7 +356,7 @@
   .sticky-bar a:active { background: #F2F4F6; }
   .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
   .sticky-bar .call { color: var(--secondary); }
-  .sticky-bar .whatsapp { color: #1A9E52; }
+  .sticky-bar .whatsapp { color: var(--whatsapp); }
   .sticky-bar .appointment { color: var(--primary); }
   .bar-divider { width: 1px; height: 20px; background: #D1D5DB; }
 
