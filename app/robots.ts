@@ -12,6 +12,13 @@ const clinic = cfg.clinic as any
         allow:     '/',
         disallow:  ['/api/'],
       },
+      // AI citation crawlers, explicitly allowed. A named group replaces the
+      // '*' group for that bot, so /api/ must be re-disallowed here too.
+      {
+        userAgent: ['GPTBot', 'ClaudeBot', 'anthropic-ai', 'PerplexityBot', 'Google-Extended', 'CCBot'],
+        allow:     '/',
+        disallow:  ['/api/'],
+      },
     ],
     sitemap: `${base}/sitemap.xml`,
   }
