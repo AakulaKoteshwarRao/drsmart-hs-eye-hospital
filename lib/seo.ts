@@ -280,9 +280,13 @@ export function buildHomeMetadata(cfg: ClinicConfig): Metadata {
 export function buildDoctorMetadata(cfg: ClinicConfig): Metadata {
   const clinic = cfg.clinic as any
   const doctor = cfg.doctor as any
-  const city   = clinic?.city || ''
-  // Match the doctor-page H1: use the clinic's most-specific locality (area + city)
-  const location = [clinic?.area, city].filter(Boolean).join(', ') || city
+  const city   = (clinic?.city || '').trim()
+  // Match the doctor-page H1: use the clinic's most-specific locality (area + city),
+  // deduped so a clinic with area == city renders it once, not "Nizamabad, Nizamabad".
+  const area   = (clinic?.area || '').trim()
+  const location = area && city && area.toLowerCase() !== city.toLowerCase()
+    ? `${area}, ${city}`
+    : (area || city)
   const name   = getDoctorName(cfg)
   // qualifications is string[]; experience is {role,hospital}[] (job history, not
   // a years-of-experience number) — years come from the doctor.stats entry instead.

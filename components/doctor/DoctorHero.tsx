@@ -27,7 +27,13 @@ export default function DoctorHero({ doctor, clinic }: { doctor: DoctorInfo; cli
               {(() => {
                 // Use each clinic's own most-specific location: area + city
                 // (e.g. "Hafeezpet, Hyderabad"), falling back to whichever exists.
-                const location = [clinic.area, clinic.city].filter(Boolean).join(', ')
+                // Guard against clinics that put the same value in both fields
+                // (e.g. area=city="Nizamabad") — show it once, not "Nizamabad, Nizamabad".
+                const area = (clinic.area || '').trim()
+                const city = (clinic.city || '').trim()
+                const location = area && city && area.toLowerCase() !== city.toLowerCase()
+                  ? `${area}, ${city}`
+                  : (area || city)
                 const tagline = [clinic.medicalSpecialty, location].filter(Boolean).join(' in ')
                 return tagline ? <span className="doc-name-tagline">{tagline}</span> : null
               })()}
