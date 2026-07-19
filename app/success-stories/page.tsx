@@ -6,6 +6,7 @@ import VideoGrid from '@/components/success-stories/VideoGrid'
 import StoriesFAQ from '@/components/success-stories/StoriesFAQ'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { generatePageSchemas } from '@/lib/schema/index.js'
+import { videoSchemasFromRaw } from '@/lib/schema/contentSchemas.js'
 import { buildSchemaConfig } from '@/lib/schema/master.config.js'
 export const revalidate = 3600
 import { loadConfig, fetchVideos } from '@/lib/config'
@@ -42,9 +43,10 @@ export default async function SuccessStoriesPage() {
       ],
     },
   })
+  const videoNodes = videoSchemasFromRaw(sc, rawVideos, sc.site.url + '/success-stories')
   return (
     <>
-      <SchemaMarkup graphs={[pageSchemas]} />
+      <SchemaMarkup graphs={[[...pageSchemas, ...videoNodes]]} />
       <Header clinic={cfg.clinic} />
       <main>
         <StoriesHero videoCount={videoCount} conditionCount={conditionCount} rating={rating} />
