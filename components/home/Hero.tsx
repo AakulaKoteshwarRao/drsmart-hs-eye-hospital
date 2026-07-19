@@ -31,7 +31,7 @@ export default function Hero({ hero, clinic }: { hero: HeroSection; clinic: Clin
       <div className="hero-image">
         <div className="doctor-photo-wrapper">
           {clinic.heroImage ? (
-            <Image src={clinic.heroImage} alt={clinic.name} width={800} height={600} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} priority sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src={clinic.heroImage} alt={clinic.city ? `${clinic.name}, ${clinic.city}` : clinic.name} width={800} height={600} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} priority sizes="(max-width: 768px) 100vw, 50vw" />
           ) : (
             <div className="doctor-photo-placeholder">
               <Icon name="user" size={56} color="rgba(255,255,255,0.3)" />
