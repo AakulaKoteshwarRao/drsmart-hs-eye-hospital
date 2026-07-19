@@ -22,7 +22,16 @@ export default function DoctorHero({ doctor, clinic }: { doctor: DoctorInfo; cli
           </div>
           <div className="doc-info">
             <div className="sec-label"><span style={{ color: 'var(--primary)' }}>Meet the Doctor</span></div>
-            <h1 className="doc-name">{doctor.name}</h1>
+            <h1 className="doc-name">
+              {doctor.name}
+              {(() => {
+                // Use each clinic's own most-specific location: area + city
+                // (e.g. "Hafeezpet, Hyderabad"), falling back to whichever exists.
+                const location = [clinic.area, clinic.city].filter(Boolean).join(', ')
+                const tagline = [clinic.medicalSpecialty, location].filter(Boolean).join(' in ')
+                return tagline ? <span className="doc-name-tagline">{tagline}</span> : null
+              })()}
+            </h1>
             <p className="doc-degree">{doctor.qualifications.join(' · ')}</p>
             <div className="doc-specialty-tags">
               {doctor.specialties.map((s, i) => <span key={i} className="doc-spec-tag">{s}</span>)}

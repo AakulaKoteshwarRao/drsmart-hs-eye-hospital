@@ -52,6 +52,9 @@ export interface PageSEOInput {
   noindex?: boolean
   /** Override the auto-appended " in City | Dr. Name" suffix */
   titleSuffix?: string
+  /** Override the location used in the title (defaults to clinic.city).
+   *  E.g. the doctor page passes "area, city" for a more specific H1/title match. */
+  location?: string
 }
 
 // ─────────────────────────────────────────────
@@ -208,7 +211,7 @@ export function buildPageMetadata(cfg: ClinicConfig, input: PageSEOInput): Metad
   const baseUrl = raw ? (raw.startsWith('http') ? raw : `https://${raw}`).replace(/\/$/, '') : ''
   const clinicName = clinic?.name             || ''
 
-  const title       = buildTitle(input.title, city, doctorName, input.titleSuffix)
+  const title       = buildTitle(input.title, input.location || city, doctorName, input.titleSuffix)
   const description = buildDescription(input.description, city)
   const canonical   = buildCanonical(baseUrl, input.path)
   const image       = input.image || clinic?.heroImage || clinic?.logo || ''
@@ -278,6 +281,8 @@ export function buildDoctorMetadata(cfg: ClinicConfig): Metadata {
   const clinic = cfg.clinic as any
   const doctor = cfg.doctor as any
   const city   = clinic?.city || ''
+  // Match the doctor-page H1: use the clinic's most-specific locality (area + city)
+  const location = [clinic?.area, city].filter(Boolean).join(', ') || city
   const name   = getDoctorName(cfg)
   // qualifications is string[]; experience is {role,hospital}[] (job history, not
   // a years-of-experience number) — years come from the doctor.stats entry instead.
@@ -288,10 +293,11 @@ export function buildDoctorMetadata(cfg: ClinicConfig): Metadata {
   const exp = yearsStat?.number || ''
 
   return buildPageMetadata(cfg, {
-    // No name/titleSuffix here — buildTitle() already appends " in City | Dr. Name"
+    // No name/titleSuffix here — buildTitle() already appends " in {location} | Dr. Name"
     // by default; passing titleSuffix would additionally append it via the
     // `if (suffix) return keyword | suffix` branch, duplicating the name.
     title:       clinic?.medicalSpecialty || 'Specialist',
+    location,
     description: `${name} is an experienced ${clinic?.medicalSpecialty || 'specialist'} in ${city}. ${quals ? quals + '.' : ''} ${exp ? exp + ' years of experience.' : ''}`.trim(),
     path:        '/doctor',
     image:       doctor?.photo,
