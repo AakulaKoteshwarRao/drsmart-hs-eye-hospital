@@ -23,7 +23,7 @@ export default function CredentialsGrid({ doctor, clinic }: { doctor: DoctorInfo
     <section className="cred-section">
       <div className="sec-header">
         <div className="sec-label"><span>Credentials</span></div>
-        <h2 className="sec-title">Professional background.</h2>
+        <h2 className="sec-title">Qualifications &amp; experience</h2>
         <p className="sec-sub">A complete view of qualifications, experience, and clinical expertise.</p>
       </div>
       <div className="cred-grid">

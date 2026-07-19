@@ -113,10 +113,15 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
   const rawWebsite = s(s01.url, '')
   const website = rawWebsite && !/^https?:\/\//i.test(rawWebsite) ? `https://${rawWebsite}` : rawWebsite
 
-  // Extract lat/lng from maps URL
+  // Extract lat/lng. Prefer the Google Maps embed URL, which always carries the
+  // coordinates as "!2d{lng}!3d{lat}"; the short goo.gl "hasMap" link never does.
+  // Fall back to an "@lat,lng" pattern if a full maps URL is present.
   let geoLat = '', geoLng = ''
-  const geoMatch = mapsUrl.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/)
-  if (geoMatch) { geoLat = geoMatch[1]; geoLng = geoMatch[2] }
+  const rawEmbed   = s(s02.mapEmbedUrl, '')
+  const embedMatch = rawEmbed.match(/!2d(-?\d+\.\d+)!3d(-?\d+\.\d+)/)
+  const atMatch    = mapsUrl.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/)
+  if (embedMatch)      { geoLng = embedMatch[1]; geoLat = embedMatch[2] }
+  else if (atMatch)    { geoLat = atMatch[1];    geoLng = atMatch[2] }
 
   // Build hoursSchema array for schema markup
   const hoursObj = (s02.hours && typeof s02.hours === 'object') ? s02.hours as Record<string, { open: string; close: string }> : {}
@@ -167,6 +172,7 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
     currenciesAccepted:   s(s02.currenciesAccepted, 'INR'),
     secondaryLocationUrl: s(s02.secondaryLocationUrl, ''),
     geo: { lat: geoLat, lng: geoLng },
+    consultationFee:      s(s02.consultationFee, ''),
     facilities: a(s02.facilities).filter((f: any) => f.title).map((f: any) => ({ title: f.title, description: f.description || '' })),
     insurers: a(s02.insurers).filter((ins: any) => ins.name).map((ins: any, i: number) => ({ name: ins.name })),
     parking:            s(s02.parking, ''),

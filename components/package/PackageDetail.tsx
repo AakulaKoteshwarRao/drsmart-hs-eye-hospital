@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Icon } from '@/lib/icons'
+import FactBox from '@/components/shared/FactBox'
 import { PILL_STYLES as pillStyles, STAT_COLOURS } from '@/lib/pills'
 
 
@@ -41,6 +42,11 @@ export interface PackageDetailProps {
   clinicHours?: string
   whatsappNumber?: string
   appointmentUrl?: string
+  doctorName?: string
+  experienceYears?: string
+  proceduresDone?: string
+  consultationFee?: string
+  currency?: string
 }
 
 export default function PackageDetail({
@@ -67,6 +73,11 @@ export default function PackageDetail({
   clinicHours = '',
   whatsappNumber = '',
   appointmentUrl = '/appointment',
+  doctorName = '',
+  experienceYears = '',
+  proceduresDone = '',
+  consultationFee = '',
+  currency = 'INR',
 }: PackageDetailProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
@@ -86,6 +97,16 @@ export default function PackageDetail({
         <div className="cond-hero-text">
           <div className="sec-label"><span>Package</span></div>
           <h1>{name}</h1>
+          <FactBox
+            role="Offered by"
+            doctorName={doctorName}
+            clinicName={clinicName}
+            facts={[
+              { icon: 'award',        value: experienceYears, label: 'experience' },
+              { icon: 'check-circle', value: proceduresDone,  label: 'procedures' },
+              { icon: 'dollar',       value: consultationFee ? `${currency === 'INR' ? '₹' : ''}${consultationFee}`.trim() : '', label: 'consultation' },
+            ]}
+          />
           <p className="cond-hero-desc">{description}</p>
           <div className="hero-pills">
             {(pills.length > 0 ? pills : ['All-Inclusive','EMI Available','Insurance Accepted']).map((pill, i) => (

@@ -55,6 +55,10 @@ export default async function PackageDetailPage({ params }: PageParams) {
   const photoUrl = (config.photos as any)?.[`package_${params.slug}`] ?? null
   const mapped = mapPackage(pkg, fallback, photoUrl)
 
+  const doctorNamePk = fallback?.s03?.name || ''
+  const statsPk = ((config.doctor as any)?.stats || []) as { number: string; label: string }[]
+  const findStatPk = (re: RegExp) => statsPk.find(s => re.test(s.label || ''))?.number || ''
+
   const sc = buildSchemaConfig(config)
   const _path = `/packages/${params.slug}`
   const pageSchemas = generatePageSchemas(sc, {
@@ -78,7 +82,14 @@ export default async function PackageDetailPage({ params }: PageParams) {
       <SchemaMarkup graphs={[pageSchemas]} />
       <Header clinic={config.clinic} />
       <StickyBar clinic={config.clinic} />
-      <PackageDetail {...mapped} />
+      <PackageDetail
+        {...mapped}
+        doctorName={doctorNamePk ? (/^dr\.?\s/i.test(doctorNamePk) ? doctorNamePk : `Dr. ${doctorNamePk}`) : ''}
+        experienceYears={findStatPk(/year|exp/i)}
+        proceduresDone={findStatPk(/procedure/i)}
+        consultationFee={(config.clinic as any)?.consultationFee || ''}
+        currency={(config.clinic as any)?.currenciesAccepted || 'INR'}
+      />
       <Footer clinic={config.clinic} config={config} />
     </>
   )

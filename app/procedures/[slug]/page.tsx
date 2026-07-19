@@ -104,6 +104,9 @@ export default async function ProcedureDetailPage({ params }: PageParams) {
     },
   })
 
+  const statsP = ((config.doctor as any)?.stats || []) as { number: string; label: string }[]
+  const findStatP = (re: RegExp) => statsP.find(s => re.test(s.label || ''))?.number || ''
+
   return (
     <>
       <SchemaMarkup graphs={[pageSchemas]} />
@@ -113,7 +116,11 @@ export default async function ProcedureDetailPage({ params }: PageParams) {
         {...mapped}
         allConditions={allConditionsP}
         allProcedures={allProceduresP}
-        doctorName={doctorNameP ? `Dr. ${doctorNameP}` : ''}
+        doctorName={doctorNameP ? (/^dr\.?\s/i.test(doctorNameP) ? doctorNameP : `Dr. ${doctorNameP}`) : ''}
+        experienceYears={findStatP(/year|exp/i)}
+        proceduresDone={findStatP(/procedure/i)}
+        consultationFee={(config.clinic as any)?.consultationFee || ''}
+        currency={(config.clinic as any)?.currenciesAccepted || 'INR'}
       />
       <Footer clinic={config.clinic} config={config} />
     </>

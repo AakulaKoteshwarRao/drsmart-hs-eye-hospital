@@ -10,8 +10,8 @@ export default function DoctorFAQ({ faqs }: { faqs: FaqItem[] }) {
       <div className="faq-inner">
         <div className="sec-header faq-header">
           <div className="sec-label"><span>FAQ</span></div>
-          <h2 className="sec-title">About the doctor.</h2>
-          <p className="sec-sub">Common questions patients ask before their consultation.</p>
+          <h2 className="sec-title">Common questions patients ask</h2>
+          <p className="sec-sub">Everything worth knowing before your first consultation.</p>
         </div>
         <div className="faq-list">
           {faqs.map((faq, i) => (

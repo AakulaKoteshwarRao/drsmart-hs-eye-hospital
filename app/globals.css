@@ -129,6 +129,23 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
 .stat-number { font-size: var(--text-2xl); font-weight: 800; color: var(--text-primary); line-height: 1; display: block; }
 .stat-label { font-size: var(--text-sm); color: var(--text-muted); margin-top: 0.25rem; display: block; }
 
+/* AI Fact Box — compact facts + entity-attribution strip under an H1 */
+.fact-box { margin: 0.85rem 0 1.1rem; }
+.fact-box-facts { display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem; }
+.fact-chip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 0.7rem; border-radius: 999px;
+  background: var(--primary-light); border: 1px solid var(--primary-pale);
+  font-size: var(--text-sm); line-height: 1;
+}
+.fact-chip svg { color: var(--primary); flex-shrink: 0; }
+.fact-chip-value { font-weight: 800; color: var(--text-primary); }
+.fact-chip-label { color: var(--text-muted); }
+.fact-box-attribution {
+  margin-top: 0.7rem; font-size: var(--text-sm); color: var(--text-muted);
+  font-weight: 600;
+}
+
 .hero-image { position: relative; display: flex; justify-content: center; align-items: flex-end; }
 .doctor-photo-wrapper {
   position: relative; width: 100%; aspect-ratio: 4 / 5;
