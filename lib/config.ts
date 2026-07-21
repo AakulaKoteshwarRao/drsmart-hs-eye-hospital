@@ -160,7 +160,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
   if (SLUG && SB_URL && SB_KEY) {
     try {
       const bRes = await fetch(
-        `${SB_URL}/rest/v1/blogs?select=title,slug,excerpt,published_at,clients!inner(slug)&clients.slug=eq.${SLUG}&status=eq.published&order=published_at.desc`,
+        `${SB_URL}/rest/v1/blogs?select=title,slug,excerpt,featured_image,published_at,clients!inner(slug)&clients.slug=eq.${SLUG}&status=eq.published&order=published_at.desc`,
         { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }, next: { revalidate: 3600 } }
       )
       if (bRes.ok) {
@@ -179,6 +179,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
           date:      b.published_at ? new Date(b.published_at).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }) : '',
           title:     b.title || '',
           excerpt:   b.excerpt || '',
+          image:     b.featured_image || '',
         }))
         if (posts.length) transformed.blog = posts
       }

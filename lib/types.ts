@@ -260,6 +260,7 @@ export interface BlogPost {
   date: string
   title: string
   excerpt: string
+  image?: string
 }
 
 export interface CTABand {

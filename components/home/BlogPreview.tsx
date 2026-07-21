@@ -1,7 +1,29 @@
 'use client'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import type { BlogPost } from '@/lib/types'
 import { Icon } from '@/lib/icons'
+
+// Thumbnail with its own error state so a broken/missing featured image
+// falls back to the gradient + file icon instead of showing nothing.
+function BlogThumb({ image, gradStyle }: { image?: string; gradStyle: string }) {
+  const [err, setErr] = useState(false)
+  const bg = gradStyle.replace('background: ', '')
+  return (
+    <div className="blog-slide-thumb" style={{ background: bg }}>
+      {image && !err ? (
+        <img
+          src={image}
+          alt=""
+          loading="lazy"
+          onError={() => setErr(true)}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
+      ) : (
+        <Icon name="file" size={40} color="rgba(255,255,255,0.4)" />
+      )}
+    </div>
+  )
+}
 
 export default function BlogPreview({ posts }: { posts: BlogPost[] }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -27,9 +49,7 @@ export default function BlogPreview({ posts }: { posts: BlogPost[] }) {
           <div className="blog-carousel" ref={ref}>
             {posts.map((post, i) => (
               <a key={i} href={post.href} className="blog-slide">
-                <div className="blog-slide-thumb" style={{ background: post.gradStyle.replace('background: ', '') }}>
-                  <Icon name="file" size={40} color="rgba(255,255,255,0.4)" />
-                </div>
+                <BlogThumb image={post.image} gradStyle={post.gradStyle} />
                 <div className="blog-slide-body">
                   <span className="blog-slide-date">{post.date}</span>
                   <h3>{post.title}</h3>
