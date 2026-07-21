@@ -4,6 +4,7 @@ import { Icon } from "@/lib/icons"
 import { PILL_STYLES } from "@/lib/pills"
 
 export default function LocalAreas({ areas, clinic }: { areas: AreaItem[]; clinic: ClinicInfo }) {
+  if (!areas?.length) return null
   return (
     <section className="areas-section">
       <div className="sec-header">

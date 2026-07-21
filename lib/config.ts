@@ -154,6 +154,39 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
     }
   }
 
+  // Blog posts — homepage BlogPreview reads transformed.blog. Prefer the live
+  // Supabase `blogs` table (same source as /blog) over the legacy s18.posts
+  // config field, which clients no longer fill. Falls back to s18 on failure.
+  if (SLUG && SB_URL && SB_KEY) {
+    try {
+      const bRes = await fetch(
+        `${SB_URL}/rest/v1/blogs?select=title,slug,excerpt,published_at,clients!inner(slug)&clients.slug=eq.${SLUG}&status=eq.published&order=published_at.desc`,
+        { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }, next: { revalidate: 3600 } }
+      )
+      if (bRes.ok) {
+        const bRows = await bRes.json()
+        const BLOG_GRADS = [
+          'linear-gradient(145deg,var(--secondary-deep),var(--secondary))',
+          'linear-gradient(145deg,var(--secondary),var(--primary))',
+          'linear-gradient(145deg,var(--primary),var(--primary-dark))',
+          'linear-gradient(145deg,var(--secondary-dark),var(--primary-dark))',
+          'linear-gradient(145deg,var(--primary-dark),var(--secondary-deep))',
+          'linear-gradient(145deg,var(--secondary-deep),var(--primary))',
+        ]
+        const posts = (bRows || []).map((b: any, i: number) => ({
+          href:      `/blog/${b.slug}`,
+          gradStyle: BLOG_GRADS[i % BLOG_GRADS.length],
+          date:      b.published_at ? new Date(b.published_at).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }) : '',
+          title:     b.title || '',
+          excerpt:   b.excerpt || '',
+        }))
+        if (posts.length) transformed.blog = posts
+      }
+    } catch (e) {
+      console.error('[config] Failed to fetch blogs:', e)
+    }
+  }
+
   return transformed
 }
 

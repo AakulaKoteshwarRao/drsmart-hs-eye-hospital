@@ -80,6 +80,7 @@ export default function PackageDetail({
   currency = 'INR',
 }: PackageDetailProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [heroErr, setHeroErr] = useState(false)
 
   return (
     <>
@@ -127,8 +128,8 @@ export default function PackageDetail({
           </a>
         </div>
         <div className="cond-hero-img" style={{ background: 'linear-gradient(145deg,var(--secondary-deep),var(--secondary),var(--primary))', position: 'relative', overflow: 'hidden' }}>
-          {heroImage ? (
-            <Image src={heroImage} alt={`${name} at ${clinicName}`} fill style={{ objectFit: 'cover' }} priority />
+          {heroImage && !heroErr ? (
+            <Image src={heroImage} alt={`${name} at ${clinicName}`} fill style={{ objectFit: 'cover' }} priority onError={() => setHeroErr(true)} />
           ) : (
             <Icon name="briefcase" size={48} color="rgba(255,255,255,0.2)" />
           )}

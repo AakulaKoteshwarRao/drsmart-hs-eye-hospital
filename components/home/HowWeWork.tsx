@@ -4,6 +4,7 @@ import { Icon } from '@/lib/icons'
 const stepIconClass = ['sf-1', 'sf-2', 'sf-3', 'sf-4']
 
 export default function HowWeWork({ steps }: { steps: StepItem[] }) {
+  if (!steps?.length) return null
   return (
     <section className="process-section section-cool-grey">
       <div className="process-inner">

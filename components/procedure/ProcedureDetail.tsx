@@ -100,6 +100,7 @@ export default function ProcedureDetail({
   const [activeRecTab, setActiveRecTab] = useState(0)
   const [openMyth,     setOpenMyth]     = useState<number | null>(null)
   const [openFaq,      setOpenFaq]      = useState<number | null>(null)
+  const [heroErr,      setHeroErr]      = useState(false)
 
   const hasTransparency = successRateItems.length > 0 || risksItems.length > 0 || sideEffectsItems.length > 0
 
@@ -154,8 +155,8 @@ export default function ProcedureDetail({
           </a>
         </div>
         <div className="cond-hero-img" style={{ background: 'linear-gradient(145deg,var(--secondary-deep),var(--secondary),var(--primary))', position: 'relative', overflow: 'hidden' }}>
-          {heroImage ? (
-            <Image src={heroImage} alt={`${name} at ${clinicName}`} fill style={{ objectFit: 'cover' }} priority />
+          {heroImage && !heroErr ? (
+            <Image src={heroImage} alt={`${name} at ${clinicName}`} fill style={{ objectFit: 'cover' }} priority onError={() => setHeroErr(true)} />
           ) : (
             <Icon name="stethoscope" size={48} color="rgba(255,255,255,0.2)" />
           )}

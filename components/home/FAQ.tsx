@@ -5,6 +5,7 @@ import { Icon } from '@/lib/icons'
 
 export default function FAQ({ items }: { items: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
+  if (!items?.length) return null
   return (
     <section className="faq-section">
       <div className="faq-inner">

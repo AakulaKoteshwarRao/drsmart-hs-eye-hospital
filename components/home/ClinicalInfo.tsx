@@ -2,6 +2,7 @@ import type { ClinicalCard } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
 export default function ClinicalInfo({ cards }: { cards: ClinicalCard[] }) {
+  if (!cards?.length) return null
   return (
     <section className="clinical-section">
       <div className="clinical-inner">

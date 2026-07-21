@@ -2,6 +2,7 @@ import type { WhyCard } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
 export default function WhyChoose({ cards, title }: { cards: WhyCard[]; title?: string }) {
+  if (!cards?.length) return null
   return (
     <section className="why-section">
       <div className="sec-header">

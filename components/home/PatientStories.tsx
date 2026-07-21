@@ -15,6 +15,7 @@ export default function PatientStories({ stories }: { stories: StoryItem[] }) {
   const ref = useRef<HTMLDivElement>(null)
   const scroll = (dir: number) => { ref.current?.scrollBy({ left: dir * 440, behavior: 'smooth' }) }
 
+  if (!stories?.length) return null
   return (
     <section className="stories-section-dark">
       <div className="stories-inner-dark">

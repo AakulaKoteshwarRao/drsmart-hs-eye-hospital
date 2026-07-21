@@ -7,6 +7,7 @@ export default function BlogPreview({ posts }: { posts: BlogPost[] }) {
   const ref = useRef<HTMLDivElement>(null)
   const scroll = (dir: number) => { ref.current?.scrollBy({ left: dir * 360, behavior: 'smooth' }) }
 
+  if (!posts?.length) return null
   return (
     <section className="blog-section-scroll">
       <div className="blog-scroll-inner">

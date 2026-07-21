@@ -2,6 +2,7 @@ import type { TrustItem } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
 export default function TrustStrip({ items }: { items: TrustItem[] }) {
+  if (!items?.length) return null
   const doubled = [...items, ...items]
   return (
     <section className="trust-strip">
