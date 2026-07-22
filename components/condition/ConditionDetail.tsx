@@ -314,7 +314,7 @@ export default function ConditionDetail({
                       </div>
                       <div className="ts-label">{t.name}</div>
                       {t.invasiveness && (
-                        <span className="ts-invasive" style={t.invasivenessStyle ?? { background: 'var(--primary-light)', color: 'var(--primary)' }}>
+                        <span className="ts-invasive" style={t.invasivenessStyle ?? { background: 'var(--primary-light)', color: 'var(--primary-dark)' }}>
                           {t.invasiveness}
                         </span>
                       )}
@@ -552,10 +552,10 @@ export default function ConditionDetail({
             {/* Related Procedures */}
             {relatedProcedures.length > 0 && (
               <div>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--primary)' }}>Related Procedures</h3>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--primary-dark)' }}>Related Procedures</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {relatedProcedures.map((p, i) => (
-                    <a key={i} href={`/procedures/${p.slug}`} style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                    <a key={i} href={`/procedures/${p.slug}`} style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                       <Icon name="arrow-right" size={12} />{p.name}
                     </a>
                   ))}
@@ -565,10 +565,10 @@ export default function ConditionDetail({
             {/* Related Conditions */}
             {(relatedConditions.length > 0 || allConditions.length > 0) && (
               <div>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--primary)' }}>Related Conditions</h3>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--primary-dark)' }}>Related Conditions</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {(relatedConditions.length > 0 ? relatedConditions : allConditions).slice(0, 4).map((c, i) => (
-                    <a key={i} href={`/conditions/${c.slug}`} style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                    <a key={i} href={`/conditions/${c.slug}`} style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                       <Icon name="arrow-right" size={12} />{c.name}
                     </a>
                   ))}
@@ -577,23 +577,23 @@ export default function ConditionDetail({
             )}
             {/* Quick Links */}
             <div>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--primary)' }}>Quick Links</h3>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--primary-dark)' }}>Quick Links</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 {doctorName && (
-                  <a href="/doctor" style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <a href="/doctor" style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                     <Icon name="arrow-right" size={12} />Meet {doctorName}
                   </a>
                 )}
-                <a href="/appointment" style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <a href="/appointment" style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                   <Icon name="arrow-right" size={12} />Book Appointment
                 </a>
-                <a href="/contact" style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <a href="/contact" style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                   <Icon name="arrow-right" size={12} />Contact Us
                 </a>
-                <a href="/services" style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <a href="/services" style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                   <Icon name="arrow-right" size={12} />All Services
                 </a>
-                <a href="/blog" style={{ fontSize: '0.88rem', color: 'var(--primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <a href="/blog" style={{ fontSize: '0.88rem', color: 'var(--primary-dark)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                   <Icon name="arrow-right" size={12} />Health Articles
                 </a>
               </div>

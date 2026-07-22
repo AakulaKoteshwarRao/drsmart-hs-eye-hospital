@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react'
+import Image from 'next/image'
 import type { VideoStory } from '@/lib/types'
 
 function getYouTubeId(url: string): string | null {
@@ -36,8 +37,7 @@ export default function VideoGrid({ stories, conditions: conditionsProp }: { sto
               <div key={i} className="video-card">
                 <div className="video-thumb" style={{ background: s.gradient || '#1a1a2e', position: 'relative', overflow: 'hidden' }}>
                   {thumbnail && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={thumbnail} alt={s.title || 'Video'} style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }} />
+                    <Image src={thumbnail} alt={s.title || 'Video'} fill sizes="(max-width: 768px) 100vw, 400px" style={{ objectFit: 'cover' }} />
                   )}
                   {url && (
                     <a href={url} target="_blank" rel="noreferrer" style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.3)' }}>

@@ -28,7 +28,7 @@ export default function LocalAreas({ areas, clinic }: { areas: AreaItem[]; clini
       <p className="areas-sub">
         Located in {clinic.address}. Easily accessible by car and public transport.{" "}
         <a href={clinic.mapUrl} target="_blank" rel="noreferrer"
-          style={{ color: "var(--primary)", fontWeight: 600, textDecoration: "none" }}>
+          style={{ color: "var(--primary-dark)", fontWeight: 600, textDecoration: "none" }}>
           Get directions &rarr;
         </a>
       </p>

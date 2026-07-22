@@ -88,9 +88,9 @@ export default function GalleryGrid({ photos = {} }: { photos?: Record<string, s
         <div className="lightbox open" onClick={() => setLightbox(null)}>
           <div className="lightbox-content" onClick={e => e.stopPropagation()}>
             <span className="lightbox-counter">{lightbox + 1} / {filtered.length}</span>
-            <button className="lightbox-close" onClick={() => setLightbox(null)}><Icon name="close" size={20} /></button>
-            <button className="lightbox-nav lightbox-prev" onClick={() => setLightbox((lightbox - 1 + filtered.length) % filtered.length)}><Icon name="arrow-left" size={20} /></button>
-            <button className="lightbox-nav lightbox-next" onClick={() => setLightbox((lightbox + 1) % filtered.length)}><Icon name="arrow-right" size={20} /></button>
+            <button className="lightbox-close" aria-label="Close gallery" onClick={() => setLightbox(null)}><Icon name="close" size={20} /></button>
+            <button className="lightbox-nav lightbox-prev" aria-label="Previous photo" onClick={() => setLightbox((lightbox - 1 + filtered.length) % filtered.length)}><Icon name="arrow-left" size={20} /></button>
+            <button className="lightbox-nav lightbox-next" aria-label="Next photo" onClick={() => setLightbox((lightbox + 1) % filtered.length)}><Icon name="arrow-right" size={20} /></button>
             <div className="lightbox-img" style={{ background: current.grad }}>
               {current.src ? (
                 <Image src={current.src} alt={current.title} fill sizes="90vw" style={{ objectFit: 'contain' }} />

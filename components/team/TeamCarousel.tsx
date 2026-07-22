@@ -1,5 +1,6 @@
 'use client'
 import { useRef } from 'react'
+import Image from 'next/image'
 import type { TeamMember } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
@@ -20,7 +21,7 @@ export default function TeamCarousel({ members, showLead = false }: { members: T
               <div key={i} className="team-card">
                 <div className="team-card-photo" style={{ background: m.gradient, position: 'relative', overflow: 'hidden' }}>
                   {m.photo ? (
-                    <img src={m.photo} alt={m.name} width={400} height={400} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    <Image src={m.photo} alt={m.name} fill sizes="(max-width: 768px) 100vw, 400px" style={{ objectFit: 'cover' }} />
                   ) : (
                     <><Icon name="user" size={48} color="rgba(255,255,255,0.3)" /><span>Photo</span></>
                   )}

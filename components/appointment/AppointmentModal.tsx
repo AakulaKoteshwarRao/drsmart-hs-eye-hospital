@@ -51,21 +51,21 @@ export default function AppointmentModal() {
           <p style={{ fontSize: 'var(--text-base)', color: 'var(--text-faint)', marginTop: '0.35rem' }}>Fill in your details and send via WhatsApp instantly.</p>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-          <input type="text" placeholder="Your Name *" value={form.name} onChange={e => set('name', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
-          <input type="tel" placeholder="Your Phone *" value={form.phone} onChange={e => set('phone', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
-          <input type="number" placeholder="Your Age" value={form.age} onChange={e => set('age', e.target.value)} min="1" max="120" style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
-          <select value={form.reason} onChange={e => set('reason', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', background: '#FFFFFF', boxSizing: 'border-box' }}>
+          <input type="text" aria-label="Your name" placeholder="Your Name *" value={form.name} onChange={e => set('name', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
+          <input type="tel" aria-label="Your phone number" placeholder="Your Phone *" value={form.phone} onChange={e => set('phone', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
+          <input type="number" aria-label="Your age" placeholder="Your Age" value={form.age} onChange={e => set('age', e.target.value)} min="1" max="120" style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
+          <select aria-label="Reason for appointment" value={form.reason} onChange={e => set('reason', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', background: '#FFFFFF', boxSizing: 'border-box' }}>
             <option value="" disabled>Appointment for *</option>
             {reasons.map((r, i) => <option key={i}>{r}</option>)}
           </select>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-            <input type="date" value={form.date} onChange={e => set('date', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
-            <select value={form.time} onChange={e => set('time', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', background: '#FFFFFF', boxSizing: 'border-box' }}>
+            <input type="date" aria-label="Preferred date" value={form.date} onChange={e => set('date', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', boxSizing: 'border-box' }} />
+            <select aria-label="Preferred time" value={form.time} onChange={e => set('time', e.target.value)} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', background: '#FFFFFF', boxSizing: 'border-box' }}>
               <option value="" disabled>Preferred Time</option>
               {times.map((t, i) => <option key={i}>{t}</option>)}
             </select>
           </div>
-          <textarea placeholder="Notes (optional)" value={form.notes} onChange={e => set('notes', e.target.value)} rows={3} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
+          <textarea aria-label="Notes" placeholder="Notes (optional)" value={form.notes} onChange={e => set('notes', e.target.value)} rows={3} style={{ width: '100%', padding: '0.75rem 1rem', border: '1.5px solid var(--neutral-200)', borderRadius: '10px', fontSize: 'var(--text-base)', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
         </div>
         <button onClick={sendWhatsApp} style={{ width: '100%', marginTop: '1.25rem', padding: '0.9rem', background: 'var(--primary)', color: '#FFFFFF', border: 'none', borderRadius: '12px', fontSize: 'var(--text-md)', fontWeight: '700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
           <Icon name="whatsapp" size={20} color="#FFFFFF" /> Send via WhatsApp

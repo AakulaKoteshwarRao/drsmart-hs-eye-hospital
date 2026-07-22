@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Header from '@/components/Header'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { generatePageSchemas } from '@/lib/schema/index.js'
@@ -94,9 +95,9 @@ export default async function BlogPostPage({ params }: { params?: { slug?: strin
           <h1 className="post-title">{post?.title || title}</h1>
 
           <div className="post-meta">
-            <div className="post-meta-avatar">
+            <div className="post-meta-avatar" style={{ position: 'relative' }}>
               {cfg.doctor?.photo
-                ? <img src={cfg.doctor.photo} alt={cfg.doctor.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                ? <Image src={cfg.doctor.photo} alt={cfg.doctor.name} fill sizes="48px" style={{ objectFit: 'cover', borderRadius: '50%' }} />
                 : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               }
             </div>
@@ -107,9 +108,9 @@ export default async function BlogPostPage({ params }: { params?: { slug?: strin
           </div>
 
           {/* Featured image */}
-          <div className="post-featured" style={{ background: 'linear-gradient(145deg,var(--primary-dark),var(--secondary))' }}>
+          <div className="post-featured" style={{ background: 'linear-gradient(145deg,var(--primary-dark),var(--secondary))', position: 'relative' }}>
             {post?.featured_image
-              ? <img src={post.featured_image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              ? <Image src={post.featured_image} alt={title} fill sizes="(max-width: 768px) 100vw, 800px" style={{ objectFit: 'cover' }} priority />
               : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             }
           </div>

@@ -21,7 +21,7 @@ export default function DoctorHero({ doctor, clinic }: { doctor: DoctorInfo; cli
             </div>
           </div>
           <div className="doc-info">
-            <div className="sec-label"><span style={{ color: 'var(--primary)' }}>Meet the Doctor</span></div>
+            <div className="sec-label"><span style={{ color: 'var(--primary-dark)' }}>Meet the Doctor</span></div>
             <h1 className="doc-name">
               {doctor.name}
               {(() => {
@@ -53,7 +53,7 @@ export default function DoctorHero({ doctor, clinic }: { doctor: DoctorInfo; cli
             <div className="doc-details">
               <div className="doc-detail-item">
                 <Icon name="location" size={18} color="var(--primary)" />
-                <a href={clinic.mapUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600, fontSize: 'var(--text-base)' }}>{clinic.address}</a>
+                <a href={clinic.mapUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--primary-dark)', textDecoration: 'none', fontWeight: 600, fontSize: 'var(--text-base)' }}>{clinic.address}</a>
               </div>
               <div className="doc-detail-item">
                 <Icon name="clock" size={18} color="var(--primary)" />

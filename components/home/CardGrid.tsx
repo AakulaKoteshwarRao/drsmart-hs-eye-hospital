@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { CardItem } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
@@ -30,7 +31,7 @@ export default function CardGrid({
           <a key={i} href={item.href} className="img-card">
             <div className={`img-card-visual ${item.gradClass}`} style={{ position: 'relative', overflow: 'hidden' }}>
               {item.image ? (
-                <img src={item.image} alt={item.title} width={400} height={300} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                <Image src={item.image} alt={item.title} fill sizes="(max-width: 768px) 100vw, 400px" style={{ objectFit: 'cover' }} />
               ) : (
                 <div className="card-visual-icon">
                   <Icon name={item.iconType || 'info'} size={26} color="#FFFFFF" />

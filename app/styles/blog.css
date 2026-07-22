@@ -5,7 +5,7 @@
 
   .sec-label { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
   .sec-label::before { content: ''; width: 40px; height: 4px; background: var(--primary); border-radius: 2px; flex-shrink: 0; }
-  .sec-label span { font-size: 0.78rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+  .sec-label span { font-size: 0.78rem; font-weight: 700; color: var(--primary-dark); text-transform: uppercase; letter-spacing: 2px; }
   .sec-title { font-size: 2rem; font-weight: 800; color: #111111; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
   .sec-sub { font-size: 1.02rem; color: #374151; line-height: 1.65; max-width: 640px; }
   .sec-header { margin-bottom: 2.5rem; padding-top: 0.25rem; }
@@ -175,7 +175,7 @@
   .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
   .sticky-bar .call { color: var(--secondary); }
   .sticky-bar .whatsapp { color: var(--whatsapp); }
-  .sticky-bar .appointment { color: var(--primary); }
+  .sticky-bar .appointment { color: var(--primary-dark); }
   .bar-divider { width: 1px; height: 20px; background: #D1D5DB; }
 
   @media (max-width: 1024px) {

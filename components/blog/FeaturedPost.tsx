@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { BlogPost } from '@/lib/blogs'
 import { Icon } from '@/lib/icons'
 
@@ -15,9 +16,9 @@ function FeaturedCard({ post, grad, defaultTitle, defaultExcerpt }: { post: Blog
   const cat     = post?.category || 'General'
   return (
     <div className="featured-card">
-      <div className="featured-thumb" style={{ background: post?.featured_image ? 'transparent' : grad }}>
+      <div className="featured-thumb" style={{ background: post?.featured_image ? 'transparent' : grad, position: 'relative' }}>
         {post?.featured_image
-          ? <img src={post.featured_image} alt={title} width={600} height={300} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+          ? <Image src={post.featured_image} alt={title} fill sizes="(max-width: 768px) 100vw, 600px" style={{ objectFit: 'cover' }} />
           : <Icon name="file" size={40} color="rgba(255,255,255,0.4)" />}
       </div>
       <div className="featured-body">

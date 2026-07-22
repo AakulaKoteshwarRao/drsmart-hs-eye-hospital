@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { ServiceItem } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
@@ -12,10 +13,9 @@ export default function ProceduresGrid({ procedures }: { procedures: ServiceItem
       <div className="card-grid">
         {procedures.map((p, i) => (
           <div key={i} className="service-card">
-            <div className="service-card-visual" style={{ background: p.gradient, overflow: 'hidden' }}>
+            <div className="service-card-visual" style={{ background: p.gradient, overflow: 'hidden', position: 'relative' }}>
               {p.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 400px" style={{ objectFit: 'cover' }} />
               ) : (
                 <Icon name={p.iconType as any || 'check-circle'} size={32} color="rgba(255,255,255,0.6)" />
               )}

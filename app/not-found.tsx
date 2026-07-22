@@ -14,8 +14,8 @@ export default function NotFound() {
         Sorry, we couldn&apos;t find the page you&apos;re looking for. It may have moved or no longer exists.
       </p>
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <Link href="/" style={{ padding: '0.6rem 1.5rem', background: 'var(--primary, #0d7a5f)', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.9rem' }}>Go Home</Link>
-        <Link href="/contact" style={{ padding: '0.6rem 1.5rem', border: '1.5px solid var(--primary, #0d7a5f)', color: 'var(--primary, #0d7a5f)', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.9rem' }}>Contact Us</Link>
+        <Link href="/" style={{ padding: '0.6rem 1.5rem', background: 'var(--primary-dark, #0b6b53)', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.9rem' }}>Go Home</Link>
+        <Link href="/contact" style={{ padding: '0.6rem 1.5rem', border: '1.5px solid var(--primary, #0d7a5f)', color: 'var(--primary-dark, #0b6b53)', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.9rem' }}>Contact Us</Link>
       </div>
     </main>
   )

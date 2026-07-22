@@ -14,7 +14,7 @@
     background: var(--primary); border-radius: 2px; flex-shrink: 0;
   }
   .sec-label span {
-    font-size: 0.78rem; font-weight: 700; color: var(--primary);
+    font-size: 0.78rem; font-weight: 700; color: var(--primary-dark);
     text-transform: uppercase; letter-spacing: 2px;
   }
   .sec-title {
@@ -330,7 +330,7 @@
   .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
   .sticky-bar .call { color: var(--secondary); }
   .sticky-bar .whatsapp { color: var(--whatsapp); }
-  .sticky-bar .appointment { color: var(--primary); }
+  .sticky-bar .appointment { color: var(--primary-dark); }
   .bar-divider { width: 1px; height: 20px; background: #D1D5DB; }
 
   /* ============================================================

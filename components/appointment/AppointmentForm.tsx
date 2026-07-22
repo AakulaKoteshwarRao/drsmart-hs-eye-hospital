@@ -36,7 +36,7 @@ export default function AppointmentForm({ clinic }: { clinic: ClinicInfo }) {
               <div className="form-group">
                 <div className="input-icon-wrap">
                   <Icon name="user" size={16} className="input-icon" />
-                  <input type="text" placeholder="Your Name" value={form.name} onChange={e => set('name', e.target.value)} />
+                  <input type="text" aria-label="Your name" placeholder="Your Name" value={form.name} onChange={e => set('name', e.target.value)} />
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function AppointmentForm({ clinic }: { clinic: ClinicInfo }) {
               <div className="form-group">
                 <div className="input-icon-wrap">
                   <Icon name="phone" size={16} className="input-icon" />
-                  <input type="tel" placeholder="Your Phone" value={form.phone} onChange={e => set('phone', e.target.value)} />
+                  <input type="tel" aria-label="Your phone number" placeholder="Your Phone" value={form.phone} onChange={e => set('phone', e.target.value)} />
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function AppointmentForm({ clinic }: { clinic: ClinicInfo }) {
               <div className="form-group">
                 <div className="input-icon-wrap">
                   <Icon name="clock" size={16} className="input-icon" />
-                  <input type="number" placeholder="Your Age" value={form.age} onChange={e => set('age', e.target.value)} min="1" max="120" />
+                  <input type="number" aria-label="Your age" placeholder="Your Age" value={form.age} onChange={e => set('age', e.target.value)} min="1" max="120" />
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function AppointmentForm({ clinic }: { clinic: ClinicInfo }) {
               <div className="form-group">
                 <div className="input-icon-wrap">
                   <Icon name="check-circle" size={16} className="input-icon" />
-                  <select value={form.reason} onChange={e => set('reason', e.target.value)}>
+                  <select aria-label="Reason for appointment" value={form.reason} onChange={e => set('reason', e.target.value)}>
                     <option value="" disabled>Appointment for</option>
                     {reasons.map((r, i) => <option key={i}>{r}</option>)}
                   </select>
@@ -71,13 +71,13 @@ export default function AppointmentForm({ clinic }: { clinic: ClinicInfo }) {
               <div className="form-group">
                 <div className="input-icon-wrap">
                   <Icon name="calendar" size={16} className="input-icon" />
-                  <input type="date" value={form.date} onChange={e => set('date', e.target.value)} />
+                  <input type="date" aria-label="Preferred date" value={form.date} onChange={e => set('date', e.target.value)} />
                 </div>
               </div>
               <div className="form-group">
                 <div className="input-icon-wrap">
                   <Icon name="clock" size={16} className="input-icon" />
-                  <select value={form.time} onChange={e => set('time', e.target.value)}>
+                  <select aria-label="Preferred time" value={form.time} onChange={e => set('time', e.target.value)}>
                     <option value="" disabled>Preferred Time</option>
                     {times.map((t, i) => <option key={i}>{t}</option>)}
                   </select>
@@ -86,7 +86,7 @@ export default function AppointmentForm({ clinic }: { clinic: ClinicInfo }) {
             </div>
             <div className="form-row full">
               <div className="form-group">
-                <textarea placeholder="Your comment or concern (optional)" value={form.notes} onChange={e => set('notes', e.target.value)} rows={4} />
+                <textarea aria-label="Your comment or concern" placeholder="Your comment or concern (optional)" value={form.notes} onChange={e => set('notes', e.target.value)} rows={4} />
               </div>
             </div>
             <button className="form-submit-wa" onClick={sendWhatsApp}>

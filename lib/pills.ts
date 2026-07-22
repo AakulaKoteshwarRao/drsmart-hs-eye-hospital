@@ -17,13 +17,17 @@ export const PILL_STYLES_DARK = [
   { background: 'rgba(30,132,73,0.25)',  color: '#ffffff', border: 'rgba(30,132,73,0.4)' },
   { background: 'rgba(185,28,28,0.25)',  color: '#ffffff', border: 'rgba(185,28,28,0.4)' },
 ]
+// Accent colours for stat numbers shown on LIGHT backgrounds (Hero, detail heroes).
+// Darkened to the -700 tone of each hue so text meets WCAG AA contrast on white
+// (previous -400 pastels measured 1.7–2.7:1; these are ~5–7:1) while keeping the
+// same multi-colour identity. Dark-background stats use STAT_COLOURS_DARK below.
 export const STAT_COLOURS = [
-  '#34D399',
-  '#60A5FA',
-  '#FBBF24',
-  '#F472B6',
-  '#A78BFA',
-  '#FB923C',
+  '#047857',
+  '#1D4ED8',
+  '#B45309',
+  '#BE185D',
+  '#6D28D9',
+  '#C2410C',
 ]
 
 export const STAT_COLOURS_DARK = [

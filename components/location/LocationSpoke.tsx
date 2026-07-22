@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import { Icon } from '@/lib/icons'
 
 const serviceGrads = [
@@ -151,9 +152,9 @@ export default function LocationSpoke(props?: any) {
             <h2 className="sec-title">Meet your specialist.</h2>
           </div>
           <div className="doc-mini">
-            <div className="doc-mini-photo">
+            <div className="doc-mini-photo" style={{ position: 'relative' }}>
               {doctor.photo ? (
-                <img src={doctor.photo} alt={doctorName} width={80} height={80} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                <Image src={doctor.photo} alt={doctorName} fill sizes="80px" style={{ objectFit: 'cover', borderRadius: '50%' }} />
               ) : (
                 <Icon name="user" size={32} color="rgba(255,255,255,0.3)" />
               )}

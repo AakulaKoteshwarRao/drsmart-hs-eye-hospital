@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { ServiceItem } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
@@ -12,10 +13,9 @@ export default function ConditionsGrid({ conditions }: { conditions: ServiceItem
       <div className="card-grid">
         {conditions.map((c, i) => (
           <div key={i} className="service-card">
-            <div className="service-card-visual" style={{ background: c.gradient, overflow: 'hidden' }}>
+            <div className="service-card-visual" style={{ background: c.gradient, overflow: 'hidden', position: 'relative' }}>
               {c.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={c.image} alt={c.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <Image src={c.image} alt={c.title} fill sizes="(max-width: 768px) 100vw, 400px" style={{ objectFit: 'cover' }} />
               ) : (
                 <Icon name={c.iconType as any || 'pulse'} size={32} color="rgba(255,255,255,0.6)" />
               )}

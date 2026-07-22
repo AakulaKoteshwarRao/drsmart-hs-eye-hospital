@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { ClinicInfo } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
@@ -13,9 +14,9 @@ export default function AboutHero({ clinic }: { clinic: ClinicInfo }) {
             <p>With modern infrastructure, experienced clinical staff, and a commitment to transparency, the practice has built a reputation for reliable, patient-first care across {clinic.city}.</p>
           </div>
         </div>
-        <div className="about-hero-image">
+        <div className="about-hero-image" style={{ position: 'relative' }}>
           {clinic.aboutImage ? (
-            <img src={clinic.aboutImage} alt={`About ${clinic.name}`} width={800} height={600} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} loading="lazy" />
+            <Image src={clinic.aboutImage} alt={`About ${clinic.name}`} fill sizes="(max-width: 768px) 100vw, 800px" style={{ objectFit: 'cover', borderRadius: '16px' }} />
           ) : (
             <Icon name="stethoscope" size={64} color="var(--primary)" />
           )}

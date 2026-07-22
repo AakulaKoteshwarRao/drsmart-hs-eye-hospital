@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import { BlogPost } from '@/lib/blogs'
 import { Icon } from '@/lib/icons'
 
@@ -40,8 +41,8 @@ export default function BlogGrid({ posts, conditions = [] }: { posts: BlogPost[]
         <div className="blog-grid">
           {filtered.map((post, i) => (
             <a key={i} href={post.href} className="blog-slide">
-              <div className="blog-slide-thumb" style={{ background: post.image ? 'transparent' : post.grad }}>
-                {post.image ? <img src={post.image} alt={post.title} width={400} height={250} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" /> : <Icon name="file" size={40} color="rgba(255,255,255,0.4)" />}
+              <div className="blog-slide-thumb" style={{ background: post.image ? 'transparent' : post.grad, position: 'relative' }}>
+                {post.image ? <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 400px" style={{ objectFit: 'cover' }} /> : <Icon name="file" size={40} color="rgba(255,255,255,0.4)" />}
               </div>
               <div className="blog-slide-body">
                 <span className={`blog-tag ${post.tagClass}`}>{post.tag}</span>

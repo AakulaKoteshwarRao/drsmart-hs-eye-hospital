@@ -5,6 +5,7 @@
  * Includes JSON-LD Author schema for AI citability signals.
  * Auto-populated from config — zero manual work per client.
  */
+import Image from 'next/image'
 
 interface BlogAuthorProps {
   name: string
@@ -58,12 +59,14 @@ export default function BlogAuthor({
 
       {/* Author bio UI */}
       <div className="author-section">
-        <div className="author-avatar">
+        <div className="author-avatar" style={{ position: 'relative' }}>
           {photo ? (
-            <img
+            <Image
               src={photo}
               alt={name}
-              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
+              fill
+              sizes="80px"
+              style={{ objectFit: 'cover', borderRadius: '50%' }}
             />
           ) : (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -73,7 +76,7 @@ export default function BlogAuthor({
           )}
         </div>
         <div className="author-info">
-          <div style={{ fontSize: '0.75rem', color: 'var(--primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>
+          <div style={{ fontSize: '0.75rem', color: 'var(--primary-dark)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>
             Written by
           </div>
           <h3>{name}</h3>
