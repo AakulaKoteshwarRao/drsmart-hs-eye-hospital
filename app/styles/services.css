@@ -111,7 +111,7 @@
   .sf-top { margin-bottom: 1.25rem; display: flex; flex-direction: column; align-items: center; }
   .sf-badge { font-size: 0.75rem; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem; }
   .sf-1 .sf-badge { color: var(--primary-dark); }
-  .sf-2 .sf-badge { color: var(--secondary); }
+  .sf-2 .sf-badge { color: var(--secondary-deep); }
   .sf-3 .sf-badge { color: var(--secondary-deep); }
   .sf-4 .sf-badge { color: var(--primary-dark); }
   .sf-icon {
@@ -201,7 +201,7 @@
   }
   .sticky-bar a:active { background: #F2F4F6; }
   .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
-  .sticky-bar .call { color: var(--secondary); }
+  .sticky-bar .call { color: var(--secondary-deep); }
   .sticky-bar .whatsapp { color: var(--whatsapp); }
   .sticky-bar .appointment { color: var(--primary-dark); }
   .bar-divider { width: 1px; height: 20px; background: #D1D5DB; }

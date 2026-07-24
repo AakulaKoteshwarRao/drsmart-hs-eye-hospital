@@ -207,7 +207,7 @@
     text-transform: uppercase;
   }
   .sf-1 .sf-badge { color: var(--primary-dark); }
-  .sf-2 .sf-badge { color: var(--secondary); }
+  .sf-2 .sf-badge { color: var(--secondary-deep); }
   .sf-3 .sf-badge { color: var(--secondary-deep); }
   .sf-4 .sf-badge { color: var(--primary-dark); }
   .sf-icon {
@@ -355,7 +355,7 @@
   .sticky-bar a { display: flex; align-items: center; gap: 0.4rem; text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 0.4rem 0.5rem; border-radius: 8px; transition: background 200ms; }
   .sticky-bar a:active { background: #F2F4F6; }
   .sticky-bar a svg { width: 18px; height: 18px; flex-shrink: 0; }
-  .sticky-bar .call { color: var(--secondary); }
+  .sticky-bar .call { color: var(--secondary-deep); }
   .sticky-bar .whatsapp { color: var(--whatsapp); }
   .sticky-bar .appointment { color: var(--primary-dark); }
   .bar-divider { width: 1px; height: 20px; background: #D1D5DB; }
