@@ -23,7 +23,7 @@
     "typescript": "5.4.5"
   },
   "browserslist": [
-    "last 2 years",
+    "> 0.3%",
     "not dead",
     "not op_mini all"
   ]
