@@ -62,7 +62,7 @@ export default async function HomePage() {
       <main>
         <Hero hero={cfg.hero} clinic={cfg.clinic} />
         <TrustStrip items={cfg.trustStrip} />
-        <WhyChoose cards={cfg.whyChoose} title={`Why patients in ${(cfg.clinic as any)?.city || 'your area'} choose us.`} />
+        <WhyChoose title={`Why patients in ${(cfg.clinic as any)?.city || 'your area'} choose us.`} />
         <CardGrid
           label="Conditions We Treat"
           title={`Conditions we treat in ${(cfg.clinic as any)?.city || 'your area'}.`}

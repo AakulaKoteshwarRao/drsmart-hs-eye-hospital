@@ -214,8 +214,11 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #FFF
 .why-icon.blue { background: linear-gradient(135deg, var(--secondary), var(--secondary-dark)); }
 .why-icon.deep { background: linear-gradient(135deg, var(--secondary-deep), var(--secondary-deep)); }
 .why-icon.green { background: linear-gradient(135deg, #1E8449, #166B3A); }
-.why-card h3 { font-size: var(--text-lg); font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem; }
+.why-card h3 { font-size: var(--text-lg); font-weight: 800; color: var(--text-primary); margin-bottom: 0.85rem; }
 .why-card p { font-size: var(--text-base); color: var(--text-body); line-height: 1.65; }
+.why-points { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+.why-points li { position: relative; padding-left: 1.4rem; font-size: var(--text-base); color: var(--text-body); line-height: 1.5; }
+.why-points li::before { content: ''; position: absolute; left: 0; top: 0.5em; width: 7px; height: 7px; border-radius: 50%; background: var(--primary); }
 
 /* -- CARD SECTIONS -- */
 .card-section { max-width: 1280px; margin: 0 auto; padding: 5rem 2rem; }
