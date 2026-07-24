@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { getConfig } from '@/lib/config'
 import { Icon } from '@/lib/icons'
 
@@ -11,6 +12,7 @@ const points = [
 export default function EarlyTreatment() {
   const cfg = getConfig()
   const specialty = cfg.clinic?.medicalSpecialty || cfg.doctor?.jobTitle || 'specialist care'
+  const servicesImage = cfg.clinic?.servicesImage
   return (
     <section className="early-section">
       <div className="early-inner">
@@ -29,7 +31,11 @@ export default function EarlyTreatment() {
             </ul>
           </div>
           <div className="early-visual">
-            <Icon name="pulse" size={64} color="var(--primary)" />
+            {servicesImage ? (
+              <Image src={servicesImage} alt={`Early ${specialty.toLowerCase()} treatment`} fill sizes="(max-width: 768px) 100vw, 640px" style={{ objectFit: 'cover' }} />
+            ) : (
+              <Icon name="pulse" size={64} color="var(--primary)" />
+            )}
           </div>
         </div>
       </div>

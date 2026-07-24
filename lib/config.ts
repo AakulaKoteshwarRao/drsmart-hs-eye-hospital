@@ -83,6 +83,7 @@ async function fetchFromSupabase(): Promise<ClinicConfig> {
         logo:       uploadedPhotos['logo']       || '',
         heroImage:  uploadedPhotos['hero_image'] || '',
         aboutImage: uploadedPhotos['about']      || '',
+        servicesImage: uploadedPhotos['services'] || '',
       }
       transformed.doctor = {
         ...transformed.doctor,

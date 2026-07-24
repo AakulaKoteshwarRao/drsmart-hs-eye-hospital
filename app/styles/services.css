@@ -93,6 +93,7 @@
   }
   .early-check svg { width: 14px; height: 14px; color: var(--primary); }
   .early-visual {
+    position: relative; overflow: hidden;
     width: 100%; aspect-ratio: 4/3; border-radius: 20px;
     background: linear-gradient(160deg, var(--secondary), var(--primary));
     display: flex; align-items: center; justify-content: center;
