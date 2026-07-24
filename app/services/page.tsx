@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const clinic = cfg.clinic as any
   return buildPageMetadata(cfg, {
     title:       `${clinic?.medicalSpecialty || 'Medical'} Services`,
-    description: `Explore conditions treated and procedures offered by ${clinic?.name || 'our clinic'} in ${clinic?.city || ''} — comprehensive ${clinic?.medicalSpecialty || 'medical'} care.`,
+    description: `Explore conditions treated and procedures offered by ${clinic?.name || 'our hospital'} in ${clinic?.city || ''} — comprehensive ${clinic?.medicalSpecialty || 'medical'} care.`,
     path:        '/services',
     image:       clinic?.image,
   })

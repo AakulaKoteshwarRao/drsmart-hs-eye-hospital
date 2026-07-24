@@ -56,16 +56,16 @@ export default function LocationSpoke(props?: any) {
 
   const reasons = [
     { grad: 'linear-gradient(135deg,var(--primary),var(--primary-dark))', icon: 'location', text: `Located at ${clinicAddress} — easily accessible from ${areaName}` },
-    { grad: 'linear-gradient(135deg,var(--secondary),var(--secondary-dark))', icon: 'clock', text: `Clinic hours ${clinicHours} — convenient for patients in the area` },
+    { grad: 'linear-gradient(135deg,var(--secondary),var(--secondary-dark))', icon: 'clock', text: `Hospital hours ${clinicHours} — convenient for patients in the area` },
     { grad: 'linear-gradient(135deg,var(--secondary-dark),var(--secondary-deep))', icon: 'check', text: `${doctorName} has extensive experience in ${specialty} and complex case management` },
     { grad: 'linear-gradient(135deg,var(--primary-dark),var(--secondary-deep))', icon: 'shield', text: 'Modern diagnostic equipment — all under one roof' },
     { grad: 'linear-gradient(135deg,var(--primary),var(--primary-dark))', icon: 'user', text: `Hundreds of successful outcomes for patients from ${areaName} and surrounding neighbourhoods` },
   ]
 
   const faqs = [
-    { q: 'How do I reach the clinic?', a: `${clinicAddress} — easily accessible from most parts of the area.` },
-    { q: 'What are the clinic hours?', a: `${doctorName} consults ${clinicHours}. Please call ahead to confirm your slot.` },
-    { q: 'Is parking available at the clinic?', a: 'Yes, parking is available near the clinic. Public transport options are also within walking distance.' },
+    { q: 'How do I reach the hospital?', a: `${clinicAddress} — easily accessible from most parts of the area.` },
+    { q: 'What are the hospital hours?', a: `${doctorName} consults ${clinicHours}. Please call ahead to confirm your slot.` },
+    { q: 'Is parking available at the hospital?', a: 'Yes, parking is available near the hospital. Public transport options are also within walking distance.' },
     { q: 'What conditions are treated at this location?', a: `All major conditions are treated — ${conditionsList.slice(0, 4).map((c: any) => c.title).join(', ')}${conditionsList.length > 4 ? ', and more' : ''}. Full diagnostic workups are available on-site.` },
     { q: 'Can I book an appointment online?', a: 'Yes. You can book via our appointment page or WhatsApp us directly. Same-week appointments are typically available for new patients.' },
   ]

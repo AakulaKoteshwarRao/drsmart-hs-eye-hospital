@@ -2,9 +2,9 @@ import { getConfig } from '@/lib/config'
 import { Icon } from '@/lib/icons'
 
 const fallbackReviews = [
-  { quote: 'Very convenient location. Easy to reach. The clinic is well-maintained and the staff is very helpful.', author: 'Suresh R.' },
-  { quote: 'I travel some distance for my appointments. It is always worth it. Excellent doctor and clinic.', author: 'Priya D.' },
-  { quote: 'Easy to find the clinic. My elderly father had no trouble reaching it. The doctor was very thorough and patient.', author: 'Anil K.' },
+  { quote: 'Very convenient location. Easy to reach. The hospital is well-maintained and the staff is very helpful.', author: 'Suresh R.' },
+  { quote: 'I travel some distance for my appointments. It is always worth it. Excellent doctor and hospital.', author: 'Priya D.' },
+  { quote: 'Easy to find the hospital. My elderly father had no trouble reaching it. The doctor was very thorough and patient.', author: 'Anil K.' },
 ]
 
 export default function LocationReviews() {

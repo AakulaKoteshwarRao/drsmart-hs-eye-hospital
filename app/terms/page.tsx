@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function TermsPage() {
   const cfg = await loadConfig()
-  const name = (cfg.clinic as any)?.name || 'this clinic'
+  const name = (cfg.clinic as any)?.name || 'this hospital'
   return (
     <>
       <Header clinic={cfg.clinic} />
@@ -37,11 +37,11 @@ export default async function TermsPage() {
             ]},
             { title: 'Appointment Requests', content: `Submitting an appointment request through this website does not guarantee an appointment. All requests are subject to confirmation by ${name}. ${name} reserves the right to accept or decline any appointment request.` },
             { title: 'Intellectual Property', content: `All content on this website including text, images, logos, graphics, and design is the property of ${name} and is protected by applicable intellectual property laws. Unauthorised use is strictly prohibited.` },
-            { title: 'Third-Party Links', content: 'This website may contain links to third-party websites. These links are provided for convenience only. The Clinic does not endorse or take responsibility for the content or practices of any linked websites.' },
+            { title: 'Third-Party Links', content: 'This website may contain links to third-party websites. These links are provided for convenience only. The Hospital does not endorse or take responsibility for the content or practices of any linked websites.' },
             { title: 'Limitation of Liability', content: `${name} shall not be held liable for any direct, indirect, incidental, or consequential damages arising from your use of this website or reliance on any information provided herein.` },
             { title: 'Changes to Terms', content: `${name} reserves the right to modify these terms at any time without prior notice. Continued use of the website following any changes constitutes acceptance of the updated terms.` },
             { title: 'Governing Law', content: 'These terms are governed by the laws of India. Any disputes arising from the use of this website shall be subject to the exclusive jurisdiction of the courts in India.' },
-            { title: 'Contact', content: 'For any questions about these terms, please contact us at our clinic or via WhatsApp at the number listed on this page.' },
+            { title: 'Contact', content: 'For any questions about these terms, please contact us at our hospital or via WhatsApp at the number listed on this page.' },
           ]}
         />
         <Footer clinic={cfg.clinic} config={cfg} />

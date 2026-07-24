@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   const clinic = config.clinic as any
   return buildPageMetadata(config, {
     title:       pkg.title || pkg.name || 'Treatment Package',
-    description: pkg.description || pkg.summary || `${pkg.title || 'Treatment package'} available at ${clinic?.name || 'our clinic'} in ${clinic?.city || ''}.`,
+    description: pkg.description || pkg.summary || `${pkg.title || 'Treatment package'} available at ${clinic?.name || 'our hospital'} in ${clinic?.city || ''}.`,
     path:        `/packages/${params.slug}`,
   })
 }

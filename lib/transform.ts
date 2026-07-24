@@ -238,7 +238,9 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
       })(),
       institution: typeof d === 'object' ? s(d.institution, '') : '',
     })),
-    languages:   a(s03.languages),
+    languages:   typeof s03.languages === 'string'
+      ? s(s03.languages, '').split(',').map((l: string) => l.trim()).filter(Boolean)
+      : a(s03.languages),
     // Languages as objects for schema
     languagesObj: typeof s03.languages === 'string'
       ? s(s03.languages, '').split(',').map((l: string) => ({ name: l.trim(), code: l.trim().slice(0,2).toLowerCase() })).filter((l: any) => l.name)

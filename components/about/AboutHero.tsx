@@ -10,7 +10,7 @@ export default function AboutHero({ clinic }: { clinic: ClinicInfo }) {
           <div className="sec-label"><span>About Us</span></div>
           <h1>Healthcare built on <em>trust and transparency.</em></h1>
           <div className="about-hero-text">
-            <p>Our clinic is dedicated to providing evidence-based specialist care with a focus on honest communication, personalised treatment, and lasting outcomes. Every patient receives the same level of attention -- from the first consultation to full recovery.</p>
+            <p>Our hospital is dedicated to providing evidence-based specialist care with a focus on honest communication, personalised treatment, and lasting outcomes. Every patient receives the same level of attention -- from the first consultation to full recovery.</p>
             <p>With modern infrastructure, experienced clinical staff, and a commitment to transparency, the practice has built a reputation for reliable, patient-first care across {clinic.city}.</p>
           </div>
         </div>

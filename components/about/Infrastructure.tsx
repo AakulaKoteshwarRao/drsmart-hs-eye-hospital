@@ -18,7 +18,7 @@ export default function Infrastructure({ clinic }: { clinic: ClinicInfo }) {
       <div className="sec-header">
         <div className="sec-label"><span>Facilities</span></div>
         <h2 className="sec-title">Modern infrastructure for better outcomes.</h2>
-        <p className="sec-sub">Our clinic is equipped with advanced diagnostic and treatment technology.</p>
+        <p className="sec-sub">Our hospital is equipped with advanced diagnostic and treatment technology.</p>
       </div>
       <div className="infra-grid">
         {facilities.map((f: any, i: number) => (

@@ -110,7 +110,7 @@ export default function PackageDetail({
           />
           <p className="cond-hero-desc">{description}</p>
           <div className="hero-pills">
-            {(pills.length > 0 ? pills : ['All-Inclusive','EMI Available','Insurance Accepted']).map((pill, i) => (
+            {(pills.length > 0 ? pills : ['All-Inclusive','Insurance Accepted']).map((pill, i) => (
               <span key={i} className="hero-pill" style={pillStyles[i % pillStyles.length]}>
                 <Icon name="check" size={12} />
                 {' '}{pill}

@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function PrivacyPage() {
   const cfg = await loadConfig()
-  const name = (cfg.clinic as any)?.name || 'this clinic'
+  const name = (cfg.clinic as any)?.name || 'this hospital'
   const phone = (cfg.clinic as any)?.phone || 'the number listed on this page'
   return (
     <>
@@ -56,7 +56,7 @@ export default async function PrivacyPage() {
               'Withdraw consent for communications at any time',
             ]},
             { title: 'Changes to This Policy', content: 'We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.' },
-            { title: 'Contact', content: `For any privacy-related queries, please contact us at our clinic or via WhatsApp at ${phone}.` },
+            { title: 'Contact', content: `For any privacy-related queries, please contact us at our hospital or via WhatsApp at ${phone}.` },
           ]}
         />
         <Footer clinic={cfg.clinic} config={cfg} />

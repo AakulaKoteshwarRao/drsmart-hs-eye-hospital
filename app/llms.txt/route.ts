@@ -57,7 +57,7 @@ ${jobTitle ? `Designation: ${jobTitle}.` : ''}
 ${specialties ? `Specialises in: ${specialties}.` : ''}
 Languages: ${languages}.
 
-## Clinic
+## Hospital
 Name: ${name}
 Address: ${address}
 Phone: ${phone}
@@ -68,7 +68,7 @@ Website: ${base}
 ## Key Pages
 - ${base}/ — Homepage
 - ${base}/doctor — Doctor profile, credentials, and biography
-- ${base}/about — About the clinic
+- ${base}/about — About the hospital
 - ${base}/services — All services offered
 - ${base}/conditions — Medical conditions treated
 - ${base}/procedures — Medical procedures performed

@@ -3,7 +3,7 @@ import { getConfig } from '@/lib/config'
 export default function BlogHero() {
   const cfg = getConfig()
   const specialty = cfg.clinic?.medicalSpecialty || cfg.doctor?.jobTitle || 'health'
-  const clinicName = cfg.clinic?.name || 'Our Clinic'
+  const clinicName = cfg.clinic?.name || 'Our Hospital'
   const doctorName = cfg.doctor?.name || 'our specialist'
   return (
     <section className="blog-hero">

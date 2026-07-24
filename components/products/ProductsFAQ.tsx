@@ -5,7 +5,7 @@ import { Icon } from '@/lib/icons'
 const faqs = [
   { q: 'Are the prices fixed or can they change?', a: 'The prices shown are estimated ranges. The exact cost is confirmed after your consultation and assessment. Final costs depend on your specific condition and treatment requirements.' },
   { q: 'Is insurance accepted for packages?', a: 'Yes, we work with all major insurance providers. Cashless facility and pre-authorisation support are available. Our team will assist with the insurance process.' },
-  { q: 'Is EMI available?', a: 'Yes, EMI options are available on request. Please discuss this during your consultation and our team will help you with available financing options.' },
+  { q: 'Is EMI available?', a: 'No, EMI is currently not available. Please discuss payment options with our team during your consultation.' },
   { q: 'What is included in the package?', a: 'Packages typically include consultation, diagnostic tests, procedure, medications, and follow-up visits. Exact inclusions are detailed in the final cost breakdown.' },
   { q: 'Can I customise a package?', a: 'Every package is personalised based on your condition and needs. The listed packages are starting points -- the doctor will tailor the treatment plan specifically for you.' },
 ]

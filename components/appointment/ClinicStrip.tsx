@@ -7,7 +7,7 @@ export default function ClinicStrip({ clinic }: { clinic: ClinicInfo }) {
       <div className="clinic-strip-inner">
         <div className="cs-item">
           <div className="cs-icon"><Icon name="location" size={20} color="#FFFFFF" /></div>
-          <div className="cs-text"><h4>Clinic Address</h4><p>{clinic.address}</p></div>
+          <div className="cs-text"><h4>Hospital Address</h4><p>{clinic.address}</p></div>
         </div>
         <div className="cs-item">
           <div className="cs-icon"><Icon name="clock" size={20} color="#FFFFFF" /></div>

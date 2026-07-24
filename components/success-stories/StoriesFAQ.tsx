@@ -13,7 +13,7 @@ export default function StoriesFAQ() {
     { q: `What is the typical success rate for ${specialty.toLowerCase()} treatments?`, a: `${specialty} treatments generally have a high success rate. However, individual outcomes depend on the specific condition, overall health, and post-operative care. The doctor will discuss realistic expectations during consultation.` },
     { q: 'How long does recovery typically take?', a: 'Recovery varies by procedure and individual. Timelines depend on the treatment, your overall health, and how closely you follow post-care instructions. Full recovery timelines are discussed in detail during your consultation.' },
     { q: 'Will my results be similar to these patients?', a: 'Every patient is different. While these stories represent positive outcomes, individual results depend on your specific condition, health, and commitment to post-treatment care. The doctor will set realistic expectations based on your case.' },
-    { q: 'Can I share my own success story?', a: 'We would love to hear from you. If you would like to share your treatment experience, please contact the clinic. Patient stories help others make informed decisions about their care.' },
+    { q: 'Can I share my own success story?', a: 'We would love to hear from you. If you would like to share your treatment experience, please contact the hospital. Patient stories help others make informed decisions about their care.' },
   ]
 
   return (

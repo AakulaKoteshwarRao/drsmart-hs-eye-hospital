@@ -11,7 +11,7 @@ export default function ClinicDetails({ clinic }: { clinic: ClinicInfo }) {
   return (
     <section className="clinic-section">
       <div className="sec-header">
-        <div className="sec-label"><span>Clinic Details</span></div>
+        <div className="sec-label"><span>Hospital Details</span></div>
         <h2 className="sec-title">Everything you need to know.</h2>
       </div>
       <div className="clinic-grid">

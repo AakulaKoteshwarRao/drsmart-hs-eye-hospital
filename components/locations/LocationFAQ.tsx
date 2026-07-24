@@ -9,10 +9,10 @@ export default function LocationFAQ() {
   const [open, setOpen] = useState<number | null>(null)
 
   const faqs = [
-    { q: 'Is the clinic wheelchair accessible?', a: `${clinic.name || 'Our clinic'} has full wheelchair accessibility. Please call ahead if you need special assistance.` },
-    { q: 'Is there parking available?', a: clinic.parking || 'Parking is available near the clinic. Contact us for specific directions.' },
+    { q: 'Is the hospital wheelchair accessible?', a: `${clinic.name || 'Our hospital'} has full wheelchair accessibility. Please call ahead if you need special assistance.` },
+    { q: 'Is there parking available?', a: clinic.parking || 'Parking is available near the hospital. Contact us for specific directions.' },
     { q: 'What are the working hours?', a: clinic.hours ? `We are open ${clinic.hours}. For emergencies outside these hours, please call us directly.` : 'Please contact us for current working hours.' },
-    { q: 'Do you handle emergency cases?', a: 'Yes. Emergency cases are seen immediately during clinic hours. Contact us for after-hours emergency arrangements.' },
+    { q: 'Do you handle emergency cases?', a: 'Yes. Emergency cases are seen immediately during hospital hours. Contact us for after-hours emergency arrangements.' },
     { q: 'Can I visit without an appointment?', a: 'Walk-ins are accepted but appointments are preferred to minimise waiting. You can book via phone, WhatsApp, or the online appointment form.' },
   ]
 
@@ -22,7 +22,7 @@ export default function LocationFAQ() {
         <div className="sec-header faq-header">
           <div className="sec-label"><span>FAQ</span></div>
           <h2 className="sec-title">Location & accessibility.</h2>
-          <p className="sec-sub">Questions about reaching the clinic and facilities available.</p>
+          <p className="sec-sub">Questions about reaching the hospital and facilities available.</p>
         </div>
         <div className="faq-list">
           {faqs.map((faq, i) => (

@@ -5,8 +5,8 @@ import { Icon } from '@/lib/icons'
 const faqs = [
   { q: 'Are these reviews verified?', a: 'Yes, all reviews shown here are sourced from Google Reviews and are from verified patients. We do not edit or filter reviews.' },
   { q: 'How can I leave a review?', a: 'Click the Write a Review button above to go directly to our Google listing. We appreciate your honest feedback -- it helps other patients make informed decisions.' },
-  { q: 'What if I have a concern about my treatment?', a: 'Please contact the clinic directly. We take every concern seriously and will work to resolve any issues promptly. Your satisfaction and wellbeing are our priority.' },
-  { q: 'How is the waiting time at the clinic?', a: 'We operate on a scheduled appointment system to minimise waiting time. Walk-ins are accommodated but may involve a short wait depending on the day schedule.' },
+  { q: 'What if I have a concern about my treatment?', a: 'Please contact the hospital directly. We take every concern seriously and will work to resolve any issues promptly. Your satisfaction and wellbeing are our priority.' },
+  { q: 'How is the waiting time at the hospital?', a: 'We operate on a scheduled appointment system to minimise waiting time. Walk-ins are accommodated but may involve a short wait depending on the day schedule.' },
   { q: 'Is the staff friendly and supportive?', a: 'Our staff is trained to provide a compassionate and supportive environment. From front desk to nursing, every team member is focused on making your visit as comfortable as possible.' },
 ]
 

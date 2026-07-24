@@ -6,9 +6,9 @@ import { Icon } from '@/lib/icons'
 function buildItems(photos: Record<string, string>) {
   const p = (key: string) => photos[key] || ''
   return [
-    { cat: 'clinic',      tag: 'Clinic',         grad: 'linear-gradient(145deg,var(--secondary),var(--secondary))',             title: 'Clinic -- Reception Area',           src: p('clinic_1') },
-    { cat: 'clinic',      tag: 'Clinic',         grad: 'linear-gradient(145deg,var(--secondary-deep),var(--secondary))',        title: 'Consultation Room',                  src: p('clinic_2') },
-    { cat: 'clinic',      tag: 'Clinic',         grad: 'linear-gradient(145deg,var(--secondary),var(--secondary-dark))',        title: 'Clinic Interior',                    src: p('clinic_3') },
+    { cat: 'clinic',      tag: 'Hospital',         grad: 'linear-gradient(145deg,var(--secondary),var(--secondary))',             title: 'Hospital -- Reception Area',           src: p('clinic_1') },
+    { cat: 'clinic',      tag: 'Hospital',         grad: 'linear-gradient(145deg,var(--secondary-deep),var(--secondary))',        title: 'Consultation Room',                  src: p('clinic_2') },
+    { cat: 'clinic',      tag: 'Hospital',         grad: 'linear-gradient(145deg,var(--secondary),var(--secondary-dark))',        title: 'Hospital Interior',                    src: p('clinic_3') },
     { cat: 'equipment',   tag: 'Equipment',      grad: 'linear-gradient(145deg,var(--primary),var(--primary-dark))',            title: 'Diagnostic Equipment',               src: p('equipment_1') },
     { cat: 'equipment',   tag: 'Equipment',      grad: 'linear-gradient(145deg,var(--secondary),var(--primary))',               title: 'Examination Unit',                   src: p('equipment_2') },
     { cat: 'equipment',   tag: 'Equipment',      grad: 'linear-gradient(145deg,var(--secondary-deep),var(--primary))',          title: 'Advanced Scanning Equipment',        src: p('equipment_3') },
@@ -25,7 +25,7 @@ function buildItems(photos: Record<string, string>) {
 
 const tabs = [
   { label: 'All', cat: 'all' },
-  { label: 'Clinic', cat: 'clinic' },
+  { label: 'Hospital', cat: 'clinic' },
   { label: 'Equipment', cat: 'equipment' },
   { label: 'Doctor', cat: 'doctor' },
   { label: 'Awards', cat: 'awards' },

@@ -4,21 +4,21 @@ import type { ClinicInfo } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
 const baseFaqs = [
-  { q: 'Is the clinic accessible for elderly patients?', a: 'Yes, the clinic is designed for accessibility with ground-floor access, wheelchair-friendly spaces, and comfortable seating in the waiting area.' },
-  { q: 'Do you provide rehabilitation in-house?', a: 'Yes, we have a dedicated rehabilitation unit within the clinic. Patients receive their treatment and aftercare under one roof.' },
+  { q: 'Is the hospital accessible for elderly patients?', a: 'Yes, the hospital is designed for accessibility with ground-floor access, wheelchair-friendly spaces, and comfortable seating in the waiting area.' },
+  { q: 'Do you provide rehabilitation in-house?', a: 'Yes, we have a dedicated rehabilitation unit within the hospital. Patients receive their treatment and aftercare under one roof.' },
   { q: 'What insurance companies do you accept?', a: 'We accept all major insurance providers including Star Health, HDFC Ergo, ICICI Lombard, and others. Cashless facility and pre-authorisation support is available.' },
   { q: 'Can I get a second opinion?', a: 'Absolutely. We welcome second opinion consultations. Please bring all your previous reports and investigations for a thorough review.' },
 ]
 
 export default function AboutFAQ({ clinic }: { clinic: ClinicInfo }) {
   const [open, setOpen] = useState<number | null>(null)
-  const faqs = [{ q: 'When was the clinic established?', a: `The clinic has been serving patients in ${clinic.city}, building a reputation for reliable, patient-first specialist care.` }, ...baseFaqs]
+  const faqs = [{ q: 'When was the hospital established?', a: `The hospital has been serving patients in ${clinic.city}, building a reputation for reliable, patient-first specialist care.` }, ...baseFaqs]
   return (
     <section className="faq-section" style={{ background: 'var(--neutral-100)' }}>
       <div className="faq-inner">
         <div className="sec-header faq-header">
           <div className="sec-label"><span>FAQ</span></div>
-          <h2 className="sec-title">About the clinic.</h2>
+          <h2 className="sec-title">About the hospital.</h2>
           <p className="sec-sub">Answers to common questions about our practice.</p>
         </div>
         <div className="faq-list">

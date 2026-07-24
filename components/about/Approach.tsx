@@ -13,7 +13,7 @@ export default function Approach() {
         <div className="sec-header">
           <div className="sec-label"><span>Our Approach</span></div>
           <h2 className="sec-title">How we practise.</h2>
-          <p className="sec-sub">The principles that guide every decision, treatment, and interaction at the clinic.</p>
+          <p className="sec-sub">The principles that guide every decision, treatment, and interaction at the hospital.</p>
         </div>
         <div className="approach-grid">
           {approaches.map((a, i) => (

@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function DisclaimerPage() {
   const cfg = await loadConfig()
-  const name = (cfg.clinic as any)?.name || 'this clinic'
+  const name = (cfg.clinic as any)?.name || 'this hospital'
   return (
     <>
       <Header clinic={cfg.clinic} />
@@ -34,7 +34,7 @@ export default async function DisclaimerPage() {
             { title: 'Third-Party Content', content: 'This website may reference medical studies, research, or information from external sources. While we strive to reference credible sources, we do not guarantee the accuracy of third-party content and are not responsible for information provided on external websites.' },
             { title: 'Professional Judgement', content: `The doctors and healthcare professionals at ${name} exercise their professional judgement when recommending treatments. Treatment plans are personalised and based on thorough clinical evaluation. ${name} is not liable for decisions made by patients based solely on website content without a formal consultation.` },
             { title: 'Updates to Content', content: 'Medical knowledge evolves continuously. While we make efforts to keep content current, some information on this website may not reflect the most recent medical developments or guidelines. The date of last review is indicated where applicable.' },
-            { title: 'Contact', content: 'If you have questions about the information on this website or wish to schedule a consultation, please contact us at our clinic or via WhatsApp.' },
+            { title: 'Contact', content: 'If you have questions about the information on this website or wish to schedule a consultation, please contact us at our hospital or via WhatsApp.' },
           ]}
         />
         <Footer clinic={cfg.clinic} config={cfg} />

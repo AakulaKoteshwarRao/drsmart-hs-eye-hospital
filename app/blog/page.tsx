@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const clinic = cfg.clinic as any
   return buildPageMetadata(cfg, {
     title:       'Health Articles & Patient Education',
-    description: `Read health articles, tips, and patient education content from ${clinic?.name || 'our clinic'} in ${clinic?.city || ''}.`,
+    description: `Read health articles, tips, and patient education content from ${clinic?.name || 'our hospital'} in ${clinic?.city || ''}.`,
     path:        '/blog',
     image:       clinic?.image,
   })

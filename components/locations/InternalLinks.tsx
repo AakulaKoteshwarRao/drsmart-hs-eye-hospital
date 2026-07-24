@@ -2,7 +2,7 @@ import { getConfig } from '@/lib/config'
 import type { AreaItem } from '@/lib/types'
 
 const pageLinks = [
-  { label: 'About the Clinic', href: '/about' },
+  { label: 'About the Hospital', href: '/about' },
   { label: 'Patient Reviews', href: '/reviews' },
   { label: 'Treatment Packages', href: '/packages' },
   { label: 'Book Appointment', href: '/appointment' },

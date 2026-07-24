@@ -4,7 +4,7 @@ const points = [
   'All ranges are estimates',
   'Exact costs confirmed at consultation',
   'No hidden charges',
-  'EMI available on request',
+  'EMI not available',
 ]
 
 export default function PricingTransparency() {
