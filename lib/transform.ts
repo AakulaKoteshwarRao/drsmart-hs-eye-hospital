@@ -187,7 +187,7 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
       instagram: s(s02.socialInstagram, ''),
       youtube:   s(s02.socialYoutube, ''),
     },
-    hasPackages: s00.hasPackages !== false,
+    hasPackages: s00.hasPackages !== false && a(s10.packages).length > 0,
   }
 
   // ── Doctor ────────────────────────────────────────────────────────────────
