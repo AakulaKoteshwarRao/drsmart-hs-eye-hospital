@@ -296,8 +296,8 @@ export function transformConfig(raw: Record<string, any>): ClinicConfig {
       { number: yearsExp,       label: 'Years Experience' },
       { number: patientCount,   label: 'Happy Patients'   },
       { number: procedureCount, label: 'Procedures Done'  },
-      { number: googleRating + '\u2605', label: 'Google Rating' },
-    ],
+      { number: googleRating ? googleRating + '\u2605' : '', label: 'Google Rating' },
+    ].filter((st) => (st.number || '').trim() !== ''),
     chips: [
       { type: 'rating',     text: `${googleRating} Google Rating`   },
       { type: 'experience', text: yearsExp ? `${yearsExp} Years` : '' },
