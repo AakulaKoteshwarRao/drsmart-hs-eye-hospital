@@ -2,6 +2,7 @@ import type { PackageItem } from '@/lib/types'
 import { Icon } from '@/lib/icons'
 
 export default function PackagesGrid({ packages, showViewAll = true }: { packages: PackageItem[]; showViewAll?: boolean }) {
+  if (!packages?.length) return null
   return (
     <section className="card-section section-cool-grey">
       <div className="sec-header">
