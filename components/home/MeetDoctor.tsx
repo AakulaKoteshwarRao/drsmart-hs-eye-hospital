@@ -23,7 +23,7 @@ export default function MeetDoctor({ doctor, clinic }: { doctor: DoctorInfo; cli
           </div>
           <div className="doc-info">
             <div className="sec-label">
-              <span style={{ color: 'var(--primary-dark)' }}>Meet the Doctor</span>
+              <span style={{ color: 'rgba(255,255,255,0.9)' }}>Meet the Doctor</span>
             </div>
             <h2 className="doc-name">{doctor.name}</h2>
             <p className="doc-degree">{doctor.degrees}</p>
@@ -43,9 +43,9 @@ export default function MeetDoctor({ doctor, clinic }: { doctor: DoctorInfo; cli
             <div className="doc-details">
               {doctor.details.map((detail, i) => (
                 <div key={i} className="doc-detail-item">
-                  <Icon name={detail.icon} size={18} color="var(--primary)" />
+                  <Icon name={detail.icon} size={18} color="rgba(255,255,255,0.85)" />
                   {detail.link ? (
-                    <a href={detail.link} target="_blank" rel="noreferrer" style={{ color: 'var(--primary-dark)', textDecoration: 'none', fontWeight: 600, fontSize: 'var(--text-base)' }}>
+                    <a href={detail.link} target="_blank" rel="noreferrer" style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600, fontSize: 'var(--text-base)' }}>
                       {detail.text}
                     </a>
                   ) : (

@@ -156,7 +156,7 @@
   .doc-auth-text h3 { font-size: 1.15rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.25rem; }
   .doc-auth-text p { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 0.75rem; }
   .doc-auth-link {
-    font-size: 0.85rem; font-weight: 700; color: var(--primary-dark);
+    font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.85);
     text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;
   }
   .doc-auth-link:hover { color: #FFFFFF; }
